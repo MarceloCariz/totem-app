@@ -12,7 +12,7 @@ const Imagenes = () => {
 
   
   return (
-    (<Carousel className='centrar-carrusel' infiniteLoop={true} showIndicators={false} showArrows={false} interval={6000} autoPlay={true} showThumbs={false}  >
+    (<Carousel className='centrar-carrusel'showStatus={false} infiniteLoop={true} showIndicators={false} showArrows={false} interval={6000} autoPlay={true} showThumbs={false}   >
         <img src={pa1} alt="" />
         <img src={pa2} alt="" />
         <img src={pa3} alt="" />
