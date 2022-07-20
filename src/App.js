@@ -13,19 +13,23 @@ function App() {
       const resultado = await obtenerImagenes()
       setimagenes(resultado)
     }
+    cargarImagenes();
 
-    cargarImagenes()
+    const interval = setInterval(()=>{
+      cargarImagenes();
+      console.log('Carge')
+    },60000);
+
+    return ()=>clearInterval(interval);
   },[])
   return (
     <div className="App">
-    <Carousel className='centrar-carrusel'showStatus={false} infiniteLoop={true} showIndicators={false}  showArrows={false} interval={8000} autoPlay={true} showThumbs={false}   >
+    <Carousel className='centrar-carrusel' autoPlay={true}  infiniteLoop={true} showIndicators={false}  showArrows={false} interval={8000}showStatus={false} showThumbs={false}   >
         {imagenes &&
           imagenes.map((imagen)=>{
             return(
-            <div key={imagen._id}>
             
               <Imagenes key={imagen._id} imagen={imagen}/>
-            </div>
           )})
         }
     </Carousel>
