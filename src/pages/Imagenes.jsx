@@ -24,7 +24,7 @@ const Imagenes = () => {
   },[])
   return (
     <div className="App">
-    <Carousel className='centrar-carrusel' autoPlay={true}  infiniteLoop={true} showIndicators={false}  showArrows={false} interval={8000}showStatus={false} showThumbs={false}   >
+    <Carousel className='centrar-carrusel' autoPlay={true} emulateTouch={true}  infiniteLoop={true} showIndicators={false}  showArrows={false} interval={8000}showStatus={false} showThumbs={false}   >
         {imagenes &&
           imagenes.map((imagen)=>{
             return(
