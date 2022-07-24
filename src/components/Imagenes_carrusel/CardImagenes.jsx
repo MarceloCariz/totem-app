@@ -27,7 +27,7 @@ const CardImagenes = ({imagen}) => {
   return (
     <Container>
         <img src={path} alt="" />
-        <Button to='preguntas'>¡Bienvenido!</Button>
+        <Button to='inicio'>¡Bienvenido!</Button>
     
     </Container>
    
