@@ -19,7 +19,7 @@ const Form = styled.form`
     margin-top: 2rem;
 `;
 
-const Preguntas = () => {
+const Inicio = () => {
 
     const [preguntas, setPreguntas] = useState({});
     const [busqueda, setBusqueda] = useState('');
@@ -30,19 +30,10 @@ const Preguntas = () => {
 
     useEffect(()=>{
         const cargarPreguntas = async () =>{
-            const resultado = await  obtenerPreguntas()
-            const data = resultado.filter(function( element ) {
-                return element.subcategoria !== undefined;
-             });
-            const categories = [...new Set(resultado.map(({categoria, subcategoria})=> {
-                return categoria
-            }))]
-            
-
-             const subcategories = [...new Set(data.map(({ subcategoria})=> {
-                return subcategoria
-            }))]
-            setPreguntas(resultado);
+            const {data, categories, subcategories} =  await obtenerPreguntas();
+            // const {categoria}
+          
+            setPreguntas(data);
             setCategorias(categories);
             setSubcategorias(subcategories);
         }
@@ -79,6 +70,7 @@ const Preguntas = () => {
 
         <CardResultado resultado={resultado}/>
         <OpcionPreguntas categorias={categorias} subcategorias={subcategorias} preguntas={preguntas}/>
+        
        
 {/* 
     {
@@ -96,4 +88,4 @@ const Preguntas = () => {
   )
 }
 
-export default Preguntas
+export default Inicio

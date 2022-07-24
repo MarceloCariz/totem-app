@@ -53,11 +53,10 @@ const OpcionPreguntas = ({ categorias, subcategorias, preguntas }) => {
   const [styleCategory, setstyleCategory] = useState({estado: false, id: ''})
   const [data, setData] = useState([]);
 
-
   const handleClickCategoria = (datos) => {
     const {categoria: category, i} = datos;
-    const data = preguntas.filter(({ categoria }) => categoria === category);
-    setData(data);
+    const resultado = preguntas.filter(({ categoria }) => categoria === category);
+    setData(resultado);
     setActivoCategoria(true);
     setstyleCategory({estado:true, id: i})
     
@@ -68,6 +67,7 @@ const OpcionPreguntas = ({ categorias, subcategorias, preguntas }) => {
   const handleClick = () => {
     setActivo(!activo);
     setActivoCategoria(false);
+    setstyleCategory({estado: false})
 
   };
 
@@ -79,7 +79,7 @@ const OpcionPreguntas = ({ categorias, subcategorias, preguntas }) => {
       {activo && (
         <>
           <ContainerCategoria >
-            {categorias.length > 0 &&
+            {categorias &&
               categorias.map((categoria, i) => (
                 <Categorias style={styleCategory.estado && styleCategory.id !== i ? {opacity: 0.5 } : {opacity: 1} }
                   id={i}

@@ -1,12 +1,25 @@
 
 import axios from 'axios';
-import biblioteca from '../data/biblioteca.json'
 export const obtenerPreguntas = async() =>{
 
     const {data} = await axios('https://totem.ivaras.cl:7002/api/preguntas');
     
+    const resultado =  data.filter(function( element ) {
+        return element.subcategoria !== undefined;
+     });
+
+    const categories = [...new Set(data.map(({categoria, subcategoria})=> {
+        return categoria
+    }))]
     
-    return data;
+
+     const subcategories = [...new Set(resultado.map(({ subcategoria})=> {
+        return subcategoria
+    }))]
+
+    
+    // console.log(resultado)
+    return {data, categories, subcategories};
  
 }
 
