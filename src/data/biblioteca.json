@@ -1,5 +1,5 @@
-[
-    {
+
+    [{
         "pregunta": "¿Cómo puedo renovar mis préstamos?",
         "respuesta": "La “Renovación” permite extender la fecha de entrega de tus materiales sin tener que ir presencialmente a la biblioteca. Solo debes ingresar a Mi Cuenta/Renovación y renovar el plazo de entrega de los materiales. El día anterior al vencimiento de tu préstamo, recibirás un mensaje recordatorio en tu correo institucional.  Considera que, si existe una reserva de tu libro, no podrás renovarlo. Es importante gestionar tus renovaciones, pues si no lo haces, se generarán multas y tu cuenta en biblioteca se bloqueará, hasta que regularices la situación.",
         "categoria": "biblioteca"
@@ -134,5 +134,149 @@
         "respuesta": "Recuerda  devolver el notebook prestado en comodato antes de finalizar el semestre.Si continúas utilizando el notebook debes firmar un nuevo contrato por el 2do semestre 2022.                                                                                                                           Las  devoluciones debes realizarlas en la biblioteca de tu sede. Recuerda llevar la mochila, cargador y todos los implementos relacionados.",
         "categoria": "biblioteca"
 
+    },
+    {
+        "pregunta":"¿Cuáles son los requisitos que debo cumplir para postular a la Gratuidad?",
+        "respuesta":"Para postular a la Gratuidad debes llenar el Formulario de Acreditación Socioeconómica (FUAS)en los períodos determinados por MINEDUC en www.beneficiosestudiantiles.clPertenecer al 60% de la población más vulnerable.Debes tener el registro Social de Hogares actualizado (no excluyente)",
+        "categoria":"financiamiento",
+        "subcategoria": "gratuidad"
+    },
+    {
+        "pregunta":"¿Qué debo hacer para renovar la gratuidad?",
+        "respuesta":"Si eres alumno de continuidad la matrícula es automática.Si realizas cambio de institución, para renovar la gratuidad debes matricularte en tu nueva casa de estudios adscrita al beneficio. No es necesario que vuelvas a completar el FUAS.Debes tener en cuenta que no podrás mantener Gratuidad si: 1) Te cambias a una institución que no esté adscrita al beneficio, 2) Excedes la duración formal de tu carrera o 3) Si haz realizado más de un cambio de carrera.",
+        "categoria":"financiamiento",
+        "subcategoria": "gratuidad"
+    },
+    {
+        "pregunta":"¿Me puedo cambiar de carrera con Gratuidad?",
+        "respuesta":"Sólo puede realizar un cambio y/o institución, pero se irán descontando los semestres cursados a la duración formal de la carrera siguiente.",
+        "categoria":"financiamiento",
+        "subcategoria": "gratuidad"
+    },
+    {
+        "pregunta":"Soy estudiante de una carrera técnica en una institución adscrita a la Gratuidad y me dan la posibilidad de articular hacia una carrera profesional ¿La Gratuidad me cubrirá todos esos años de estudio?",
+        "respuesta":"Sí, la Gratuidad también financiará la duración de la carrera profesional. Siempre y cuando convalide al menos un semestre, y no hayas realizado un cambio previo",
+        "categoria":"financiamiento",
+        "subcategoria": "gratuidad"
+    },
+    {
+        "pregunta":"¿Cuántos años dura la Gratuidad?",
+        "respuesta":"Solo la duración formal de la carrera Carreras profesionales  4 años Carreras técnicas 2años y 1⁄2 medio",
+        "categoria":"financiamiento",
+        "subcategoria": "gratuidad"
+    },
+    {
+        "pregunta":"Actualmente estoy estudiando en programa presencial, pero quiero cambiarme a programa Semi Presencial, ¿mi Gratuidad será renovada?",
+        "respuesta":"No, al estar matriculado en un programa semi presencial la gratuidad no será renovada",
+        "categoria":"financiamiento",
+        "subcategoria": "gratuidad"
+    },
+    {
+        "pregunta":"¿Puedo optar a Gratuidad teniendo un título técnico o profesional?",
+        "respuesta":"Si cuentas con un título técnico de nivel superior, puedes acceder a Gratuidad sólo en caso de que quieras continuar con una carrera afín a la carrera técnica. Debes tener convalidado al menos 2 semestres para que se te otorgue gratuidad. Si ya posees título profesional o una licenciatura terminal, no podrás acceder a Gratuidad.",
+        "categoria":"financiamiento",
+        "subcategoria": "gratuidad"
+    },
+    {
+        "pregunta":"¿Puedo suspender mi Gratuidad?",
+        "respuesta":"Si, se puede suspender. Primero debes suspender académicamente, en los plazos indicados por la institución, luego debes acercarte al Área de Financiamiento, a dejar los documentos de respaldos de las razones de suspensión. Los plazos de entrega de la documentación corresponden a la primera quincena de abril y/o septiembre, según semestre de suspensión.En el siguiente link se indican las causales con sus respectivos respaldos a presentar http://portal.beneficiosestudiantiles.cl/suspension-de-beneficio",
+        "categoria":"financiamiento",
+        "subcategoria": "gratuidad"
+    },
+    {
+        "pregunta":"¿Cuáles son los requisitos que debo cumplir para postular a Becas?",
+        "respuesta":"Para postular al Becas Ministeriales debes llenar el Formulario de Acreditación Socioeconómica (FUAS) en los períodos determinados por MINEDUC en www.beneficosestudiantiles.cl Alumnos de inicio Debe cumplir con los requisitos determinados por MINEDUC, dependiendo de la beca (NEM y/o Puntaje PSU). Alumnos que cursan carrera Debe cumplir con los requisitos determinados por MINEDUC dependiendo de la beca (notas de EM y/o Puntaje PSU) Si el alumno ingresa a segundo año: haber aprobado, al menos, el 60% de las asignaturas inscritas durante el primer año académico.  Estudiantes a contar del tercer año: tener aprobado el 70% de las asignaturas inscritas el año anterior.",
+        "categoria":"financiamiento",
+        "subcategoria": "becas estatales"
+    },
+    {
+        "pregunta":"¿La Beca cubre matrícula?",
+        "respuesta":"Las becas ministeriales no cubren matrícula, exceptuando la beca Valech Titulares.",
+        "categoria":"financiamiento",
+        "subcategoria": "becas estatales"
+    },
+    {
+        "pregunta":"¿Qué debo hacer para renovar mi Beca?",
+        "respuesta":"Estar dentro de la duración formal de la carrera Ser alumno regular(matrícula más toma de ramos) Cumplir con el avance académico exigido 60% alumnos de primer año 70% alumnos desde segundo año",
+        "categoria":"financiamiento",
+        "subcategoria": "becas estatales"
+    },
+    {
+        "pregunta":"¿Me puedo cambiar de carrera con BECA?",
+        "respuesta":"SI, pero la beca se mantendrá siempre y cuando cumpla el requisito académico y solo por la duración de la carrera con la cual se le asignó el beneficio.",
+        "categoria":"financiamiento",
+        "subcategoria": "becas estatales"
+    },
+    {
+        "pregunta":"Actualmente tengo beca estatal, pero quiero hacer cambio de carrera o continuidad de estudios, ¿puedo postular nuevamente a Becas?",
+        "respuesta":"Si, en los períodos determinados por MINEDUC, por lo cual puedes postular nuevamente a los beneficios para que estos se asignen de acuerdo a la nueva carrera que cursarás. (no existe postulación intersemestre)",
+        "categoria":"financiamiento",
+        "subcategoria": "becas estatales"
+    },
+    {
+        "pregunta":"¿Cuántos años dura la beca?",
+        "respuesta":"Solo la duración formal de la carrera Carreras profesionales  4 años Carreras técnicas 2años y 1⁄2 medio",
+        "categoria":"financiamiento",
+        "subcategoria": "becas estatales"
+    },
+    {
+        "pregunta":"Actualmente estoy estudiando en programa presencial, pero quiero cambiarme a programa PEV, ¿mi beca será renovada?",
+        "respuesta":"No, los programas semi-presenciales no tienen asignación ni renovación de becas.",
+        "categoria":"financiamiento",
+        "subcategoria": "becas estatales"
+    },
+    {
+        "pregunta":"¿Puedo suspender mi Beca Ministerial?",
+        "respuesta":"Si, primero debes suspender académicamente, en los plazos indicados por la institución, luego debes acercarte a financiamiento, a dejar los respaldos de las razones de suspensión. Plazo entrega de documentación primera quincena de abril y/o septiembre, según semestre desuspensión. En el siguiente link se indican las causales con sus respectivos respaldos a presentar http://portal.beneficiosestudiantiles.cl/suspension-de-beneficio",
+        "categoria":"financiamiento",
+        "subcategoria": "becas estatales"
+    },
+    {
+        "pregunta":"¿Cuáles son los requisitos que debo cumplir para postular al CAE?",
+        "respuesta":"Para postular al CAE debes llenar el Formulario de Acreditación Socioeconómica (FUAS) en los períodos determinados por MINEDUC en www.beneficiosestudiantiles.cl Requisitos: Alumnos de inicio (alumno que ingresa a primer año) Promedio de notas de Enseñanza media desde 5,31. Puntaje promedio en la PSU igual o superior a 475 (Lenguaje/Matemáticas).Se consideran válidas las PSU rendidas en el año de postulación o en los dos años anteriores Alumnos que cursan carrera Haber aprobado el 70% de los cursos inscritos en los últimos dos semestres cursados y, PPCF (promedio ponderado de calificaciones finales), desde 4,5 Resultados de preselección y selección deben revisarse en www.ingresa.cl",
+        "categoria":"financiamiento",
+        "subcategoria":"cae"
+    },
+    {
+        "pregunta":"¿Cuál es el monto que cubre el CAE?",
+        "respuesta":"Puedes pedir el monto entre $200.000 anual y el monto equivalente al 100% del Arancel de Referencia, establecido anualmente por el Ministerio de Educación. Debes tener en consideración que el 100% de arancel referencial no es el valor anual de la carrera, quedando por cubrir un copago (monto que no cubre el CAE).",
+        "categoria":"financiamiento",
+        "subcategoria":"cae"
+    },
+    {
+        "pregunta":"¿El CAE cubre matrícula?",
+        "respuesta":"No, el Cae no se puede utilizar para dar pago matrículas.",
+        "categoria":"financiamiento",
+        "subcategoria":"cae"
+    },
+    {
+        "pregunta":"¿Cuántos años dura el CAE?",
+        "respuesta":"Para carreras profesionales  Duración formal de la carrera más 2 años adicionale Para carreras técnicas  Duración formal de la carrera más 1 año adicional",
+        "categoria":"financiamiento",
+        "subcategoria":"cae"
+    },
+    {
+        "pregunta":"¿Qué requisitos debo cumplir para renovar el CAE?",
+        "respuesta":"Debes ser alumno regular (matrícula más toma de ramos) y validar tu monto de renovación en www.ingresa.cl portal del beneficiario.",
+        "categoria":"financiamiento",
+        "subcategoria":"cae"
+    },
+    {
+        "pregunta":"¿Me puedo cambiar de carrera con CAE?",
+        "respuesta":"SI, puede realizar solo un cambio de carrera y/o Institución.",
+        "categoria":"financiamiento",
+        "subcategoria":"cae"
+    },
+    {
+        "pregunta":"¿Puedo hacer continuidad de estudios con CAE?",
+        "respuesta":"SI, siempre y cuando la carrera técnica sea afín a la carrera profesional.Ej. Administración financiera  Ing. En Administración.",
+        "categoria":"financiamiento",
+        "subcategoria":"cae"
+    },
+    {
+        "pregunta":"¿Puedo suspender mi CAE anualmente?",
+        "respuesta":"El CAE no se suspende, puedes no utilizarlo durante un año completo, almomento de reincorporarte será informada tu regularidad en la carrera a Comisión Ingresa y éste será renovado.Si no tienes regularidad en la carrera el segundo semestre, el monto que no sea utilizado de tu CAE será devuelto al banco prestador.Si no tienes regularidad en la carrera el primer semestre, debes reincorporarte a más tardar la primera quincena de agosto incluyendo matrícula y toma de ramos (regularidad). Recuerda que el CAE es anual, por lo que si renuevas tu beneficio será informado para el año completo. http://www.ingresa.cl/",
+        "categoria":"financiamiento",
+        "subcategoria":"cae"
     }
 ]
