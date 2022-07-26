@@ -1,6 +1,7 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Categorias from '../components/opcion-preguntas/Categorias'
+import EvaluacionForm from '../components/opcion-preguntas/EvaluacionForm'
 import PalabraClave from '../components/opcion-preguntas/PalabraClave'
 import Preguntas from '../components/opcion-preguntas/Preguntas'
 import Layout from '../layouts/Layout'
@@ -17,6 +18,7 @@ const AppRouter = () => {
            <Route path='preguntas' element={<Preguntas/>}/>
            <Route path='preguntas/:categoria' element={<Categorias/>}/>
            <Route path='preguntas/:categoria/:subcategoria' element={<PalabraClave/>}/>
+           <Route path='evaluacion' element={<EvaluacionForm/>}/>
 
 
         </Route>

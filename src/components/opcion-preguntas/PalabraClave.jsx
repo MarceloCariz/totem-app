@@ -13,7 +13,7 @@ const Enlace = styled(Link)`
 const PalabraClave = () => {
 
     const {categoria:nombre, subcategoria: sub} = useParams();
-    const {preguntas: datos} = useOpciones();
+    const {preguntas: datos, setPreguntaSeleccionada, preguntaSeleccionada} = useOpciones();
     // const {subcategoria} = preguntas;
     // console.log(preguntas)
     const {data} = datos;
@@ -38,7 +38,8 @@ const PalabraClave = () => {
         setActive(true)
 
         setRespuesta({id: e._id})
-        // console.log(respuesta)
+        setPreguntaSeleccionada(e.pregunta)
+        console.log(e.pregunta)
     }
 
     const handleInputChange = (e) =>{
@@ -81,7 +82,7 @@ const PalabraClave = () => {
                 <div key={_id}> 
                 <p>{pregunta}</p>
 
-                <button onClick={(e)=> handleClick({_id,}, e)}>{active && respuestaF.id === _id ? (<p>Cerrar</p>) : (<p>Ver</p>)}</button>
+                <button onClick={(e)=> handleClick({_id, pregunta}, e)}>{active && respuestaF.id === _id ? (<p>Cerrar</p>) : (<p>Ver</p>)}</button>
                 {
                     active &&  (
                         <p>{respuestaF.id === _id ? respuesta : ""}</p>
@@ -95,7 +96,7 @@ const PalabraClave = () => {
         {/* {
             activePreguntas && (<p>Cargando ....</p>)
         } */}
-       <Enlace to="/">SALIR</Enlace>
+       <Enlace to="/inicio/evaluacion">SALIR</Enlace>
    
     </>
   )

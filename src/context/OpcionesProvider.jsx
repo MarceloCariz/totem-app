@@ -10,6 +10,7 @@ const OpcionesContext = createContext();
 
 const OpcionesProvider =({children}) =>{
     const [preguntas, setPreguntas] = useState({data:[], categorias: {}, subcategoria: []});
+    const [preguntaSeleccionada, setPreguntaSeleccionada] = useState([])
 
 
     useEffect(() => {
@@ -23,7 +24,7 @@ const OpcionesProvider =({children}) =>{
     
 
     return(
-        <OpcionesContext.Provider value={{preguntas}}>
+        <OpcionesContext.Provider value={{preguntas, setPreguntaSeleccionada, preguntaSeleccionada}}>
             {children}
         </OpcionesContext.Provider>
     )

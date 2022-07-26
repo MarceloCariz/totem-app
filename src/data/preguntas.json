@@ -2,281 +2,680 @@
     [{
         "pregunta": "¿Cómo puedo renovar mis préstamos?",
         "respuesta": "La “Renovación” permite extender la fecha de entrega de tus materiales sin tener que ir presencialmente a la biblioteca. Solo debes ingresar a Mi Cuenta/Renovación y renovar el plazo de entrega de los materiales. El día anterior al vencimiento de tu préstamo, recibirás un mensaje recordatorio en tu correo institucional.  Considera que, si existe una reserva de tu libro, no podrás renovarlo. Es importante gestionar tus renovaciones, pues si no lo haces, se generarán multas y tu cuenta en biblioteca se bloqueará, hasta que regularices la situación.",
-        "categoria": "biblioteca"
+        "categoria": "biblioteca",
+        "subcategoria":"biblioteca",
+        "ranking": 0
+
     },
     {
         "pregunta": "¿Qué servicios pueden utilizar titulados o exalumnos?",
         "respuesta": "Todos los titulados y ex alumnos, aquella persona que fue Alumno Regular en la Institución durante un periodo de tiempo determinado, concluyendo o no sus estudios académicos, podrán utilizar la Biblioteca Digital Para acceder a la biblioteca digital, deberán actualizar su cuenta en el portal de titulados o en el siguiente formulario https://tituladosbo.duoc.cl/formulario",
-        "categoria": "biblioteca"
+        "categoria": "biblioteca",
+        "subcategoria":"biblioteca",
+        "ranking": 0
+
+
     },
     {
         "pregunta": "¿Puedo cancelar las multas de biblioteca en línea?",
         "respuesta": "No, para cancelar la multa debes acercarte presencialmente a la caja de tu sede, y luego presentar el comprobante de pago en biblioteca para que la multa sea eliminada.",
-        "categoria": "biblioteca"
+        "categoria": "biblioteca",
+        "subcategoria":"biblioteca",
+        "ranking": 0
+
     },
     {
         "pregunta": "¿Puedo pedir libros en otra biblioteca que no sea de Duoc?",
         "respuesta": "Sí, puedes acceder al servicio de “Préstamo interbibliotecario” que tenemos con la biblioteca de la Pontificia Universidad Católica (PUC).  Solicítalo en la biblioteca de tu sede.",
-        "categoria": "biblioteca"
+        "categoria": "biblioteca",
+        "subcategoria":"biblioteca",
+        "ranking": 0
+
     },
     {
         "pregunta": "¿Qué hago, si se dañó el libro o material que me prestaron?",
         "respuesta": "Debes acercarte lo antes posible a tu Biblioteca con el material dañado para evaluar su estado e indicarte cuáles son los pasos a seguir. Para revisar los datos de contacto y horarios de atención de tu biblioteca ingresa  aquí https://bibliotecas.duoc.cl/bibliotecas",
-        "categoria": "biblioteca"
+        "categoria": "biblioteca",
+        "subcategoria":"biblioteca",
+        "ranking": 0
+
     },
     {
         "pregunta": "¿Puede otra persona devolver un libro que está prestado a mi nombre?",
         "respuesta": "Sí, no hay inconveniente que el libro u otro material sea devuelto por otra persona.",
-        "categoria": "biblioteca"
+        "categoria": "biblioteca",
+        "subcategoria":"biblioteca",
+        "ranking": 0
+
     },
     {
         "pregunta": "¿Qué es una asesoría académica?",
         "respuesta":"Para las Bibliotecas Duoc UC el foco principal se encuentra en los alumnos y su aprendizaje. Favorecer el desarrollo de éste y la progresión de su  conocimiento, son las motivaciones centrales del diseño de sus servicios. Un alto componente de innovación tecnológica en sus servicios, facilitan  la autogestión y autonomía del estudiante , esto, complementado con un programa de formación de competencias digitales,  propician la formación integral de los estudiantes de Duoc UC.                                                                                                                                       Servicios de interacción: cómo usar los servicios: Cuales son mis recursos, solicitudes, uso de la biblioteca, reserva de salas de estudio, Reserva, Renovación etc.                                                                                                                       Servicios de formación de competencias digitales: Talleres: búsqueda de información, uso de bases de datos, fuentes de información, Normas APA. Solicitar apoyo en herramientas digitales de tu interés Word, Excel, Canvas, Google Drive, Miro, Mentimeter, Loom, entre otras.",
-        "categoria": "biblioteca"
+        "categoria": "biblioteca",
+        "subcategoria":"biblioteca",
+        "ranking": 0
+
         
     
     },
     {
         "pregunta": "¿Cómo puedo revisar los libros que tienen disponible en biblioteca?",
         "respuesta": " A traves de nuestro buscador puedes acceder a toda la colección de  las Bibliotecas Duoc UC, tanto en formato impreso como digital. Asimismo podrás verificar si se encuentra “Disponible” o “Prestado” en tu Biblioteca. Recuerda que, si es de la colección de otra Sede, puedes ir a solicitarlo directamente o acceder a nuestro servicio. Ingresa aquí: https://consultas-bibliotecas.duoc.cl/faq/357931",
-        "categoria": "biblioteca"
+        "categoria": "biblioteca",
+        "subcategoria":"biblioteca",
+        "ranking": 0
+
     },
     {
         "pregunta": "Si estoy bloqueado, ¿qué hago?",
         "respuesta": "Debes verificar el motivo del bloqueo de tu cuenta, puede ser porque no has realizado la renovación o devolución del material en la fecha estipulada. En este caso, debes acercarte lo antes posible a realizar la devolución del material o escribe directamente a tu biblioteca quienes te indicarán los pasos a seguir.Ingresa aquí: https://bibliotecas.duoc.cl/antonio-varas consultas",
-        "categoria": "biblioteca"
+        "categoria": "biblioteca",
+        "subcategoria":"biblioteca",
+        "ranking": 0
+
     },
     {
         "pregunta": "¿Puedo devolver un libro prestado en una biblioteca distinta a mi sede?",
         "respuesta": "Sí, puedes devolver el libro en cualquier biblioteca Duoc.",
-        "categoria": "biblioteca"
+        "categoria": "biblioteca",
+        "subcategoria":"biblioteca",
+        "ranking": 0
+
 
     },
     {
         "pregunta": "¿Por cuánto tiempo puedo utilizar una sala de estudio?",
         "respuesta": "Las salas de estudio se utilizan por 50 minutos. Puedes reservarlas en línea a través del Portal de Biblioteca. Ingresas aquí : https://bibliotecas.duoc.cl/reserva-sala opción Reserva de salas de estudio",
-        "categoria": "biblioteca"
+        "categoria": "biblioteca",
+        "subcategoria":"biblioteca",
+        "ranking": 0
+
 
     },
     {
         "pregunta": "¿Cómo devuelvo un notebook en comodato?",
         "respuesta": "Debes acercarte a la biblioteca de tu sede con el notebook y los accesorios (cargador, mochila, candado) que te facilitaron",
-        "categoria": "biblioteca"
+        "categoria": "biblioteca",
+        "subcategoria":"biblioteca",
+        "ranking": 0
+
     },
     {
         "pregunta": "¿Cómo accedo al material digital?",
         "respuesta": "Para acceder a los recursos digitales ingresa a Biblioteca digital https://eds.p.ebscohost.com/eds/search/basic?vid=0&sid=152de268-43be-4da8-be9d-e192f0a012e3%40redis Una vez localizado el material que requieras, debes iniciar sesión, ingresando tu usuario y contraseña Duoc para poder visualizarlo.",
-        "categoria": "biblioteca"
+        "categoria": "biblioteca",
+        "subcategoria":"biblioteca",
+        "ranking": 0
+
 
     },
     {
         "pregunta": "¿Cómo accedo al material impreso?",
         "respuesta": "Puedes realizar la búsqueda de algún título desde el “Buscador” y luego ir a “Estantería” o recorrerla libremente. Una vez que tengas seleccionados los libros que requieres en préstamo, debes acercarte a la estación de Autopréstamo para registrarlos en tu cuenta, ingresando tu usuario y contraseña Duoc. Si tienes dudas, puedes consultar directamente en los puntos de atención.",
-        "categoria": "biblioteca"
+        "categoria": "biblioteca",
+        "subcategoria":"biblioteca",
+        "ranking": 0
+
 
     },
     {
         "pregunta": "¿Cuál es el horario de funcionamiento de las bibliotecas?",
         "respuesta": "Las bibliotecas atienden de lunes a sábado. El horario de la Biblioteca Antonio Varas es:                                                      Lunes-viernes 8:30 - 22:00 hrs y Sábado 9:00 - 14:00 hrs",
-        "categoria": "biblioteca"
+        "categoria": "biblioteca",
+        "subcategoria":"biblioteca",
+        "ranking": 0
+
 
     },
     {
         "pregunta": " ¿Puedo solicitar un libro que está en otra sede?",
         "respuesta": "Sí, puedes solicitar libros que no se encuentren en formato  digital a las bibliotecas de las otras sedes.  Para esto, debes acercarte a los puntos de atención y realizar la solicitud, esta tardará en gestionarse 3 días hábiles aproximadamente.                                                         Si el material se encuentra digitalizado, el acceso deberá ser al libro digital a través del                                                                Portal de Bibliotecas  : https://bibliotecas.duoc.cl/inicio",
-        "categoria": "biblioteca"
+        "categoria": "biblioteca",
+        "subcategoria":"biblioteca",
+        "ranking": 0
+
 
     },
     {
         "pregunta": "Soy exalumno, ¿puedo utilizar la Biblioteca?",
         "respuesta": "Sí, como exalumno tendrás acceso a la Biblioteca Digital, para lo cual debes activar tu cuenta de usuario Duoc, ingresando al Portal de Titulados , o directamente aquí :                                                                                                                            https://tituladosbo.duoc.cl/formulario                                                                                                                         Con tu cuenta activada, podrás acceder a todos los recursos digitales de Bibliotecas Duoc UC.",
-        "categoria": "biblioteca"
+        "categoria": "biblioteca",
+        "subcategoria":"biblioteca",
+        "ranking": 0
+
 
     },
     {
         "pregunta": "¿Puedo reservar un libro que se encuentre disponible en otra sede?",
         "respuesta": "No, solamente podrás reservar libros físicos pertenecientes a tu sede. La reserva opera sólo cuando todas las copias físicas o impresas están prestadas.",
-        "categoria": "biblioteca"
+        "categoria": "biblioteca",
+        "subcategoria":"biblioteca",
+        "ranking": 0
+
 
     },
     {
         "pregunta": "¿Por cuánto tiempo se prestan los libros?",
         "respuesta": "Los días de préstamo dependen del tipo de colección a la que pertenece el libro.Estas  son los tipos de colección y sus días de préstamo",
-        "categoria": "biblioteca"
+        "categoria": "biblioteca",
+        "subcategoria":"biblioteca",
+        "ranking": 0
+
 
     },
     {
         "pregunta": "Cuánto es el máximo de libros (o materiales) que puedo solicitar a la vez?",
         "respuesta": "Puedes solicitar en préstamo un máximo de 5 libros (o cualquier otro material) a la vez.",
-        "categoria": "biblioteca"
+        "categoria": "biblioteca",
+        "subcategoria":"biblioteca",
+        "ranking": 0
+
 
     },
     {
         "pregunta": "¿Qué pasa si devuelvo un libro atrasado, pero no puedo pagar la multa?",
         "respuesta": "La multa la puedes cancelar cuando puedas. No olvides presentar la boleta en biblioteca una vez cancelada la deuda.",
-        "categoria": "biblioteca"
+        "categoria": "biblioteca",
+        "subcategoria":"biblioteca",
+        "ranking": 0
+
 
     },
     {
         "pregunta": "Préstamo de calculadoras",
         "respuesta": "Las calculadoras se prestan sólo por el día, y se deben devolver en los Puntos de Atención y / o Buzón de Biblioteca ubicado en el hall de entrada  de la sede,junto a los trofeos.",
-        "categoria": "biblioteca"
+        "categoria": "biblioteca",
+        "subcategoria":"biblioteca",
+        "ranking": 0
+
 
     },
     {
         "pregunta": "¿Para qué sirve el buzón de devolución?",
         "respuesta": "El buzón sirve para depositar los libros y las calculadoras cuyo préstamo ha vencido cuando no puedes ir personalmente a la Biblioteca, evitando así multas y bloqueos. Está ubicado en el hall de la sede junto a la vitrina de los trofeos",
-        "categoria": "biblioteca"
+        "categoria": "biblioteca",
+        "subcategoria":"biblioteca",
+        "ranking": 0
+
 
     },
     {
         "pregunta": "Préstamo y devolución Notebook",
         "respuesta": "Recuerda  devolver el notebook prestado en comodato antes de finalizar el semestre.Si continúas utilizando el notebook debes firmar un nuevo contrato por el 2do semestre 2022.                                                                                                                           Las  devoluciones debes realizarlas en la biblioteca de tu sede. Recuerda llevar la mochila, cargador y todos los implementos relacionados.",
-        "categoria": "biblioteca"
+        "categoria": "biblioteca",
+        "subcategoria":"biblioteca",
+        "ranking": 0
+
 
     },
     {
         "pregunta":"¿Cuáles son los requisitos que debo cumplir para postular a la Gratuidad?",
         "respuesta":"Para postular a la Gratuidad debes llenar el Formulario de Acreditación Socioeconómica (FUAS)en los períodos determinados por MINEDUC en www.beneficiosestudiantiles.clPertenecer al 60% de la población más vulnerable.Debes tener el registro Social de Hogares actualizado (no excluyente)",
         "categoria":"financiamiento",
-        "subcategoria": "gratuidad"
+        "subcategoria": "gratuidad",
+        "ranking": 0
+
     },
     {
         "pregunta":"¿Qué debo hacer para renovar la gratuidad?",
         "respuesta":"Si eres alumno de continuidad la matrícula es automática.Si realizas cambio de institución, para renovar la gratuidad debes matricularte en tu nueva casa de estudios adscrita al beneficio. No es necesario que vuelvas a completar el FUAS.Debes tener en cuenta que no podrás mantener Gratuidad si: 1) Te cambias a una institución que no esté adscrita al beneficio, 2) Excedes la duración formal de tu carrera o 3) Si haz realizado más de un cambio de carrera.",
         "categoria":"financiamiento",
-        "subcategoria": "gratuidad"
+        "subcategoria": "gratuidad",
+        "ranking": 0
+
     },
     {
         "pregunta":"¿Me puedo cambiar de carrera con Gratuidad?",
         "respuesta":"Sólo puede realizar un cambio y/o institución, pero se irán descontando los semestres cursados a la duración formal de la carrera siguiente.",
         "categoria":"financiamiento",
-        "subcategoria": "gratuidad"
+        "subcategoria": "gratuidad",
+        "ranking": 0
+
     },
     {
         "pregunta":"Soy estudiante de una carrera técnica en una institución adscrita a la Gratuidad y me dan la posibilidad de articular hacia una carrera profesional ¿La Gratuidad me cubrirá todos esos años de estudio?",
         "respuesta":"Sí, la Gratuidad también financiará la duración de la carrera profesional. Siempre y cuando convalide al menos un semestre, y no hayas realizado un cambio previo",
         "categoria":"financiamiento",
-        "subcategoria": "gratuidad"
+        "subcategoria": "gratuidad",
+        "ranking": 0
+
     },
     {
         "pregunta":"¿Cuántos años dura la Gratuidad?",
         "respuesta":"Solo la duración formal de la carrera Carreras profesionales  4 años Carreras técnicas 2años y 1⁄2 medio",
         "categoria":"financiamiento",
-        "subcategoria": "gratuidad"
+        "subcategoria": "gratuidad",
+        "ranking": 0
+
     },
     {
         "pregunta":"Actualmente estoy estudiando en programa presencial, pero quiero cambiarme a programa Semi Presencial, ¿mi Gratuidad será renovada?",
         "respuesta":"No, al estar matriculado en un programa semi presencial la gratuidad no será renovada",
         "categoria":"financiamiento",
-        "subcategoria": "gratuidad"
+        "subcategoria": "gratuidad",
+        "ranking": 0
+
     },
     {
         "pregunta":"¿Puedo optar a Gratuidad teniendo un título técnico o profesional?",
         "respuesta":"Si cuentas con un título técnico de nivel superior, puedes acceder a Gratuidad sólo en caso de que quieras continuar con una carrera afín a la carrera técnica. Debes tener convalidado al menos 2 semestres para que se te otorgue gratuidad. Si ya posees título profesional o una licenciatura terminal, no podrás acceder a Gratuidad.",
         "categoria":"financiamiento",
-        "subcategoria": "gratuidad"
+        "subcategoria": "gratuidad",
+        "ranking": 0
+
     },
     {
         "pregunta":"¿Puedo suspender mi Gratuidad?",
         "respuesta":"Si, se puede suspender. Primero debes suspender académicamente, en los plazos indicados por la institución, luego debes acercarte al Área de Financiamiento, a dejar los documentos de respaldos de las razones de suspensión. Los plazos de entrega de la documentación corresponden a la primera quincena de abril y/o septiembre, según semestre de suspensión.En el siguiente link se indican las causales con sus respectivos respaldos a presentar http://portal.beneficiosestudiantiles.cl/suspension-de-beneficio",
         "categoria":"financiamiento",
-        "subcategoria": "gratuidad"
+        "subcategoria": "gratuidad",
+        "ranking": 0
+
     },
     {
         "pregunta":"¿Cuáles son los requisitos que debo cumplir para postular a Becas?",
         "respuesta":"Para postular al Becas Ministeriales debes llenar el Formulario de Acreditación Socioeconómica (FUAS) en los períodos determinados por MINEDUC en www.beneficosestudiantiles.cl Alumnos de inicio Debe cumplir con los requisitos determinados por MINEDUC, dependiendo de la beca (NEM y/o Puntaje PSU). Alumnos que cursan carrera Debe cumplir con los requisitos determinados por MINEDUC dependiendo de la beca (notas de EM y/o Puntaje PSU) Si el alumno ingresa a segundo año: haber aprobado, al menos, el 60% de las asignaturas inscritas durante el primer año académico.  Estudiantes a contar del tercer año: tener aprobado el 70% de las asignaturas inscritas el año anterior.",
         "categoria":"financiamiento",
-        "subcategoria": "becas estatales"
+        "subcategoria": "becas estatales",
+        "ranking": 0
+
     },
     {
         "pregunta":"¿La Beca cubre matrícula?",
         "respuesta":"Las becas ministeriales no cubren matrícula, exceptuando la beca Valech Titulares.",
         "categoria":"financiamiento",
-        "subcategoria": "becas estatales"
+        "subcategoria": "becas estatales",
+        "ranking": 0
+
     },
     {
         "pregunta":"¿Qué debo hacer para renovar mi Beca?",
         "respuesta":"Estar dentro de la duración formal de la carrera Ser alumno regular(matrícula más toma de ramos) Cumplir con el avance académico exigido 60% alumnos de primer año 70% alumnos desde segundo año",
         "categoria":"financiamiento",
-        "subcategoria": "becas estatales"
+        "subcategoria": "becas estatales",
+        "ranking": 0
+
     },
     {
         "pregunta":"¿Me puedo cambiar de carrera con BECA?",
         "respuesta":"SI, pero la beca se mantendrá siempre y cuando cumpla el requisito académico y solo por la duración de la carrera con la cual se le asignó el beneficio.",
         "categoria":"financiamiento",
-        "subcategoria": "becas estatales"
+        "subcategoria": "becas estatales",
+        "ranking": 0
+
     },
     {
         "pregunta":"Actualmente tengo beca estatal, pero quiero hacer cambio de carrera o continuidad de estudios, ¿puedo postular nuevamente a Becas?",
         "respuesta":"Si, en los períodos determinados por MINEDUC, por lo cual puedes postular nuevamente a los beneficios para que estos se asignen de acuerdo a la nueva carrera que cursarás. (no existe postulación intersemestre)",
         "categoria":"financiamiento",
-        "subcategoria": "becas estatales"
+        "subcategoria": "becas estatales",
+        "ranking": 0
+
     },
     {
         "pregunta":"¿Cuántos años dura la beca?",
         "respuesta":"Solo la duración formal de la carrera Carreras profesionales  4 años Carreras técnicas 2años y 1⁄2 medio",
         "categoria":"financiamiento",
-        "subcategoria": "becas estatales"
+        "subcategoria": "becas estatales",
+        "ranking": 0
+
     },
     {
         "pregunta":"Actualmente estoy estudiando en programa presencial, pero quiero cambiarme a programa PEV, ¿mi beca será renovada?",
         "respuesta":"No, los programas semi-presenciales no tienen asignación ni renovación de becas.",
         "categoria":"financiamiento",
-        "subcategoria": "becas estatales"
+        "subcategoria": "becas estatales",
+        "ranking": 0
+
     },
     {
         "pregunta":"¿Puedo suspender mi Beca Ministerial?",
         "respuesta":"Si, primero debes suspender académicamente, en los plazos indicados por la institución, luego debes acercarte a financiamiento, a dejar los respaldos de las razones de suspensión. Plazo entrega de documentación primera quincena de abril y/o septiembre, según semestre desuspensión. En el siguiente link se indican las causales con sus respectivos respaldos a presentar http://portal.beneficiosestudiantiles.cl/suspension-de-beneficio",
         "categoria":"financiamiento",
-        "subcategoria": "becas estatales"
+        "subcategoria": "becas estatales",
+        "ranking": 0
+
     },
     {
         "pregunta":"¿Cuáles son los requisitos que debo cumplir para postular al CAE?",
         "respuesta":"Para postular al CAE debes llenar el Formulario de Acreditación Socioeconómica (FUAS) en los períodos determinados por MINEDUC en www.beneficiosestudiantiles.cl Requisitos: Alumnos de inicio (alumno que ingresa a primer año) Promedio de notas de Enseñanza media desde 5,31. Puntaje promedio en la PSU igual o superior a 475 (Lenguaje/Matemáticas).Se consideran válidas las PSU rendidas en el año de postulación o en los dos años anteriores Alumnos que cursan carrera Haber aprobado el 70% de los cursos inscritos en los últimos dos semestres cursados y, PPCF (promedio ponderado de calificaciones finales), desde 4,5 Resultados de preselección y selección deben revisarse en www.ingresa.cl",
         "categoria":"financiamiento",
-        "subcategoria":"cae"
+        "subcategoria":"cae",
+        "ranking": 0
+
     },
     {
         "pregunta":"¿Cuál es el monto que cubre el CAE?",
         "respuesta":"Puedes pedir el monto entre $200.000 anual y el monto equivalente al 100% del Arancel de Referencia, establecido anualmente por el Ministerio de Educación. Debes tener en consideración que el 100% de arancel referencial no es el valor anual de la carrera, quedando por cubrir un copago (monto que no cubre el CAE).",
         "categoria":"financiamiento",
-        "subcategoria":"cae"
+        "subcategoria":"cae",
+        "ranking": 0
+
     },
     {
         "pregunta":"¿El CAE cubre matrícula?",
         "respuesta":"No, el Cae no se puede utilizar para dar pago matrículas.",
         "categoria":"financiamiento",
-        "subcategoria":"cae"
+        "subcategoria":"cae",
+        "ranking": 0
+
     },
     {
         "pregunta":"¿Cuántos años dura el CAE?",
         "respuesta":"Para carreras profesionales  Duración formal de la carrera más 2 años adicionale Para carreras técnicas  Duración formal de la carrera más 1 año adicional",
         "categoria":"financiamiento",
-        "subcategoria":"cae"
+        "subcategoria":"cae",
+        "ranking": 0
+
     },
     {
         "pregunta":"¿Qué requisitos debo cumplir para renovar el CAE?",
         "respuesta":"Debes ser alumno regular (matrícula más toma de ramos) y validar tu monto de renovación en www.ingresa.cl portal del beneficiario.",
         "categoria":"financiamiento",
-        "subcategoria":"cae"
+        "subcategoria":"cae",
+        "ranking": 0
+
     },
     {
         "pregunta":"¿Me puedo cambiar de carrera con CAE?",
         "respuesta":"SI, puede realizar solo un cambio de carrera y/o Institución.",
         "categoria":"financiamiento",
-        "subcategoria":"cae"
+        "subcategoria":"cae",
+        "ranking": 0
+
     },
     {
         "pregunta":"¿Puedo hacer continuidad de estudios con CAE?",
         "respuesta":"SI, siempre y cuando la carrera técnica sea afín a la carrera profesional.Ej. Administración financiera  Ing. En Administración.",
         "categoria":"financiamiento",
-        "subcategoria":"cae"
+        "subcategoria":"cae",
+        "ranking": 0
+
     },
     {
         "pregunta":"¿Puedo suspender mi CAE anualmente?",
         "respuesta":"El CAE no se suspende, puedes no utilizarlo durante un año completo, almomento de reincorporarte será informada tu regularidad en la carrera a Comisión Ingresa y éste será renovado.Si no tienes regularidad en la carrera el segundo semestre, el monto que no sea utilizado de tu CAE será devuelto al banco prestador.Si no tienes regularidad en la carrera el primer semestre, debes reincorporarte a más tardar la primera quincena de agosto incluyendo matrícula y toma de ramos (regularidad). Recuerda que el CAE es anual, por lo que si renuevas tu beneficio será informado para el año completo. http://www.ingresa.cl/",
         "categoria":"financiamiento",
-        "subcategoria":"cae"
+        "subcategoria":"cae",
+        "ranking": 0
+
+    },
+    {
+        "pregunta":"¿Cuáles son las áreas que hay en Desarrollo Estudiantil? ",
+        "respuesta":"Asuntos Estudiantiles, Deportes y actividad física, Apoyo y bienestar, Desarrollo laboral ",
+        "categoria":"Desarrollo Estudiantil",
+        "subcategoria":"Desarrollo Estudiantil",
+        "ranking": 0
+
+    }
+    ,
+    {
+        "pregunta":"¿Cómo me comunico con alguien del equipo? ",
+        "respuesta":"Puedes acercarte a Punto Estudiantil en el primer piso del edificio Varas, escribir a puntoestudiantil_avaras@duoc.cl o al WhatsApp +569 3 7805338 ",
+        "categoria":"Desarrollo Estudiantil",
+        "subcategoria":"Desarrollo Estudiantil",
+        "ranking": 0
+
+    }
+    ,
+    {
+        "pregunta":"¿Qué implementos puedo pedir? ",
+        "respuesta":"Tenemos cartas, pelotas de tenis de mesa y taca taca, pide en el mesón de Punto Estudiantil, deja tus datos en el formulario y listo. Recuerda cuidar los implementos que tenemos porque son para todos los alumnos. ",
+        "categoria":"Desarrollo Estudiantil",
+        "subcategoria":"Desarrollo Estudiantil",
+        "ranking": 0
+
+    }
+    ,
+    {
+        "pregunta":"¿Cómo puedo tener TNE? ",
+        "respuesta":" Existen tres procesos de TNE, todo va a depender de tu situación en particular: TNE NUEVA: lo deben realizar estudiantes que ingresan por 1era vez a educación superior y/o estudiantes que vienen directo de educación media. Si este es tu caso, acércate a la coordinadora de asuntos estudiantiles para que te ayude a obtener tu tarjeta nueva.  REVALIDACIÓN: lo deben realizar estudiantes de continuidad o quienes vengan de otra institución de educación superior y cuenten con tarjeta nacional estudiantil emitida desde el 2015 en adelante. El proceso se hace en la sede e inicia en mayo de cada año y es informado a través de mail y RRSS. REPOSICIÓN:  lo deben realizar estudiantes que tuvieron TNE de educación superior (instituto, CFT, universidad) y sufrieron la perdida, robo o daño de su tarjeta. Este proceso lo puedes realizar durante todo el año de forma online en www.tne.cl o presencial en oficinas TNE. ",
+        "categoria":"Desarrollo Estudiantil",
+        "subcategoria":"Desarrollo Estudiantil",
+        "ranking": 0
+
+    }
+    ,
+    {
+        "pregunta":"¿Qué pasa si tengo un accidente?",
+        "respuesta":"Al estar matriculado en Duoc, contarás con un seguro de accidente, que te cubre los 7 días de la semana, las 24 horas del día, independiente te encuentres dentro o fuera de la sede.   Es importante te encuentres inscrito en FONASA o ISAPRES para que cuentes con cobertura total, de hasta 6 accidentes anuales con un tope de hasta 100 UF (anual). Es importante que sepas que el seguro NO CUBRE ENFERMEDADES, sólo accidentes. ",
+        "categoria":"Desarrollo Estudiantil",
+        "subcategoria":"Desarrollo Estudiantil",
+        "ranking": 0
+
+    }
+    ,
+    {
+        "pregunta":"¿Cómo hago uso del seguro?",
+        "respuesta":"Frente a un accidente debes llamar al DOC DUOC :600 362 3862 ",
+        "categoria":"Desarrollo Estudiantil",
+        "subcategoria":"Desarrollo Estudiantil",
+        "ranking": 0
+
+    }
+    ,
+    {
+        "pregunta":"¿Hay apoyo psicológico? ¿Cómo puedo agendar una hora? ",
+        "respuesta":"Si, al ser estudiante de Duoc, cuentas con apoyo psicológico gratuito. Si deseas tener más información de cómo es el programa, puedes agendar una hora con nuestra coordinadora de apoyo y bienestar en agéndate con varas o acercarte a Punto Estudiantil. Además, contamos con talleres de salud mental a lo largo del año. ",
+        "categoria":"Desarrollo Estudiantil",
+        "subcategoria":"Desarrollo Estudiantil",
+        "ranking": 0
+
+    }
+    ,
+    {
+        "pregunta":"¿Hay talleres extracurriculares? ",
+        "respuesta":"Si, tenemos distintos talleres para que aprendas nuevos hobbies y compartas con compañeros que tienen tus mismos intereses. La oferta de estos talleres va cambiando semestre a semestre, acércate a tus coordinadoras de asuntos estudiantiles para que te cuenten cuales son los talleres de este semestre y sus horarios. Son actividades completamente gratuitas. ",
+        "categoria":"Desarrollo Estudiantil",
+        "subcategoria":"talleres",
+        "ranking": 0
+
+    }
+    ,
+    {
+        "pregunta":"¿Hay talleres deportivos? ",
+        "respuesta":"Contamos con una gran variedad de talleres deportivos en la sede y fuera de ella. Todos los semestres se abren nuevos cupos para estas actividades, acércate al coordinador de deporte y consulta qué talleres hay para ti, sus horarios y el lugar donde se estará impartiendo. También son gratuitos. ",
+        "categoria":"Desarrollo Estudiantil",
+        "subcategoria":"talleres",
+        "ranking": 0
+
+    }
+    ,
+    {
+        "pregunta":"¿Cómo puedo ocupar la cancha para jugar con compañeros? ",
+        "respuesta":"La cancha está disponible para todos quienes deseen ocuparla, puedes reservar una hora en el código de agéndate con varas, en caso de que no te salgan horarios disponibles es porque alguien ya reservó o se está haciendo un taller, pero puedes buscar otro horario que te acomode. El uso de la cancha es gratuito, solo pedimos que todos los que la ocupen tengan su pase de movilidad y sean estudiantes de la sede. ",
+        "categoria":"Desarrollo Estudiantil",
+        "subcategoria":"Desarrollo Estudiantil",
+        "ranking": 0
+
+    }
+    ,
+    {
+        "pregunta":"¿Me pueden ayudar a encontrar práctica o trabajo? ",
+        "respuesta":"En el área de desarrollo laboral te ayudamos en el proceso de tu búsqueda, como por ejemplo si necesitas tips para una entrevista o que te orientemos con tu curriculum, además contamos con distintos talleres para ayudarte a que encuentres el mejor lugar.  Para buscar tu práctica o trabajo, puedes crearte un perfil en la página www.duoclaboral.cl nuestra bolsa de trabajo institucional.",
+        "categoria":"Desarrollo Estudiantil",
+        "subcategoria":"Desarrollo Estudiantil",
+        "ranking": 0
+
+    }
+    ,
+    {
+        "pregunta":"¿Quién aprueba, rechaza o solicita rectificar el Formulario de Validación?",
+        "respuesta":" El Director de Carreras tiene la atribución de aprobar, rechazar o solicitar rectificar el formulario de validación.",
+        "categoria":"practica",
+        "subcategoria":"practica",
+        "ranking": 0
+
+    }
+    ,
+    {
+        "pregunta":"¿En qué momento me entero de la asignación de un Docente?",
+        "respuesta":"Cuando el DCC valida el formulario, entonces, asigna un Docente Guía. El estudiante se informa por correo.",
+        "categoria":"practica",
+        "subcategoria":"practica",
+        "ranking": 0
+
+    }
+    ,
+    {
+        "pregunta":"¿Puede un alumno comenzar la práctica sin tener la asignatura inscrita?",
+        "respuesta":"No, la asignatura de práctica debe estar inscrita y además el Director de Carreras debe aprobar el formulario en la plataforma de Práctica (www.duoc.cl/practica )",
+        "categoria":"practica",
+        "subcategoria":"practica",
+        "ranking": 0
+
+    }
+    ,
+    {
+        "pregunta":"¿Un alumno puede validar y después convalidar la práctica?",
+        "respuesta":"Cuando la práctica está inscrita, iniciada y con un Docente guía asignado, entonces, el alumno no podrá solicitar la convalidación de la asignatura. Sin embargo, la decisión es del Director de Carreras.",
+        "categoria":"practica",
+        "subcategoria":"practica",
+        "ranking": 0
+
+    }
+    ,
+    {
+        "pregunta":"¿Qué puedo hacer si no puedo ingresar el formulario al portal?",
+        "respuesta":"Todos los estudiantes que tienen inscrita la asignatura pueden entrar al portal e ingresar el formulario de validación. Si tienes problemas con tu clave, entonces, puedes obtener una nueva en: cambiatuclave.duoc.cl o bien debes enviar un correo a: cetecom_avaras@duoc.cl. Si aún tienes dudas, entonces, contacta a tu Coordinador de Práctica",
+        "categoria":"practica",
+        "subcategoria":"practica",
+        "ranking": 0
+
+    }
+    ,
+    {
+        "pregunta":"¿Un estudiante puede hacer la práctica laboral y profesional en la misma empresa?",
+        "respuesta":"Sí, es factible. El formulario de validación lo deben ingresar en la asignatura de práctica profesional. En total tienen que realizar 540 horas de práctica. Cabe mencionar que las funciones deben estar relacionadas con el perfil de egreso de la carrera.",
+        "categoria":"practica",
+        "subcategoria":"practica",
+        "ranking": 0
+
+    }
+    ,
+    {
+        "pregunta":"¿Quién emite la carta del seguro?",
+        "respuesta":"La carta del seguro la puedes descargar directo del portal de práctica y si requieres una carta personalizada, entonces, debes enviar un correo a: csa_avaras@duoc.cl",
+        "categoria":"practica",
+        "subcategoria":"practica",
+        "ranking": 0
+
+    }
+    ,
+    {
+        "pregunta":"¿Puedo solicitar el cambio de Docente guía?",
+        "respuesta":"Puedes enviar un correo al Director de Carreras mencionando los motivos por los cuales solicitas el cambio de Docente.",
+        "categoria":"practica",
+        "subcategoria":"practica",
+        "ranking": 0
+
+    }
+    ,
+    {
+        "pregunta":"¿Un estudiante puede cambiar su Centro de Práctica?",
+        "respuesta":" Sí, el alumno debe informar por correo al Director de Carreras y Docente guía. El Director al autorizar el cambio, el Docente guía lo formalizará en la plataforma de práctica y el estudiante podrá ingresar nuevamente  al portal de práctica y podrá cambiar el formulario de validación. ",
+        "categoria":"practica",
+        "subcategoria":"practica",
+        "ranking": 0
+
+    }
+    ,
+    {
+        "pregunta":"¿Cómo activo mi seguro escolar?",
+        "respuesta":"Para activar el Seguro Escolar debes llamar al 6003623862. Para más información ingresa a: https://www.duoc.cl/alumnos/seguro/",
+        "categoria":"practica",
+        "subcategoria":"practica",
+        "ranking": 0
+
+    }
+    ,
+    {
+        "pregunta":"Tuve un accidente y tengo una licencia médica ¿A quién le informo?",
+        "respuesta":" Debes informar al Director de Carreras, Docente guía y Centro de Práctica.",
+        "categoria":"practica",
+        "subcategoria":"practica",
+        "ranking": 0
+
+    }
+    ,
+    {
+        "pregunta":"Quiero cancelar mi práctica ¿Quién lo autoriza?",
+        "respuesta":"Autoriza el Director de Carreras. Debes enviar un correo al Director de Carreras con copia al Docente guía.",
+        "categoria":"practica",
+        "subcategoria":"practica",
+        "ranking": 0
+
+    }
+    ,
+    {
+        "pregunta":"Cambiaron a mi Jefe Directo ¿A quién le informo? ¿Debo cambiar el formulario?",
+        "respuesta":"Debes informar a tu Director de Carreras y Docente guía. El Docente podrá ingresar el nombre del Jefe directo en el portal en observaciones o bien puedes gestionar un nuevo formulario  e ingresarlo al portal de práctica.",
+        "categoria":"practica",
+        "subcategoria":"practica",
+        "ranking": 0
+
+    }
+    ,
+    {
+        "pregunta":"Si abandono el Centro de Práctica ¿Qué pasará con mi asignatura?",
+        "respuesta":"Tu asignatura quedará reprobada.",
+        "categoria":"practica",
+        "subcategoria":"practica",
+        "ranking": 0
+
+    }
+    ,
+    {
+        "pregunta":"¿Cuándo el profesor debe ingresar la nota al portal?",
+        "respuesta":"Cuando el Docente guía tiene la nota del informe y Centro de Práctica, entonces, el profesor(a) ingresará la nota después de finalizada la fecha de término de la asignatura.",
+        "categoria":"practica",
+        "subcategoria":"practica",
+        "ranking": 0
+
+    }
+    ,
+    {
+        "pregunta":"¿Qué puedo hacer si tengo problemas de seguridad o acoso laboral?",
+        "respuesta":"Puedes solicitar cancelar la práctica, debes informar por correo al Director de Carreras y Docente guía.",
+        "categoria":"practica",
+        "subcategoria":"practica",
+        "ranking": 0
+
+    }
+    ,
+    {
+        "pregunta":"Estoy realizando mi práctica Profesional de 360 horas y mi Jefe solicitó que extienda mi práctica por 2 meses ¿A quién debo solicitar la extensión de mi práctica?",
+        "respuesta":"Debes enviar un correo con la información a tu Director de Carreras con copia a tu Docente guía. No olvides enviar el nuevo formulario de validación con la nueva fecha de término. El Documento debe estar firmado y timbrado por el Centro de Práctica (empresa).",
+        "categoria":"practica",
+        "subcategoria":"practica",
+        "ranking": 0
+
+    }
+    ,
+    {
+        "pregunta":"No encontré un Centro de Práctica ¿Hasta cuándo podré realizar mi práctica?",
+        "respuesta":"Cuando tienes la asignatura inscrita y pendiente, entonces, podrá realizar tu práctica en el siguiente semestre académico.",
+        "categoria":"practica",
+        "subcategoria":"practica",
+        "ranking": 0
+
+    }
+    ,
+    {
+        "pregunta":"Encontré un Centro de Práctica y sólo estoy cursando la Práctica Profesional ¿Tengo derecho a tener validado mi pase escolar?",
+        "respuesta":"Para validar tu pase debes consultar en Punto Estudiantil o directo en: www.tne.cl",
+        "categoria":"practica",
+        "subcategoria":"practica",
+        "ranking": 0
+
+    }
+    ,
+    {
+        "pregunta":"¿Cuándo podré egresar?",
+        "respuesta":"Cuando tengas todas las asignaturas de tu Plan de estudios cursadas y aprobadas, entonces, se gestionará el egreso y titulación. Si tienes dudas puedes enviar un correo a tu Coordinador(a) de Carreras.",
+        "categoria":"practica",
+        "subcategoria":"practica",
+        "ranking": 0
+
     }
 ]
