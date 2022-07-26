@@ -1,8 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import {useParams} from 'react-router-dom';
+import styled from 'styled-components';
 import { buscarPreguntas } from '../../helpers/getPreguntas';
 import useOpciones from '../../hooks/useOpciones';
 import CardResultado from './CardResultado';
+import {Link} from 'react-router-dom';
+
+
+const Enlace = styled(Link)`
+    text-decoration: none;
+`
 const PalabraClave = () => {
 
     const {categoria:nombre, subcategoria: sub} = useParams();
@@ -37,6 +44,7 @@ const PalabraClave = () => {
     const handleInputChange = (e) =>{
         setBusqueda(e.target.value)
         setActivePreguntas(false)
+        setActive(false)
         if(e.target.value === ''){
             setActivePreguntas(true)
             setResultado({})
@@ -56,7 +64,9 @@ const PalabraClave = () => {
         }
         obtenerResultado();
         setActivePreguntas(false)
-        console.log(activePreguntas)
+        // setActive(!active)
+
+        console.log(active)
     }
   return (
     <>
@@ -85,6 +95,7 @@ const PalabraClave = () => {
         {/* {
             activePreguntas && (<p>Cargando ....</p>)
         } */}
+       <Enlace to="/">SALIR</Enlace>
    
     </>
   )

@@ -74,6 +74,7 @@ const Inicio = () => {
         <OpcionPreguntas categorias={categorias} subcategorias={subcategorias} preguntas={preguntas}/> */}
         <p>En que te puedo  ayudar</p>
        <Enlace to="preguntas">Preguntas Frecuentes</Enlace>
+       <Enlace to="/">SALIR</Enlace>
 
 {/* 
     {

@@ -1,6 +1,12 @@
 import React from 'react'
 import useOpciones from '../../hooks/useOpciones'
 import {Link} from 'react-router-dom';
+import styled from 'styled-components';
+
+
+const Enlace = styled(Link)`
+    text-decoration: none;
+`
 const Preguntas = () => {
 
   const {preguntas} = useOpciones();
@@ -23,6 +29,7 @@ const Preguntas = () => {
         ))
      
       ): 'cargando'}
+      <Enlace to="/">SALIR</Enlace>
     </>
   )
 }

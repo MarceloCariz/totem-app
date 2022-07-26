@@ -1,7 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import {useParams} from 'react-router-dom';
 import useOpciones from '../../hooks/useOpciones';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+import styled from 'styled-components';
+
+
+const Enlace = styled(Link)`
+    text-decoration: none;
+`
 const Categorias = () => {
 
     const {categoria: categoriaParams} = useParams();
@@ -42,6 +48,7 @@ const Categorias = () => {
         )
         :'dsadas'
     }
+    <Enlace to="/">SALIR</Enlace>
    </>
   )
 }
