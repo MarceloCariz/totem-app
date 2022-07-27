@@ -1,16 +1,22 @@
 import React, { useState } from "react";
 import useOpciones from "../../hooks/useOpciones";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { enviarEvaluacion } from "../../helpers/getPreguntas";
 const EvaluacionForm = () => {
   const { preguntaSeleccionada } = useOpciones();
+  const navigate = useNavigate();
+
   const [evaluacion, setEvaluacion] = useState({
     pregunta: "",
     respuesta: "",
     correo: "",
   });
   const [active, setActive] = useState(false);
+
+
+
+  
   const { correo } = evaluacion;
-  const navigate = useNavigate();
 
   const handleInputChange = (e) => {
     setEvaluacion({ ...evaluacion, correo: e.target.value });
@@ -29,9 +35,10 @@ const EvaluacionForm = () => {
     setActive(false);
   };
 
-  const handleEnviar = (e) => {
+  const handleEnviar = async(e) => {
     e.preventDefault();
-    console.log(evaluacion);
+    await enviarEvaluacion({...evaluacion, categoria: 'pregunta'})
+
     navigate("/inicio");
   };
   return (
@@ -40,7 +47,6 @@ const EvaluacionForm = () => {
         <p>Considerando la experiencia previa</p>
         <p>Lograste obtener una respuesta</p>
 
-        {/* <p onClick={} >NO</p> */}
         <input onClick={(e) => handleClick(e)} value="si" readOnly/>
          
         

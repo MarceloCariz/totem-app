@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import {useParams} from 'react-router-dom';
 import styled from 'styled-components';
-import { buscarPreguntas } from '../../helpers/getPreguntas';
+import { aumentarRanking, buscarPreguntas } from '../../helpers/getPreguntas';
 import useOpciones from '../../hooks/useOpciones';
 import CardResultado from './CardResultado';
 import {Link} from 'react-router-dom';
@@ -13,11 +13,9 @@ const Enlace = styled(Link)`
 const PalabraClave = () => {
 
     const {categoria:nombre, subcategoria: sub} = useParams();
-    const {preguntas: datos, setPreguntaSeleccionada, preguntaSeleccionada} = useOpciones();
-    // const {subcategoria} = preguntas;
-    // console.log(preguntas)
+    const {preguntas: datos, setPreguntaSeleccionada} = useOpciones();
+   
     const {data} = datos;
-    // console.log(params)
     const [preguntas, setPreguntas] = useState({})
     const [respuestaF, setRespuesta] = useState({id: ''})
     const [active, setActive] = useState(false)
@@ -34,12 +32,15 @@ const PalabraClave = () => {
         filtrado()
         
     },[data,nombre, sub]) 
+
+
     const handleClick = (e) =>{
         setActive(true)
 
         setRespuesta({id: e._id})
         setPreguntaSeleccionada(e.pregunta)
-        console.log(e.pregunta)
+        // Aumentar ranking
+        aumentarRanking(e._id)
     }
 
     const handleInputChange = (e) =>{
@@ -65,9 +66,8 @@ const PalabraClave = () => {
         }
         obtenerResultado();
         setActivePreguntas(false)
-        // setActive(!active)
 
-        console.log(active)
+        // console.log(active)
     }
   return (
     <>
