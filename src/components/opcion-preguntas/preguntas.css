@@ -1,0 +1,49 @@
+.p-inicio {
+    color: #ffff;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 54px;
+}
+
+.preg-frec {
+    width: 402px;
+    height: 90px;
+    left: 340px;
+    top: 1534px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #1E1E1E;
+    background: #FFB71B;
+    border: 6px solid #FFFFFF;
+    border-radius: 316.881px;
+}
+
+.btn-salir-inicio {
+    width: 443.56px;
+    height: 115.74px;
+    left: 318.89px;
+    top: 1629.66px;
+    background: #FFB71B;
+    border-radius: 316.881px;
+    transform: rotate(0.32deg);
+    width: 524px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 54px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #1E1E1E;
+}
