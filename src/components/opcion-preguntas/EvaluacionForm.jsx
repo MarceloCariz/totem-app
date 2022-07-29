@@ -38,6 +38,7 @@ const EvaluacionForm = () => {
   const handleEnviar = async(e) => {
     e.preventDefault();
     await enviarEvaluacion({...evaluacion, categoria: 'pregunta'})
+    console.log(evaluacion)
 
     navigate("/inicio");
   };

@@ -32,6 +32,7 @@ export const buscarPreguntas = async (busqueda, nombre, sub) =>{
 
 export const enviarEvaluacion= async (datos) =>{
     const {pregunta , respuesta, correo, categoria} = datos;
+    console.log(pregunta)
     const evaluacionObj = {categoria, problema:pregunta, evaluacion: respuesta, correo};
     try {
     await axios.post(`https://totem.ivaras.cl:7002/api/preguntas/evaluacion`, evaluacionObj);

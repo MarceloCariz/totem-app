@@ -1,5 +1,6 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
+import useOpciones from '../../hooks/useOpciones';
 
 
 const Button = styled(Link)`
@@ -21,15 +22,27 @@ const Container =styled.div`
 const CardImagenes = ({imagen}) => {
 
   const {path} = imagen;
+  const {setStandBY, standBy} = useOpciones();
+  const navigate = useNavigate();
 
-
+  console.log(standBy)
+  const handleClick = () =>{
+    // setStandBY(false)
+    setTimeout(() => {
+      navigate('/')
+    }, 60000);
+  }
   return (
+    <>
+    
+    
     <Container>
         <img src={path} alt="" />
-        <Button to='inicio'>¡Bienvenido!</Button>
     
     </Container>
+        <Button onClick={handleClick} to='inicio'>¡Bienvenido!</Button>
    
+        </>
     
     
   )
