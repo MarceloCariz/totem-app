@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
 
@@ -21,12 +21,16 @@ const Container =styled.div`
 const CardImagenes = ({imagen}) => {
 
   const {path} = imagen;
-
-
+  const navigate  = useNavigate();
+  const handleStandBy = () =>{
+    setTimeout(() => {
+      navigate('/')
+    }, 600000);
+  }
   return (
     <Container>
         <img src={path} alt="" />
-        <Button to='inicio'>¡Bienvenido!</Button>
+        <Button to='inicio' onClick={handleStandBy}>¡Bienvenido!</Button>
     
     </Container>
    
