@@ -13,9 +13,10 @@ const Enlace = styled(Link)`
 `
 const PalabraClave = () => {
 
-    const { categoria: nombre, subcategoria: sub } = useParams();
-    const { preguntas: datos, setPreguntaSeleccionada} = useOpciones();
-    const { data } = datos;
+    const {categoria:nombre, subcategoria: sub} = useParams();
+    const {preguntas: datos, setPreguntaSeleccionada} = useOpciones();
+   
+    const {data} = datos;
     const [preguntas, setPreguntas] = useState({})
     const [respuestaF, setRespuesta] = useState({ id: '' })
     const [active, setActive] = useState(false)
@@ -64,7 +65,6 @@ const PalabraClave = () => {
         }
         obtenerResultado();
         setActivePreguntas(false)
-        // setActive(!active)
 
     }
     return (

@@ -15,8 +15,11 @@ const EvaluacionForm = () => {
     correo: "",
   });
   const [active, setActive] = useState(false);
-  const { correo } = evaluacion;
+
+
+
   
+  const { correo } = evaluacion;
 
   const handleInputChange = (e) => {
     setEvaluacion({ ...evaluacion, correo: e.target.value });
@@ -48,7 +51,6 @@ const EvaluacionForm = () => {
         <p className="p-lograste">¿Lograste obtener una respuesta?</p>
 
         <div className="div-eva">
-          {/* <p onClick={} >NO</p> */}
           <input className="input-si" onClick={(e) => handleClick(e)} value="SI" readOnly />
           <BiSmile className="icon-1" />
           <input className="input-no" onClick={(e) => handleClick(e)} value="NO" readOnly />
