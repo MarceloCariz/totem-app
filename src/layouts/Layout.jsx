@@ -3,7 +3,7 @@ import {Outlet} from 'react-router-dom';
 import styled from 'styled-components';
 
 const Main = styled.main`
-  background-color: #e6e6e6;  
+  background-color: #1E1E1E;  
   min-height: 100vh;
 `;
 

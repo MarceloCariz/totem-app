@@ -1,8 +1,14 @@
 import React, { useState } from "react";
 import useOpciones from "../../hooks/useOpciones";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { enviarEvaluacion } from "../../helpers/getPreguntas";
+import './preguntas.css';
+import { BiSmile } from "react-icons/bi";
+import { RiEmotionUnhappyLine } from "react-icons/ri";
 const EvaluacionForm = () => {
   const { preguntaSeleccionada } = useOpciones();
+  const navigate = useNavigate();
+  
   const [evaluacion, setEvaluacion] = useState({
     pregunta: "",
     respuesta: "",
@@ -10,14 +16,14 @@ const EvaluacionForm = () => {
   });
   const [active, setActive] = useState(false);
   const { correo } = evaluacion;
-  const navigate = useNavigate();
+  
 
   const handleInputChange = (e) => {
     setEvaluacion({ ...evaluacion, correo: e.target.value });
   };
 
   const handleClick = ({ target }) => {
-    if (target.value === "no") {
+    if (target.value === "NO") {
       setEvaluacion({
         pregunta: preguntaSeleccionada,
         respuesta: target.value,
@@ -29,28 +35,30 @@ const EvaluacionForm = () => {
     setActive(false);
   };
 
-  const handleEnviar = (e) => {
+  const handleEnviar = async (e) => {
     e.preventDefault();
-    console.log(evaluacion);
+    await enviarEvaluacion({ ...evaluacion, categoria: 'pregunta' })
     navigate("/inicio");
   };
   return (
     <>
-      <form action="" onSubmit={handleEnviar}>
-        <p>Considerando la experiencia previa</p>
-        <p>Lograste obtener una respuesta</p>
+      <div className='rectangulo' />
+      <form className="form-eva" action="" onSubmit={handleEnviar}>
+        <p className="p-exp">Considerando la experiencia previa</p>
+        <p className="p-lograste">¿Lograste obtener una respuesta?</p>
 
-        {/* <p onClick={} >NO</p> */}
-        <input onClick={(e) => handleClick(e)} value="si" readOnly/>
-         
-        
-
-        <input onClick={(e) => handleClick(e)} value="no" readOnly/>
-       
+        <div className="div-eva">
+          {/* <p onClick={} >NO</p> */}
+          <input className="input-si" onClick={(e) => handleClick(e)} value="SI" readOnly />
+          <BiSmile className="icon-1" />
+          <input className="input-no" onClick={(e) => handleClick(e)} value="NO" readOnly />
+          <RiEmotionUnhappyLine className="icon-2" />
+        </div>
         {active && (
           <>
-            <p>Ingresa tu correo para finalizar</p>
+            <p className="p-finalizar">Ingresa tu correo para finalizar</p>
             <input
+              className="inp-correo"
               type="text"
               name=""
               id=""
@@ -60,7 +68,8 @@ const EvaluacionForm = () => {
             />
           </>
         )}
-        <button type="submit">Enviar</button>
+
+        <button className="btn-enviar" type="submit">Enviar</button>
       </form>
     </>
   );
