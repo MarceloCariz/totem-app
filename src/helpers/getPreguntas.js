@@ -1,6 +1,6 @@
-import axios from 'axios';
+import clienteAxios from '../axios';
 export const obtenerPreguntas = async() =>{
-    const {data} = await axios('https://totem.ivaras.cl:7002/api/preguntas');
+    const {data} = await clienteAxios('/preguntas');
     
     const resultado =  data.filter(function( element ) {return element.subcategoria !== undefined;});
     
@@ -22,7 +22,7 @@ export const obtenerPreguntas = async() =>{
 
 
 export const buscarPreguntas = async (busqueda, nombre, sub) =>{
-    const {data} = await axios(`https://totem.ivaras.cl:7002/api/preguntas/search?q=${busqueda}`);
+    const {data} = await clienteAxios(`/preguntas/search?q=${busqueda}`);
     const {preguntas} = data;
     const resultado = preguntas.filter(({categoria, subcategoria})=> (categoria === nombre && subcategoria === sub))
     return resultado
@@ -33,7 +33,7 @@ export const enviarEvaluacion= async (datos) =>{
     const {pregunta , respuesta, correo, categoria} = datos;
     const evaluacionObj = {categoria, problema:pregunta, evaluacion: respuesta, correo};
     try {
-    await axios.post(`https://totem.ivaras.cl:7002/api/preguntas/evaluacion`, evaluacionObj);
+    await clienteAxios.post(`/preguntas/evaluacion`, evaluacionObj);
         
     } catch (error) {
         console.log(error)
@@ -44,7 +44,7 @@ export const enviarEvaluacion= async (datos) =>{
 export const aumentarRanking= async (id) =>{
 
     try {
-    await axios.put(`https://totem.ivaras.cl:7002/api/preguntas/ranking/${id}`);
+    await clienteAxios.put(`/preguntas/ranking/${id}`);
         
     } catch (error) {
         console.log(error)

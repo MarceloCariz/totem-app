@@ -1,9 +1,9 @@
-import axios from "axios";
+import clienteAxios from "../axios";
 
 
 export const obtenerImagenes = async()=>{
 
-    const {data} = await axios.get('https://totem.ivaras.cl:7002/api/imagenes/');
+    const {data} = await clienteAxios('/imagenes/');
     // console.log(data);
     const imagenes  = data.filter(({active})=>{
         return active === true;
