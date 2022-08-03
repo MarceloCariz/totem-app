@@ -7,6 +7,11 @@ import './preguntas.css';
 const Enlace = styled(Link)`
     text-decoration: none;
 `
+
+const Categorias = styled(Link)`
+    text-decoration: none;
+    text-transform: capitalize;
+`
 const Preguntas = () => {
 
   const { preguntas } = useOpciones();
@@ -27,7 +32,7 @@ const Preguntas = () => {
         {categorias.length > 0 ? (
           categorias.map((categoria, _id) => (
             <li className='preguntas-li' key={_id}>
-              <Link className='name-cat' to={{ pathname: `${categoria}` }}>{categoria}</Link>
+              <Categorias className='name-cat' to={{ pathname: `${categoria}` }}>{categoria}</Categorias>
             </li>
           ))
         ) : 'cargando'}

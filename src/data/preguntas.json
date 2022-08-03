@@ -502,8 +502,8 @@
     {
         "pregunta":"¿Quién aprueba, rechaza o solicita rectificar el Formulario de Validación?",
         "respuesta":" El Director de Carreras tiene la atribución de aprobar, rechazar o solicitar rectificar el formulario de validación.",
-        "categoria":"practica",
-        "subcategoria":"practica",
+        "categoria":" práctica",
+        "subcategoria":" práctica",
         "ranking": 0
 
     }
@@ -511,17 +511,17 @@
     {
         "pregunta":"¿En qué momento me entero de la asignación de un Docente?",
         "respuesta":"Cuando el DCC valida el formulario, entonces, asigna un Docente Guía. El estudiante se informa por correo.",
-        "categoria":"practica",
-        "subcategoria":"practica",
+        "categoria":" práctica",
+        "subcategoria":" práctica",
         "ranking": 0
 
     }
     ,
     {
         "pregunta":"¿Puede un alumno comenzar la práctica sin tener la asignatura inscrita?",
-        "respuesta":"No, la asignatura de práctica debe estar inscrita y además el Director de Carreras debe aprobar el formulario en la plataforma de Práctica (www.duoc.cl/practica )",
-        "categoria":"practica",
-        "subcategoria":"practica",
+        "respuesta":"No, la asignatura de práctica debe estar inscrita y además el Director de Carreras debe aprobar el formulario en la plataforma de Práctica (www.duoc.cl/ práctica )",
+        "categoria":" práctica",
+        "subcategoria":" práctica",
         "ranking": 0
 
     }
@@ -529,8 +529,8 @@
     {
         "pregunta":"¿Un alumno puede validar y después convalidar la práctica?",
         "respuesta":"Cuando la práctica está inscrita, iniciada y con un Docente guía asignado, entonces, el alumno no podrá solicitar la convalidación de la asignatura. Sin embargo, la decisión es del Director de Carreras.",
-        "categoria":"practica",
-        "subcategoria":"practica",
+        "categoria":" práctica",
+        "subcategoria":" práctica",
         "ranking": 0
 
     }
@@ -538,8 +538,8 @@
     {
         "pregunta":"¿Qué puedo hacer si no puedo ingresar el formulario al portal?",
         "respuesta":"Todos los estudiantes que tienen inscrita la asignatura pueden entrar al portal e ingresar el formulario de validación. Si tienes problemas con tu clave, entonces, puedes obtener una nueva en: cambiatuclave.duoc.cl o bien debes enviar un correo a: cetecom_avaras@duoc.cl. Si aún tienes dudas, entonces, contacta a tu Coordinador de Práctica",
-        "categoria":"practica",
-        "subcategoria":"practica",
+        "categoria":" práctica",
+        "subcategoria":" práctica",
         "ranking": 0
 
     }
@@ -547,8 +547,8 @@
     {
         "pregunta":"¿Un estudiante puede hacer la práctica laboral y profesional en la misma empresa?",
         "respuesta":"Sí, es factible. El formulario de validación lo deben ingresar en la asignatura de práctica profesional. En total tienen que realizar 540 horas de práctica. Cabe mencionar que las funciones deben estar relacionadas con el perfil de egreso de la carrera.",
-        "categoria":"practica",
-        "subcategoria":"practica",
+        "categoria":" práctica",
+        "subcategoria":" práctica",
         "ranking": 0
 
     }
@@ -556,8 +556,8 @@
     {
         "pregunta":"¿Quién emite la carta del seguro?",
         "respuesta":"La carta del seguro la puedes descargar directo del portal de práctica y si requieres una carta personalizada, entonces, debes enviar un correo a: csa_avaras@duoc.cl",
-        "categoria":"practica",
-        "subcategoria":"practica",
+        "categoria":" práctica",
+        "subcategoria":" práctica",
         "ranking": 0
 
     }
@@ -565,8 +565,8 @@
     {
         "pregunta":"¿Puedo solicitar el cambio de Docente guía?",
         "respuesta":"Puedes enviar un correo al Director de Carreras mencionando los motivos por los cuales solicitas el cambio de Docente.",
-        "categoria":"practica",
-        "subcategoria":"practica",
+        "categoria":" práctica",
+        "subcategoria":" práctica",
         "ranking": 0
 
     }
@@ -574,8 +574,8 @@
     {
         "pregunta":"¿Un estudiante puede cambiar su Centro de Práctica?",
         "respuesta":" Sí, el alumno debe informar por correo al Director de Carreras y Docente guía. El Director al autorizar el cambio, el Docente guía lo formalizará en la plataforma de práctica y el estudiante podrá ingresar nuevamente  al portal de práctica y podrá cambiar el formulario de validación. ",
-        "categoria":"practica",
-        "subcategoria":"practica",
+        "categoria":" práctica",
+        "subcategoria":" práctica",
         "ranking": 0
 
     }
@@ -583,8 +583,8 @@
     {
         "pregunta":"¿Cómo activo mi seguro escolar?",
         "respuesta":"Para activar el Seguro Escolar debes llamar al 6003623862. Para más información ingresa a: https://www.duoc.cl/alumnos/seguro/",
-        "categoria":"practica",
-        "subcategoria":"practica",
+        "categoria":" práctica",
+        "subcategoria":" práctica",
         "ranking": 0
 
     }
@@ -592,8 +592,8 @@
     {
         "pregunta":"Tuve un accidente y tengo una licencia médica ¿A quién le informo?",
         "respuesta":" Debes informar al Director de Carreras, Docente guía y Centro de Práctica.",
-        "categoria":"practica",
-        "subcategoria":"practica",
+        "categoria":" práctica",
+        "subcategoria":" práctica",
         "ranking": 0
 
     }
@@ -601,8 +601,8 @@
     {
         "pregunta":"Quiero cancelar mi práctica ¿Quién lo autoriza?",
         "respuesta":"Autoriza el Director de Carreras. Debes enviar un correo al Director de Carreras con copia al Docente guía.",
-        "categoria":"practica",
-        "subcategoria":"practica",
+        "categoria":" práctica",
+        "subcategoria":" práctica",
         "ranking": 0
 
     }
@@ -610,8 +610,8 @@
     {
         "pregunta":"Cambiaron a mi Jefe Directo ¿A quién le informo? ¿Debo cambiar el formulario?",
         "respuesta":"Debes informar a tu Director de Carreras y Docente guía. El Docente podrá ingresar el nombre del Jefe directo en el portal en observaciones o bien puedes gestionar un nuevo formulario  e ingresarlo al portal de práctica.",
-        "categoria":"practica",
-        "subcategoria":"practica",
+        "categoria":" práctica",
+        "subcategoria":" práctica",
         "ranking": 0
 
     }
@@ -619,8 +619,8 @@
     {
         "pregunta":"Si abandono el Centro de Práctica ¿Qué pasará con mi asignatura?",
         "respuesta":"Tu asignatura quedará reprobada.",
-        "categoria":"practica",
-        "subcategoria":"practica",
+        "categoria":" práctica",
+        "subcategoria":" práctica",
         "ranking": 0
 
     }
@@ -628,8 +628,8 @@
     {
         "pregunta":"¿Cuándo el profesor debe ingresar la nota al portal?",
         "respuesta":"Cuando el Docente guía tiene la nota del informe y Centro de Práctica, entonces, el profesor(a) ingresará la nota después de finalizada la fecha de término de la asignatura.",
-        "categoria":"practica",
-        "subcategoria":"practica",
+        "categoria":" práctica",
+        "subcategoria":" práctica",
         "ranking": 0
 
     }
@@ -637,8 +637,8 @@
     {
         "pregunta":"¿Qué puedo hacer si tengo problemas de seguridad o acoso laboral?",
         "respuesta":"Puedes solicitar cancelar la práctica, debes informar por correo al Director de Carreras y Docente guía.",
-        "categoria":"practica",
-        "subcategoria":"practica",
+        "categoria":" práctica",
+        "subcategoria":" práctica",
         "ranking": 0
 
     }
@@ -646,8 +646,8 @@
     {
         "pregunta":"Estoy realizando mi práctica Profesional de 360 horas y mi Jefe solicitó que extienda mi práctica por 2 meses ¿A quién debo solicitar la extensión de mi práctica?",
         "respuesta":"Debes enviar un correo con la información a tu Director de Carreras con copia a tu Docente guía. No olvides enviar el nuevo formulario de validación con la nueva fecha de término. El Documento debe estar firmado y timbrado por el Centro de Práctica (empresa).",
-        "categoria":"practica",
-        "subcategoria":"practica",
+        "categoria":" práctica",
+        "subcategoria":" práctica",
         "ranking": 0
 
     }
@@ -655,8 +655,8 @@
     {
         "pregunta":"No encontré un Centro de Práctica ¿Hasta cuándo podré realizar mi práctica?",
         "respuesta":"Cuando tienes la asignatura inscrita y pendiente, entonces, podrá realizar tu práctica en el siguiente semestre académico.",
-        "categoria":"practica",
-        "subcategoria":"practica",
+        "categoria":" práctica",
+        "subcategoria":" práctica",
         "ranking": 0
 
     }
@@ -664,8 +664,8 @@
     {
         "pregunta":"Encontré un Centro de Práctica y sólo estoy cursando la Práctica Profesional ¿Tengo derecho a tener validado mi pase escolar?",
         "respuesta":"Para validar tu pase debes consultar en Punto Estudiantil o directo en: www.tne.cl",
-        "categoria":"practica",
-        "subcategoria":"practica",
+        "categoria":" práctica",
+        "subcategoria":" práctica",
         "ranking": 0
 
     }
@@ -673,8 +673,8 @@
     {
         "pregunta":"¿Cuándo podré egresar?",
         "respuesta":"Cuando tengas todas las asignaturas de tu Plan de estudios cursadas y aprobadas, entonces, se gestionará el egreso y titulación. Si tienes dudas puedes enviar un correo a tu Coordinador(a) de Carreras.",
-        "categoria":"practica",
-        "subcategoria":"practica",
+        "categoria":" práctica",
+        "subcategoria":" práctica",
         "ranking": 0
 
     }

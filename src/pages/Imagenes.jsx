@@ -17,8 +17,7 @@ const Imagenes = () => {
 
     const interval = setInterval(()=>{
       cargarImagenes();
-      console.log('Carge')
-    },60000);
+    },180000);
 
     return ()=>clearInterval(interval);
   },[])
