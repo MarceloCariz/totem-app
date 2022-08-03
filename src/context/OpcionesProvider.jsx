@@ -20,6 +20,11 @@ const OpcionesProvider =({children}) =>{
             // console.log(preguntas)
         }
         cargarPreguntas();
+        const interval = setInterval(()=>{
+            cargarPreguntas();
+          },300000);
+      
+          return ()=>clearInterval(interval);
     }, [])
     
 

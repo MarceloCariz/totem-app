@@ -22,7 +22,6 @@ const Preguntas = () => {
 
   const { categorias } = preguntas;
 
-  console.log(categorias)
   // const {categoria} = categorias;
   return (
     <>

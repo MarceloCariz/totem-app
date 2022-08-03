@@ -23,7 +23,6 @@ const Categorias = () => {
         const comprobar = async () => {
             let resultado = subcategoria.filter(({ categoria }) => { return categoria === categoriaParams })
             //  resultado
-            console.log(resultado)
             setSubCategorias(resultado)
             //  console.log(subcategorias)
 
