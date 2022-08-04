@@ -20,7 +20,7 @@ const PalabraClave = () => {
     const [preguntas, setPreguntas] = useState({})
     const [respuestaF, setRespuesta] = useState({ id: '' })
     const [active, setActive] = useState(false)
-    const [activePreguntas, setActivePreguntas] = useState(true)
+    const [activePreguntas, setActivePreguntas] = useState(false)
 
     const [busqueda, setBusqueda] = useState('');
     const [resultado, setResultado] = useState({})
@@ -42,43 +42,61 @@ const PalabraClave = () => {
         aumentarRanking(e._id)
     }
 
-    const handleInputChange = (e) => {
-        setBusqueda(e.target.value)
-        setActivePreguntas(false)
-        setActive(false)
-        if (e.target.value === '') {
-            setActivePreguntas(true)
-            setResultado({})
+    const handleInputChange = ({target}) => {
+        setBusqueda(target.value)
+        filtrar(target.value);
+        console.log(resultado)
+        setActivePreguntas(true)
+        if (target.value == '') {
+            setActivePreguntas(false)
         }
     }
 
-    const handleBuscar = (e) => {
-        e.preventDefault();
-        e.preventDefault();
-        if (busqueda.length < 3) {
-            console.log('Ingrese un valor');
-            return
-        }
-        const obtenerResultado = async () => {
-            const respuesta = await buscarPreguntas(busqueda, nombre, sub);
-            setResultado(respuesta);
-        }
-        obtenerResultado();
-        setActivePreguntas(false)
+ 
 
+
+    const filtrar = (terminoBusqueda) => {
+
+        if (!preguntas) {
+            return;
+        }
+        let resultadoBusqueda = preguntas.filter((elemento) => {
+            if (elemento.pregunta.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())) {
+                return elemento
+
+            }
+        });
+        // setProductos(resultadoBusqueda);
+        setResultado(resultadoBusqueda)
     }
     return (
         <>
             <div className='rectangulo' />
             <div className='div-pacl'>
                 <div className='name-subcat'>{nombre}</div>
-                <form action="" onSubmit={handleBuscar}>
-                    <input className='input-palcl' type="text" onChange={handleInputChange} value={busqueda} placeholder='Palabra Clave' />
+                {/* <form action="" >
                     <CardResultado resultado={resultado} handleClick={handleClick} respuestaF={respuestaF} active={active} />
-                </form>
+                </form> */}
 
+                <input className='input-palcl' type="text" onChange={handleInputChange} value={busqueda} placeholder='Palabra Clave' />
                 {
-                    activePreguntas && preguntas.length > 0 && preguntas.map(({ pregunta, respuesta, _id }) => (
+                    activePreguntas === false && preguntas.length > 0 && preguntas.map(({ pregunta, respuesta, _id }) => (
+                        <div key={_id}>
+                            <p className='resultado-sub'>{pregunta}</p>
+
+                            <button className='btn-ver' onClick={(e) => handleClick({ _id, pregunta }, e)}>{active && respuestaF.id === _id ? (<p>Cerrar</p>) : (<p>Respuesta</p>)}</button>
+                            {
+                                active && respuestaF.id === _id && (
+                                    <p className='resp-cate'>{respuestaF.id === _id ? respuesta : ""}</p>
+                                )
+                            }
+
+                        </div>
+                    )) 
+
+                }
+                {
+                    activePreguntas === true && resultado.length > 0 && resultado.map(({ pregunta, respuesta, _id }) => (
                         <div key={_id}>
                             <p className='resultado-sub'>{pregunta}</p>
 
@@ -90,9 +108,11 @@ const PalabraClave = () => {
                             }
 
                         </div>
-                    ))
+                    )) 
 
                 }
+
+                
                 {/* {
             activePreguntas && (<p>Cargando ....</p>)
         } */}

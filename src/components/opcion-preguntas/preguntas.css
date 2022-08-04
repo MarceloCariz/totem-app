@@ -232,7 +232,7 @@
 }
 
 .input-palcl {
-    position: sticky;
+    /* position: sticky; */
     width: 418px;
     height: 127px;
     left: 230px;
