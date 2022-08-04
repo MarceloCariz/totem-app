@@ -47,7 +47,7 @@ const PalabraClave = () => {
         filtrar(target.value);
         console.log(resultado)
         setActivePreguntas(true)
-        if (target.value == '') {
+        if (target.value === '') {
             setActivePreguntas(false)
         }
     }
@@ -60,8 +60,9 @@ const PalabraClave = () => {
         if (!preguntas) {
             return;
         }
+        // console.log(preguntas));
         let resultadoBusqueda = preguntas.filter((elemento) => {
-            if (elemento.pregunta.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())) {
+            if (elemento.pregunta.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toString().toLowerCase().includes(terminoBusqueda.toLowerCase())) {
                 return elemento
 
             }
@@ -102,7 +103,7 @@ const PalabraClave = () => {
 
                             <button className='btn-ver' onClick={(e) => handleClick({ _id, pregunta }, e)}>{active && respuestaF.id === _id ? (<p>Cerrar</p>) : (<p>Respuesta</p>)}</button>
                             {
-                                active && (
+                                active && respuestaF.id === _id &&(
                                     <p className='resp-cate'>{respuestaF.id === _id ? respuesta : ""}</p>
                                 )
                             }
