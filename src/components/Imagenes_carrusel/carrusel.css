@@ -124,8 +124,10 @@ footer .social-icon li img{
 }
 
 footer .social-icon li:hover img {
+    position: absolute;
     transform: scale(1);
     transition-delay: 0.25s;
+
 }
 
 footer .social-icon li:hover {
