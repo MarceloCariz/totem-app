@@ -7,16 +7,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
   width: 100%;
-  height: 45%;
   bottom: 0;
+  background: #1c1c1c;
+  height: 100vh;
+
+
 }
 
 
 .centrar-carrusel{
-  background: #1c1c1c;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 90%;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  
 }
+
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import styled from 'styled-components';
 import { aumentarRanking, buscarPreguntas } from '../../helpers/getPreguntas';
 import useOpciones from '../../hooks/useOpciones';
@@ -70,10 +70,16 @@ const PalabraClave = () => {
         // setProductos(resultadoBusqueda);
         setResultado(resultadoBusqueda)
     }
+
+    const navigate = useNavigate();
+
     return (
         <>
             <div className='rectangulo' />
+            <Volver onClick={()=> navigate(-1)}>Volver</Volver>
+
             <div className='div-pacl'>
+
                 <div className='name-subcat'>{nombre}</div>
                 {/* <form action="" >
                     <CardResultado resultado={resultado} handleClick={handleClick} respuestaF={respuestaF} active={active} />
@@ -122,5 +128,19 @@ const PalabraClave = () => {
         </>
     )
 }
-
+const Volver = styled.button`
+  background-color: #FFB71B;
+  font-size: 2rem;
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+  position: absolute;
+  padding: 30px 50px 30px 50px;
+  margin-top: 25rem;
+  /* margin-bottom: 12rem; */
+  margin-right: 49rem;
+  margin-left: 3rem;
+  border-radius: 20px;
+ 
+`;
 export default PalabraClave

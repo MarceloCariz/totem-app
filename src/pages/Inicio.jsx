@@ -12,8 +12,22 @@ const Container = styled.div`
 
 const Enlace = styled(Link)`
   text-decoration: none;
+  z-index: 1;
 `;
+const Volver = styled(Link)`
+  background-color: #FFB71B;
+  font-size: 2rem;
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+  position: absolute;
+  padding: 30px 50px 30px 50px;
+  margin-top: 26rem;
+  margin-right: 49rem;
 
+  border-radius: 20px;
+ 
+`;
 const Inicio = () => {
   
   // const idleTimer = useIdleTimer({ onIdle, onActive });
@@ -22,6 +36,8 @@ const Inicio = () => {
   return (
       <Container className="cont-inicio">
         <div className="rectangulo" />
+        <Volver to={'/'}>Volver</Volver>
+
         <p className="p-inicio">En que te puedo ayudar</p>
         <div className="div-inicio">
           <Enlace className="preg-frec" to="preguntas">

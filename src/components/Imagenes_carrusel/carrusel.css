@@ -21,7 +21,10 @@ img {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    width: 90%;
+    /* width: 90%; */
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 40px;
     background-color: #FFB71B;
     border-radius: 54px;
 }

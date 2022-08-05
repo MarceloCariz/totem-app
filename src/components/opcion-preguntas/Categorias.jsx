@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import useOpciones from '../../hooks/useOpciones';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
@@ -9,7 +9,7 @@ const Enlace = styled(Link)`
     text-decoration: none;
 `
 const Categorias = () => {
-
+    const navigate = useNavigate();
     const { categoria: categoriaParams } = useParams();
     const { preguntas } = useOpciones();
     const { subcategoria } = preguntas;
@@ -35,6 +35,8 @@ const Categorias = () => {
 
             <div className='rectangulo' />
             <div className='div-cat'>
+            <Volver onClick={()=> navigate(-1)}>Volver</Volver>
+
                 <p className='title-cat'>{categoriaParams}</p>
                 {
                     subcategorias.length > 0 ?
@@ -58,5 +60,18 @@ const Categorias = () => {
         </>
     )
 }
-
+const Volver = styled.button`
+  background-color: #FFB71B;
+  font-size: 2rem;
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+  position: absolute;
+  padding: 30px 50px 30px 50px;
+  margin-bottom: 70rem;
+  margin-right: 49rem;
+  margin-left: 3rem;
+  border-radius: 20px;
+ 
+`;
 export default Categorias
