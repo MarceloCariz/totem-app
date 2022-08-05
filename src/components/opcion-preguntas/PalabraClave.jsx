@@ -35,7 +35,7 @@ const PalabraClave = () => {
     }, [data, nombre, sub])
 
     const handleClick = (e) => {
-        setActive(true)
+        setActive(!active)
 
         setRespuesta({ id: e._id })
         setPreguntaSeleccionada(e.pregunta)
@@ -88,7 +88,7 @@ const PalabraClave = () => {
                 <input className='input-palcl' type="text" onChange={handleInputChange} value={busqueda} placeholder='Palabra Clave' />
                 {
                     activePreguntas === false && preguntas.length > 0 && preguntas.map(({ pregunta, respuesta, _id }) => (
-                        <div key={_id}>
+                        <div key={_id} onClick={(e) => handleClick({ _id, pregunta }, e)}>
                             <p className='resultado-sub'>{pregunta}</p>
 
                             <button className='btn-ver' onClick={(e) => handleClick({ _id, pregunta }, e)}>{active && respuestaF.id === _id ? (<p>Cerrar</p>) : (<p>Respuesta</p>)}</button>
