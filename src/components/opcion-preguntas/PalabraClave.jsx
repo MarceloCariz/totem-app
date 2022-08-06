@@ -86,7 +86,7 @@ const PalabraClave = () => {
                 </form> */}
 
                 <input className='input-palcl' type="text" onChange={handleInputChange} value={busqueda} placeholder='Palabra Clave' />
-                <Div>
+                <Div className='example'>
                 {
                     activePreguntas === false && preguntas.length > 0 && preguntas.map(({ pregunta, respuesta, _id }) => (
                         <div key={_id} onClick={(e) => handleClick({ _id, pregunta }, e)}>
@@ -121,6 +121,7 @@ const PalabraClave = () => {
 
                 }
                 </Div>
+                <Flecha>&#10151; </Flecha>
 
                 
                 {/* {
@@ -146,9 +147,18 @@ const Volver = styled.button`
   border-radius: 20px;
  
 `;
-
+const Flecha = styled.div`
+  
+  transform: rotate(90deg);
+  position: relative;
+  color: #FFB71B;
+  font-size: 5rem;
+  font-weight: 900;
+`;
 const Div = styled.div`
-    overflow: scroll;
+    overflow: hidden scroll;
+    overflow-x: hidden;
+    overflow-anchor: 1px;
     height: 650px;
 `
 export default PalabraClave
