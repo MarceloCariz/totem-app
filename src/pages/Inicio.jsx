@@ -3,6 +3,7 @@ import styled from "styled-components";
 // import OpcionPreguntas from '../components/preguntas/OpcionPreguntas';
 // import { buscarPreguntas, obtenerPreguntas } from '../helpers/getPreguntas';
 import { Link } from "react-router-dom";
+import { Footer } from "../components/ui/Footer";
 
 const Container = styled.div`
   display: flex;
@@ -34,7 +35,8 @@ const Inicio = () => {
   // console.log(object)
 
   return (
-      <Container className="cont-inicio">
+    <>
+      <Container className="">
         <div className="rectangulo" />
         <Volver to={'/'}>Volver</Volver>
 
@@ -43,12 +45,27 @@ const Inicio = () => {
           <Enlace className="preg-frec" to="preguntas">
             Preguntas Frecuentes
           </Enlace>
+          
         </div>
+
         <Enlace className="btn-salir-inicio" to="/">
           SALIR
         </Enlace>
       </Container>
+      <Div>
+      <Footer/>
+
+      </Div>
+    
+    </>
+      
   );
 };
+
+const Div = styled.div`
+  position: relative;
+  bottom: 0;
+  margin-top: 125%;
+`;
 
 export default Inicio;

@@ -5,6 +5,9 @@ import { aumentarRanking, buscarPreguntas } from '../../helpers/getPreguntas';
 import useOpciones from '../../hooks/useOpciones';
 import CardResultado from './CardResultado';
 import { Link } from 'react-router-dom';
+import flecha  from './icons/Flecha.png'
+import  barraBusqueda from './icons/barra_busqueda.png'
+import busquedaIcon from './icons/busqueda_icon.png'
 import './preguntas.css';
 
 
@@ -84,8 +87,11 @@ const PalabraClave = () => {
                 {/* <form action="" >
                     <CardResultado resultado={resultado} handleClick={handleClick} respuestaF={respuestaF} active={active} />
                 </form> */}
-
-                <input className='input-palcl' type="text" onChange={handleInputChange} value={busqueda} placeholder='Palabra Clave' />
+                <DivBusqueda>
+                    <input className='input-palcl' type="text" onChange={handleInputChange} value={busqueda} placeholder='Palabra Clave' />
+                    <IconBusqueda src={busquedaIcon} alt="" />
+                </DivBusqueda>
+                <img src={barraBusqueda} alt="" />
                 <Div className='example'>
                 {
                     activePreguntas === false && preguntas.length > 0 && preguntas.map(({ pregunta, respuesta, _id }) => (
@@ -121,7 +127,7 @@ const PalabraClave = () => {
 
                 }
                 </Div>
-                <Flecha>&#10151; </Flecha>
+                <Flecha src={flecha}/>
 
                 
                 {/* {
@@ -132,6 +138,18 @@ const PalabraClave = () => {
         </>
     )
 }
+
+const DivBusqueda = styled.div`
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+`;
+const IconBusqueda = styled.img`
+  width: 2.4rem;
+  height: 2.4rem;  
+  margin-top: 1rem;
+  object-fit: contain;
+`;
 const Volver = styled.button`
   background-color: #FFB71B;
   font-size: 2rem;
@@ -147,9 +165,8 @@ const Volver = styled.button`
   border-radius: 20px;
  
 `;
-const Flecha = styled.div`
-  
-  transform: rotate(90deg);
+const Flecha = styled.img`
+  margin-top: 1rem;
   position: relative;
   color: #FFB71B;
   font-size: 5rem;
@@ -160,5 +177,6 @@ const Div = styled.div`
     overflow-x: hidden;
     overflow-anchor: 1px;
     height: 650px;
+    margin-top: 1rem;
 `
 export default PalabraClave

@@ -212,6 +212,7 @@
     height: 127px;
     left: 239px;
     top: 523px;
+    text-transform: capitalize;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
@@ -233,7 +234,11 @@
 
 .input-palcl {
     /* position: sticky; */
-    width: 418px;
+    margin-top: 1rem;
+    text-align: left;
+    color: white;
+    /* width: 418px; */
+    width: 31rem;
     height: 127px;
     left: 230px;
     top: 729px;
@@ -244,9 +249,9 @@
     line-height: 54px;
     display: flex;
     align-items: center;
-    color: rgba(255, 255, 255, 0.38);
+    /* color: rgba(255, 255, 255, 0.38); */
     background-color: #1E1E1E;
-    border: 0;
+    border: none;
     justify-content: center;
 
 }

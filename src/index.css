@@ -10,6 +10,7 @@ body {
   bottom: 0;
   background: #1c1c1c;
   height: 100vh;
+  overflow: hidden;
 
 
 }
@@ -22,6 +23,6 @@ body {
   
 }
 
-.example::-webkit-scrollbar {
+.example::-webkit-scrollbar  {
   display: none;
 }

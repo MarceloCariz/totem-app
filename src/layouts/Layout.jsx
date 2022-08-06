@@ -10,7 +10,7 @@ const Main = styled.main`
 const Layout = () => {
   return (
     <div>
-        <Main>
+        <Main className='example'>
             <Outlet/>
 
         </Main>

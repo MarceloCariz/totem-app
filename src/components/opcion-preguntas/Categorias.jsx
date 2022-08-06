@@ -3,7 +3,10 @@ import { useParams, useNavigate } from 'react-router-dom';
 import useOpciones from '../../hooks/useOpciones';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import flecha  from './icons/Flecha.png'
+
 import './preguntas.css';
+import { Footer } from '../ui/Footer';
 
 const Enlace = styled(Link)`
     text-decoration: none;
@@ -45,7 +48,11 @@ const Categorias = () => {
                                 return (
                                     <div key={_id}>
                                         <li>
-                                            <Link className='subcategorias' to={{ pathname: `${subcategoria}` }}>{subcategoria}</Link>
+                                            <Div>
+                                                <Link className='subcategorias' to={{ pathname: `${subcategoria}` }}>{subcategoria}</Link>
+                                                <Flecha src={flecha}/>
+
+                                            </Div>
                                             <div className='figura-1' />
                                             <div className='figura-2' />
                                         </li>
@@ -56,10 +63,26 @@ const Categorias = () => {
                         : 'dsadas'
                 }
                 <Enlace className='btn-salir' to="/">SALIR</Enlace>
+
             </div>
         </>
     )
 }
+
+const Div = styled.div`
+  display: flex;
+  gap: 8rem;
+  justify-content: center;
+  align-items:center;
+  text-transform: capitalize;   
+`;
+const Flecha = styled.img`
+  /* margin-top: 1rem; */
+  position: relative;
+  color: #FFB71B;
+  width: 8%;
+  height: 10%;
+`;
 const Volver = styled.button`
   background-color: #FFB71B;
   font-size: 2rem;

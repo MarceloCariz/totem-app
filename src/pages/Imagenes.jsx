@@ -7,12 +7,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import '../components/Imagenes_carrusel/carrusel.css';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { BsWhatsapp } from "react-icons/bs";
-import { BsInstagram } from "react-icons/bs";
-import { BsFacebook } from "react-icons/bs";
-import wsp from '../components/Imagenes_carrusel/img/whatsapp.png';
-import fb from '../components/Imagenes_carrusel/img/facebook.png';
-import ig from '../components/Imagenes_carrusel/img/instagram.png';
+import { Footer } from '../components/ui/Footer';
+
 
 
 const Button = styled(Link)`
@@ -59,26 +55,8 @@ const Imagenes = () => {
       </div>
       <div className='radio-div'></div>
     </div>
-    
-    <footer>
-      <div className='waves'>
-        <div className='wave' id='wave1'></div>
-        <div className='wave' id='wave2'></div>
-        <div className='wave' id='wave3'></div>
-        <div className='wave' id='wave4'></div>
-      </div>
-      <ul className='social-icon'>
-        <li><BsWhatsapp className='icon-wsp' />
-          <img src={wsp}/>   
-          </li>
-        <li><BsInstagram className='icon-ig' />
-          <img src={ig}/>   
-          </li>
-        <li><BsFacebook className='icon-fb' />
-          <img src={fb} />   
-           </li>
-      </ul>
-    </footer>
+    <Footer/>
+ 
     </>
   )
 }
