@@ -45,7 +45,7 @@ const PalabraClave = () => {
     const handleInputChange = ({target}) => {
         setBusqueda(target.value)
         filtrar(target.value);
-        console.log(resultado)
+        // console.log(resultado)
         setActivePreguntas(true)
         if (target.value === '') {
             setActivePreguntas(false)
@@ -80,12 +80,13 @@ const PalabraClave = () => {
 
             <div className='div-pacl'>
 
-                <div className='name-subcat'>{nombre}</div>
+                <div className='name-subcat'>{sub}</div>
                 {/* <form action="" >
                     <CardResultado resultado={resultado} handleClick={handleClick} respuestaF={respuestaF} active={active} />
                 </form> */}
 
                 <input className='input-palcl' type="text" onChange={handleInputChange} value={busqueda} placeholder='Palabra Clave' />
+                <Div>
                 {
                     activePreguntas === false && preguntas.length > 0 && preguntas.map(({ pregunta, respuesta, _id }) => (
                         <div key={_id} onClick={(e) => handleClick({ _id, pregunta }, e)}>
@@ -102,9 +103,10 @@ const PalabraClave = () => {
                     )) 
 
                 }
+
                 {
                     activePreguntas === true && resultado.length > 0 && resultado.map(({ pregunta, respuesta, _id }) => (
-                        <div key={_id}>
+                        <div key={_id} onClick={(e) => handleClick({ _id, pregunta }, e)}>
                             <p className='resultado-sub'>{pregunta}</p>
 
                             <button className='btn-ver' onClick={(e) => handleClick({ _id, pregunta }, e)}>{active && respuestaF.id === _id ? (<p>Cerrar</p>) : (<p>Respuesta</p>)}</button>
@@ -118,6 +120,7 @@ const PalabraClave = () => {
                     )) 
 
                 }
+                </Div>
 
                 
                 {/* {
@@ -143,4 +146,9 @@ const Volver = styled.button`
   border-radius: 20px;
  
 `;
+
+const Div = styled.div`
+    overflow: scroll;
+    height: 650px;
+`
 export default PalabraClave

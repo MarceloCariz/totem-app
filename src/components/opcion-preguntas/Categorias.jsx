@@ -37,7 +37,7 @@ const Categorias = () => {
             <div className='div-cat'>
             <Volver onClick={()=> navigate(-1)}>Volver</Volver>
 
-                <p className='title-cat'>{categoriaParams}</p>
+                <p className='title-cat'>Tipo de Pregunta</p>
                 {
                     subcategorias.length > 0 ?
                         (
