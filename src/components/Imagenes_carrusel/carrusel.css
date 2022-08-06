@@ -66,8 +66,8 @@ img {
 }
 
 .borde-div {
-    width: 488px;
-    height: 174px;
+    width: 428px;
+    height: 114px;
     left: 296px;
     top: 1510px;
     border: 6px solid #FFFFFF;
@@ -119,11 +119,14 @@ footer .social-icon li {
 }
 
 footer .social-icon li img{
-    position: absolute;
+    position: relative;
+    top: 28px;
+    left: 147.5px;
     margin: 0 -120px;
     transform: scale(0);
     transition: 0.25s;
     transition-delay: 0s;
+    border-radius: 0;
 }
 
 footer .social-icon li:hover img {
