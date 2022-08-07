@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom';
 import styled from 'styled-components';
-import { aumentarRanking, buscarPreguntas } from '../../helpers/getPreguntas';
+import { aumentarRanking } from '../../helpers/getPreguntas';
 import useOpciones from '../../hooks/useOpciones';
-import CardResultado from './CardResultado';
+// import CardResultado from './CardResultado';
 import { Link } from 'react-router-dom';
 import flecha  from './icons/Flecha.png'
 import  barraBusqueda from './icons/barra_busqueda.png'
@@ -67,7 +67,6 @@ const PalabraClave = () => {
         let resultadoBusqueda = preguntas.filter((elemento) => {
             if (elemento.pregunta.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toString().toLowerCase().includes(terminoBusqueda.toLowerCase())) {
                 return elemento
-
             }
         });
         // setProductos(resultadoBusqueda);

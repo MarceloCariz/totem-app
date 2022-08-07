@@ -38,15 +38,17 @@ const Imagenes = () => {
     <div className='div-carrusel'>
       <h1 className='titulo'>PUNTO DE INFORMACIÓN</h1>
       <div className='centrar-carrusel'>
-      <Carousel className={'width-carrusel'} autoPlay={true} emulateTouch={true} infiniteLoop={true} showIndicators={true} showArrows={false} interval={8000} showStatus={false} showThumbs={false}   >
-        {imagenes &&
+      <Carousel  autoPlay={true} infiniteLoop={true} interval={6000} showIndicators={true} showArrows={false}  showStatus={false} showThumbs={false}   >
+        {imagenes.length > 0 &&
           imagenes.map((imagen) => {
             return (
+               <CardImagenes key={imagen._id} imagen={imagen} /> 
+              
 
-              <CardImagenes key={imagen._id} imagen={imagen} />
             )
           })
-        }        
+        }     
+
       </Carousel>
       </div>
      

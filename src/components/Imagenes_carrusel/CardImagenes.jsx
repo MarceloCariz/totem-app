@@ -1,22 +1,21 @@
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+// import { Link } from 'react-router-dom';
+// import styled from 'styled-components';
 
 
 
-const Button = styled(Link)`
-`;
+// const Button = styled(Link)`
+// `;
 
 
 const CardImagenes = ({ imagen }) => {
 
   const { path } = imagen;
-  return (<>
+  return (
+  <div className='img-carrusel'>
  
-      <div className='img-carrusel'>
         <img src={path} alt="" />
-      </div>
   
-  </>
+  </div>
   )
 }
 

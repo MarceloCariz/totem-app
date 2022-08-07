@@ -3,7 +3,7 @@ import useOpciones from '../../hooks/useOpciones'
 import { Link, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import './preguntas.css';
-import { Footer } from '../ui/Footer';
+// import { Footer } from '../ui/Footer';
 
 const Enlace = styled(Link)`
     text-decoration: none;

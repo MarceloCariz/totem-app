@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import flecha  from './icons/Flecha.png'
 
 import './preguntas.css';
-import { Footer } from '../ui/Footer';
+// import { Footer } from '../ui/Footer';
 
 const Enlace = styled(Link)`
     text-decoration: none;

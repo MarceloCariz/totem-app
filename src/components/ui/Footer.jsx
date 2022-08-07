@@ -17,13 +17,13 @@ export const Footer = () => {
     </div>
     <ul className='social-icon'>
       <li><BsWhatsapp className='icon-wsp' />
-        <img src={wsp}/>   
+        <img src={wsp} alt='wsp'/>   
         </li>
-      <li><BsInstagram className='icon-ig' />
-        <img src={ig}/>   
+      <li><BsInstagram className='icon-ig'  />
+        <img src={ig} alt='ig'/>   
         </li>
       <li><BsFacebook className='icon-fb' />
-        <img src={fb} />   
+        <img src={fb} alt='fb' />   
          </li>
     </ul>
   </footer>
