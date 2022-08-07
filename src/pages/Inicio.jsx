@@ -3,7 +3,7 @@ import styled from "styled-components";
 // import OpcionPreguntas from '../components/preguntas/OpcionPreguntas';
 // import { buscarPreguntas, obtenerPreguntas } from '../helpers/getPreguntas';
 import { Link } from "react-router-dom";
-import { Footer } from "../components/ui/Footer";
+// import { Footer } from "../components/ui/Footer";
 
 const Container = styled.div`
   display: flex;
@@ -15,20 +15,20 @@ const Enlace = styled(Link)`
   text-decoration: none;
   z-index: 1;
 `;
-const Volver = styled(Link)`
-  background-color: #FFB71B;
-  font-size: 2rem;
-  font-weight: 700;
-  color: black;
-  text-decoration: none;
-  position: absolute;
-  padding: 30px 50px 30px 50px;
-  margin-top: 26rem;
-  margin-right: 49rem;
+// const Volver = styled(Link)`
+//   background-color: #FFB71B;
+//   font-size: 2rem;
+//   font-weight: 700;
+//   color: black;
+//   text-decoration: none;
+//   position: absolute;
+//   padding: 30px 50px 30px 50px;
+//   margin-top: 26rem;
+//   margin-right: 49rem;
 
-  border-radius: 20px;
+//   border-radius: 20px;
  
-`;
+// `;
 const Inicio = () => {
   
   // const idleTimer = useIdleTimer({ onIdle, onActive });
@@ -37,8 +37,8 @@ const Inicio = () => {
   return (
     <>
       <Container className="">
-        <div className="rectangulo" />
-        <Volver to={'/'}>Volver</Volver>
+        {/* <div className="rectangulo" /> */}
+        {/* <Volver to={'/'}>Volver</Volver> */}
 
         <p className="p-inicio">En que te puedo ayudar</p>
         <div className="div-inicio">
@@ -48,24 +48,23 @@ const Inicio = () => {
           
         </div>
 
-        <Enlace className="btn-salir-inicio" to="/">
+        {/* <Enlace className="btn-salir-inicio" to="/">
           SALIR
-        </Enlace>
+        </Enlace> */}
       </Container>
-      <Div>
-      <Footer/>
+      {/* <Div>
 
-      </Div>
+      </Div> */}
     
     </>
       
   );
 };
 
-const Div = styled.div`
-  position: relative;
-  bottom: 0;
-  margin-top: 125%;
-`;
+// const Div = styled.div`
+//   position: relative;
+//   bottom: 0;
+//   margin-top: 125%;
+// `;
 
 export default Inicio;

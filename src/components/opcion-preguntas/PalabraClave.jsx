@@ -9,6 +9,7 @@ import flecha  from './icons/Flecha.png'
 import  barraBusqueda from './icons/barra_busqueda.png'
 import busquedaIcon from './icons/busqueda_icon.png'
 import './preguntas.css';
+import { Logo } from './logo/Logo';
 
 
 const Enlace = styled(Link)`
@@ -77,10 +78,10 @@ const PalabraClave = () => {
 
     return (
         <>
-            <div className='rectangulo' />
-            <Volver onClick={()=> navigate(-1)}>Volver</Volver>
-
+            {/* <div className='rectangulo' /> */}
+            {/* <Volver onClick={()=> navigate(-1)}>Volver</Volver> */}
             <div className='div-pacl'>
+            <Logo/>
 
                 <div className='name-subcat'>{sub}</div>
                 {/* <form action="" >
@@ -132,7 +133,7 @@ const PalabraClave = () => {
                 {/* {
             activePreguntas && (<p>Cargando ....</p>)
         } */}
-                <Enlace className='btn-salir' to="/inicio/evaluacion">SALIR</Enlace>
+                {/* <Enlace className='btn-salir' to="/inicio/evaluacion">SALIR</Enlace> */}
             </div>
         </>
     )

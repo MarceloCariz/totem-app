@@ -12,6 +12,7 @@ import { Footer } from '../components/ui/Footer';
 
 
 const Button = styled(Link)`
+/* margin-bottom: 3rem; */
 `;
 
 

@@ -5,10 +5,11 @@ import { BsFacebook } from "react-icons/bs";
 import wsp from '../Imagenes_carrusel/img/whatsapp.png';
 import fb from '../Imagenes_carrusel/img/facebook.png';
 import ig from '../Imagenes_carrusel/img/instagram.png';
+import styled from 'styled-components';
 
 export const Footer = () => {
   return (
-    <footer>
+    <FooterContainer>
     <div className='waves'>
       <div className='wave' id='wave1'></div>
       <div className='wave' id='wave2'></div>
@@ -26,6 +27,12 @@ export const Footer = () => {
         <img src={fb} alt='fb' />   
          </li>
     </ul>
-  </footer>
+  </FooterContainer>
   )
 }
+
+const  FooterContainer = styled.footer`
+  /* margin-top: 18.5rem; */
+  bottom: 0;
+  position: fixed;
+`;
