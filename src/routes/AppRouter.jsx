@@ -8,6 +8,7 @@ import Layout from '../layouts/Layout'
 import Imagenes from '../pages/Imagenes'
 import Inicio from '../pages/Inicio'
 import { IdleTimerProvider } from "react-idle-timer";
+import { Pregunta } from '../components/opcion-preguntas/prueba/Pregunta'
 
 const AppRouter = () => {
   const location = useLocation();
@@ -28,7 +29,7 @@ const AppRouter = () => {
     console.log('activo')
   };
   return (
-    <IdleTimerProvider timeout={1000 * 15}  onIdle={onIdle} onActive={onActive}>
+    <IdleTimerProvider timeout={1000 * 20}  onIdle={onIdle} onActive={onActive}>
 
     <Routes path='/' >
         <Route index element={<Imagenes/>} />
@@ -37,6 +38,7 @@ const AppRouter = () => {
            <Route path='preguntas' element={<Preguntas/>}/>
            <Route path='preguntas/:categoria' element={<Categorias/>}/>
            <Route path='preguntas/:categoria/:subcategoria' element={<PalabraClave/>}/>
+           <Route path='pregunta' element={<Pregunta/>}/>
            <Route path='evaluacion' element={<EvaluacionForm/>}/>
 
 
