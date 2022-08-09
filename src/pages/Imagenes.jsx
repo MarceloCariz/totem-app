@@ -13,6 +13,7 @@ import {Head} from '../components/ui/Head'
 
 
 const Button = styled(Link)`
+/* margin-bottom: 3rem; */
 `;
 
 

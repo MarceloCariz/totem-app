@@ -3,6 +3,8 @@ import useOpciones from '../../hooks/useOpciones'
 import { Link, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import './preguntas.css';
+import { Footer } from '../ui/Footer';
+import { Logo } from './logo/Logo';
 // import { Footer } from '../ui/Footer';
 
 const Enlace = styled(Link)`
@@ -41,12 +43,16 @@ const Preguntas = () => {
   // const {categoria} = categorias;
   return (
     <>
-        <Volver onClick={()=> navigate(-1)}>Volver</Volver>
+        {/* <Volver onClick={()=> navigate(-1)}>Volver</Volver> */}
 
+        
       <div className='div-pre'>
-        <div className='rectangulo' />
+        {/* <div className='rectangulo' /> */}
+        <Logo/>
+
 
         <p className='preg'>¿EN QUÉ TE PUEDO AYUDAR?</p>
+
         {categorias.length > 0 ? (
           categorias.map((categoria, _id) => (
             <li className='preguntas-li' key={_id}>
@@ -54,8 +60,7 @@ const Preguntas = () => {
             </li>
           ))
         ) : 'cargando'}
-        <Enlace className='btn-salir' to="/">SALIR</Enlace>
-
+        {/* <Enlace className='btn-salir' to="/">SALIR</Enlace> */}
       </div>
 
     </>

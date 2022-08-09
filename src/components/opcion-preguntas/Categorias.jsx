@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import flecha  from './icons/Flecha.png'
 
 import './preguntas.css';
+import { Logo } from './logo/Logo';
 // import { Footer } from '../ui/Footer';
 
 const Enlace = styled(Link)`
@@ -35,10 +36,10 @@ const Categorias = () => {
 
     return (
         <>
-
-            <div className='rectangulo' />
+            {/* <div className='rectangulo' /> */}
             <div className='div-cat'>
-            <Volver onClick={()=> navigate(-1)}>Volver</Volver>
+            {/* <Volver onClick={()=> navigate(-1)}>Volver</Volver> */}
+            <Logo/>
 
                 <p className='title-cat'>Tipo de Pregunta</p>
                 {
@@ -62,7 +63,7 @@ const Categorias = () => {
                         )
                         : 'dsadas'
                 }
-                <Enlace className='btn-salir' to="/">SALIR</Enlace>
+                {/* <Enlace className='btn-salir' to="/">SALIR</Enlace> */}
 
             </div>
         </>

@@ -5,6 +5,8 @@
     align-items: center;
     position: relative;
     top: 10px;
+    /* height: 90%; */
+    /* width: 90%; */
 }
 
 img {
@@ -22,6 +24,7 @@ img {
     align-items: center;
     padding: 20px;
     /* width: 90%; */
+    /* height: 80%; */
     margin-left: 1rem;
     margin-right: 1rem;
     margin-bottom: 40px;
@@ -54,13 +57,13 @@ img {
     width: 428px;
     height: 114px;
     left: 296px;
-    top: 1510px;
+    /* top: 1510px; */
     border: 6px solid #FFFFFF;
     border-radius: 316.881px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 11%;
+    margin-top: 3%;
 }
 
 /* redes sociales */

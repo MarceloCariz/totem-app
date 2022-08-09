@@ -9,6 +9,7 @@ import flecha  from './icons/Flecha.png'
 import  barraBusqueda from './icons/barra_busqueda.png'
 import busquedaIcon from './icons/busqueda_icon.png'
 import './preguntas.css';
+import { Logo } from './logo/Logo';
 
 
 const Enlace = styled(Link)`
@@ -17,6 +18,7 @@ const Enlace = styled(Link)`
 const PalabraClave = () => {
 
     const {categoria:nombre, subcategoria: sub} = useParams();
+    const navigate = useNavigate();
     const {preguntas: datos, setPreguntaSeleccionada} = useOpciones();
    
     const {data} = datos;
@@ -27,7 +29,6 @@ const PalabraClave = () => {
 
     const [busqueda, setBusqueda] = useState('');
     const [resultado, setResultado] = useState({})
-
     useEffect(() => {
         const filtrado = () => {
             const resultado = data.filter(({ categoria, subcategoria }) => (categoria === nombre && subcategoria === sub))
@@ -41,8 +42,11 @@ const PalabraClave = () => {
         setActive(!active)
 
         setRespuesta({ id: e._id })
-        setPreguntaSeleccionada(e.pregunta)
+        setPreguntaSeleccionada({pregunta: e.pregunta, respuesta: e.respuesta})
+        // setPreguntaSeleccionada( e.pregunta)
+
         aumentarRanking(e._id)
+        navigate('/inicio/pregunta')
     }
 
     const handleInputChange = ({target}) => {
@@ -73,14 +77,14 @@ const PalabraClave = () => {
         setResultado(resultadoBusqueda)
     }
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     return (
         <>
-            <div className='rectangulo' />
-            <Volver onClick={()=> navigate(-1)}>Volver</Volver>
-
+            {/* <div className='rectangulo' /> */}
+            {/* <Volver onClick={()=> navigate(-1)}>Volver</Volver> */}
             <div className='div-pacl'>
+            <Logo/>
 
                 <div className='name-subcat'>{sub}</div>
                 {/* <form action="" >
@@ -94,10 +98,10 @@ const PalabraClave = () => {
                 <Div className='example'>
                 {
                     activePreguntas === false && preguntas.length > 0 && preguntas.map(({ pregunta, respuesta, _id }) => (
-                        <div key={_id} onClick={(e) => handleClick({ _id, pregunta }, e)}>
+                        <div key={_id} onClick={(e) => handleClick({ _id, pregunta, respuesta }, e)}>
                             <p className='resultado-sub'>{pregunta}</p>
 
-                            <button className='btn-ver' onClick={(e) => handleClick({ _id, pregunta }, e)}>{active && respuestaF.id === _id ? (<p>Cerrar</p>) : (<p>Respuesta</p>)}</button>
+                            <button className='btn-ver' onClick={(e) => handleClick({ _id, pregunta, respuesta }, e)}>{active && respuestaF.id === _id ? (<p>Cerrar</p>) : (<p>Respuesta</p>)}</button>
                             {
                                 active && respuestaF.id === _id && (
                                     <p className='resp-cate'>{respuestaF.id === _id ? respuesta : ""}</p>
@@ -111,7 +115,7 @@ const PalabraClave = () => {
 
                 {
                     activePreguntas === true && resultado.length > 0 && resultado.map(({ pregunta, respuesta, _id }) => (
-                        <div key={_id} onClick={(e) => handleClick({ _id, pregunta }, e)}>
+                        <div key={_id} onClick={(e) => handleClick({ _id, pregunta, respuesta }, e)}>
                             <p className='resultado-sub'>{pregunta}</p>
 
                             <button className='btn-ver' onClick={(e) => handleClick({ _id, pregunta }, e)}>{active && respuestaF.id === _id ? (<p>Cerrar</p>) : (<p>Respuesta</p>)}</button>
@@ -132,7 +136,7 @@ const PalabraClave = () => {
                 {/* {
             activePreguntas && (<p>Cargando ....</p>)
         } */}
-                <Enlace className='btn-salir' to="/inicio/evaluacion">SALIR</Enlace>
+                {/* <Enlace className='btn-salir' to="/inicio/evaluacion">SALIR</Enlace> */}
             </div>
         </>
     )

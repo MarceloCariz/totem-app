@@ -16,7 +16,7 @@ const EvaluacionForm = () => {
   });
   const [active, setActive] = useState(false);
 
-
+  console.log(preguntaSeleccionada)
 
   
   const { correo } = evaluacion;
@@ -28,7 +28,7 @@ const EvaluacionForm = () => {
   const handleClick = ({ target }) => {
     if (target.value === "NO") {
       setEvaluacion({
-        pregunta: preguntaSeleccionada,
+        pregunta: preguntaSeleccionada.pregunta,
         respuesta: target.value,
       });
       setActive(true);
@@ -45,7 +45,7 @@ const EvaluacionForm = () => {
   };
   return (
     <>
-      <div className='rectangulo' />
+      {/* <div className='rectangulo' /> */}
       <form className="form-eva" action="" onSubmit={handleEnviar}>
         <p className="p-exp">Considerando la experiencia previa</p>
         <p className="p-lograste">¿Lograste obtener una respuesta?</p>

@@ -67,11 +67,12 @@
 
 .div-pre {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     text-align: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 750px;
+    padding-top: 470px;
+    /* margin-bottom: 2rem; */
 }
 
 .preg {
@@ -79,7 +80,7 @@
     width: 690px;
     height: 135px;
     left: 194px;
-    top: 485px;
+    top: 300px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -171,7 +172,7 @@
     justify-content: center;
     align-items: center;
     position: sticky;
-    padding-top: 723px;
+    padding-top: 420px;
 }
 
 .subcategorias {
@@ -204,7 +205,7 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
-    padding-top: 850px;
+    padding-top: 400px;
 }
 
 .name-subcat {
@@ -323,7 +324,7 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
-    padding-top: 500px;
+    padding-top: 200px;
 }
 
 .div-eva {
