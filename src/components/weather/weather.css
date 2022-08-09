@@ -1,0 +1,16 @@
+.weather {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.timeWeatherLocation {
+    color: #fff;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+
+

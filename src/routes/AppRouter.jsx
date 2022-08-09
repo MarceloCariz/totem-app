@@ -9,6 +9,7 @@ import Imagenes from '../pages/Imagenes'
 import Inicio from '../pages/Inicio'
 import { IdleTimerProvider } from "react-idle-timer";
 import { Pregunta } from '../components/opcion-preguntas/prueba/Pregunta'
+import { Weather } from '../components/weather/Weather'
 
 const AppRouter = () => {
   const location = useLocation();
@@ -30,7 +31,7 @@ const AppRouter = () => {
   };
   return (
     <IdleTimerProvider timeout={1000 * 20}  onIdle={onIdle} onActive={onActive}>
-
+      <Weather />
     <Routes path='/' >
         <Route index element={<Imagenes/>} />
         <Route path='inicio' element={<Layout/>}>
