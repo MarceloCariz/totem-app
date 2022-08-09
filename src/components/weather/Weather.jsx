@@ -1,14 +1,19 @@
 import {useEffect, useRef, useState} from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCloudSun } from '@fortawesome/free-solid-svg-icons'
+
 import { getWeather } from "../../helpers/getWeather";
 import "./weather.css";
+import { useWeather } from "../../hooks/useWeather";
 
 export const Weather = () => {
     
+
     const span = useRef();
     const time = () => {
         const datetime = new Date();
         const hour = datetime.getHours();
-        const minute = datetime.getMinutes();
+        const minute = ('0'+datetime.getMinutes()).slice(-2);
 
         return `${hour}:${minute}`;
     };
@@ -17,11 +22,10 @@ export const Weather = () => {
         const cl = setInterval(() => {
             span.current.innerHTML = `${time()}`;
         }, 1000);
+        return () => clearInterval(cl);
     }, [])
 
-    
-
-    // const {name, temp_c} = getWeather();
+    const weather = useWeather();
 
     return (
         <div className="weather">
@@ -32,7 +36,7 @@ export const Weather = () => {
             </div>
 
             <div>
-                <span className="timeWeatherLocation">7C</span> 
+                <span className="timeWeatherLocation">{weather.temp_c}°<FontAwesomeIcon icon={faCloudSun} /></span> 
             </div>
         </div>
     )
