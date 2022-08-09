@@ -1,6 +1,6 @@
 
 
-const url = 'http://api.weatherapi.com/v1/current.json?key=745c51793be941778f015800220908&q=Providencia Chile&aqi=no';
+const url = 'https://api.weatherapi.com/v1/current.json?key=745c51793be941778f015800220908&q=Providencia Chile&aqi=no';
 
 export const getWeather = async() => {
 
