@@ -1,15 +1,19 @@
+span {
+    color: #fff;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .weather {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
+    position: absolute;
+    top: -5px;
 }
-
-.timeWeatherLocation {
-    color: #fff;
-    font-size: 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+.timeLocation {
+    margin-right: 740px;
 }
 
 
