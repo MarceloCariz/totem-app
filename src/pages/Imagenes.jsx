@@ -8,6 +8,7 @@ import '../components/Imagenes_carrusel/carrusel.css';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { Footer } from '../components/ui/Footer';
+import {Head} from '../components/ui/Head'
 
 
 
@@ -36,7 +37,7 @@ const Imagenes = () => {
   return (
     <>
     <div className='div-carrusel'>
-      <h1 className='titulo'>PUNTO DE INFORMACIÓN</h1>
+    <Head/>
       <div className='centrar-carrusel'>
       <Carousel  autoPlay={true} infiniteLoop={true} interval={6000} showIndicators={true} showArrows={false}  showStatus={false} showThumbs={false}   >
         {imagenes.length > 0 &&
