@@ -4,6 +4,7 @@ import { faCloudSun } from '@fortawesome/free-solid-svg-icons'
 
 import "./weather.css";
 import { useWeather } from "../../hooks/useWeather";
+import styled from "styled-components";
 
 export const Weather = () => {
 
@@ -32,8 +33,13 @@ export const Weather = () => {
                 {time()}
             </span>
 
-            <span className="timeWeatherLocation">{weather.temp_c}°<FontAwesomeIcon icon={faCloudSun} /></span>
+            <Span className="">{weather.temp_c}°<FontAwesomeIcon icon={faCloudSun} /></Span>
 
         </div>
     )
 }
+
+
+const Span = styled.span`
+display: flex;  
+`;

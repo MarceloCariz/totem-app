@@ -1,20 +1,18 @@
+import axios from "axios";
 
 
-const url = 'https://api.weatherapi.com/v1/current.json?key=745c51793be941778f015800220908&q=Providencia Chile&aqi=no';
+const url = 'https://api.openweathermap.org/data/2.5/weather?q=providencia,cl&appid=bfda3fb8deedbb888f02919d7c6f24d4';
 
 export const getWeather = async() => {
+    const {data} = await axios(url);
+    const {temp} = data.main;
+    const temperatura = (temp - 273.15).toFixed(1);
 
-    const resp = await fetch(url);
-    const {location, current} = await resp.json();
-
-    const {name} = location;
-    const {temp_c} = current;
-    
     const weather = {
-        name,
-        temp_c
-    };
+        name : data.name,
+        temp_c:temperatura
+    }
+    return weather
+ }
 
-    return weather;
-}
 

@@ -10,10 +10,11 @@ span {
     align-items: center;
     padding: 15px;
     position: absolute;
-    top: -5px;
+    top: 0px;
+    
 }
 .timeLocation {
-    margin-right: 740px;
+    margin-right: 700px;
 }
 
 
