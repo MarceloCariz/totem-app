@@ -2,7 +2,6 @@ import React from 'react'
 import { useLocation, useNavigate, useParams } from 'react-router-dom'
 import styled from 'styled-components'
 import home from './icons/Home.png'
-import homeDisabled from './icons/homeDisabled.png'
 
 import prev_activo from './icons/prev-activo.png'
 import prev from './icons/prev.png'
