@@ -34,7 +34,7 @@ const EvaluacionForm = () => {
       setActive(true);
       return;
     }
-    setEvaluacion({ pregunta: preguntaSeleccionada, respuesta: target.value });
+    setEvaluacion({ pregunta: preguntaSeleccionada.pregunta, respuesta: target.value });
     setActive(false);
   };
 

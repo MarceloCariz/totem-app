@@ -32,6 +32,7 @@ export const buscarPreguntas = async (busqueda, nombre, sub) =>{
 export const enviarEvaluacion= async (datos) =>{
     const {pregunta , respuesta, correo, categoria} = datos;
     const evaluacionObj = {categoria, problema:pregunta, evaluacion: respuesta, correo};
+    console.log(datos)
     try {
     await clienteAxios.post(`/preguntas/evaluacion`, evaluacionObj);
         
