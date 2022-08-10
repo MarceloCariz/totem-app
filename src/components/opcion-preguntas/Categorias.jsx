@@ -42,6 +42,7 @@ const Categorias = () => {
             <Logo/>
 
                 <p className='title-cat'>Tipo de Pregunta</p>
+                <Divsub>
                 {
                     subcategorias.length > 0 ?
                         (
@@ -63,13 +64,23 @@ const Categorias = () => {
                         )
                         : 'dsadas'
                 }
+                </Divsub>
+                <Flecha src={flecha}/>
+
                 {/* <Enlace className='btn-salir' to="/">SALIR</Enlace> */}
 
             </div>
         </>
     )
 }
-
+const Divsub = styled.div`
+    overflow: hidden scroll;
+    overflow-x: hidden;
+    overflow-anchor: 1px;
+    height: 600px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+`;
 const Div = styled.div`
   display: flex;
   gap: 8rem;

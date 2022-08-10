@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import './preguntas.css';
 import { Footer } from '../ui/Footer';
 import { Logo } from './logo/Logo';
+import flecha from './icons/Flecha.png'
 // import { Footer } from '../ui/Footer';
 
 const Enlace = styled(Link)`
@@ -52,7 +53,7 @@ const Preguntas = () => {
 
 
         <p className='preg'>¿EN QUÉ TE PUEDO AYUDAR?</p>
-
+        <Div className='example'>
         {categorias.length > 0 ? (
           categorias.map((categoria, _id) => (
             <li className='preguntas-li' key={_id}>
@@ -60,11 +61,29 @@ const Preguntas = () => {
             </li>
           ))
         ) : 'cargando'}
+
+        </Div>
+        <Flecha src={flecha}/>
+
         {/* <Enlace className='btn-salir' to="/">SALIR</Enlace> */}
       </div>
 
     </>
   )
 }
-
+const Div = styled.div`
+    overflow: hidden scroll;
+    overflow-x: hidden;
+    overflow-anchor: 1px;
+    height: 800px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+`;
+const Flecha = styled.img`
+  margin-top: 1rem;
+  position: relative;
+  color: #FFB71B;
+  font-size: 5rem;
+  font-weight: 900;
+`;
 export default Preguntas
