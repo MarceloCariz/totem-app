@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import useOpciones from '../../hooks/useOpciones';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import flecha  from './icons/Flecha.png'
+import flecha from './icons/Flecha.png'
 
 import './preguntas.css';
 import { Logo } from './logo/Logo';
@@ -38,34 +38,34 @@ const Categorias = () => {
         <>
             {/* <div className='rectangulo' /> */}
             <div className='div-cat'>
-            {/* <Volver onClick={()=> navigate(-1)}>Volver</Volver> */}
-            <Logo/>
+                {/* <Volver onClick={()=> navigate(-1)}>Volver</Volver> */}
+                <Logo />
 
                 <p className='title-cat'>Tipo de Pregunta</p>
                 <Divsub>
-                {
-                    subcategorias.length > 0 ?
-                        (
-                            subcategorias.map(({ subcategoria, _id }) => {
-                                return (
-                                    <div key={_id}>
-                                        <li>
-                                            <Div>
-                                                <Link className='subcategorias' to={{ pathname: `${subcategoria}` }}>{subcategoria}</Link>
-                                                <Flecha src={flecha}/>
+                    {
+                        subcategorias.length > 0 ?
+                            (
+                                subcategorias.map(({ subcategoria, _id }) => {
+                                    return (
+                                        <div key={_id}>
+                                            <li>
+                                                <Div>
+                                                    <Link className='subcategorias' to={{ pathname: `${subcategoria}` }}>{subcategoria}</Link>
+                                                    <Flecha src={flecha} />
 
-                                            </Div>
-                                            <div className='figura-1' />
-                                            <div className='figura-2' />
-                                        </li>
-                                    </div>
-                                )
-                            })
-                        )
-                        : 'dsadas'
-                }
+                                                </Div>
+                                                <div className='figura-1' />
+                                                <div className='figura-2' />
+                                            </li>
+                                        </div>
+                                    )
+                                })
+                            )
+                            : 'dsadas'
+                    }
                 </Divsub>
-                <Flecha src={flecha}/>
+                <Flecha src={flecha} />
 
                 {/* <Enlace className='btn-salir' to="/">SALIR</Enlace> */}
 
