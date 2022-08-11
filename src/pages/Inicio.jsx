@@ -10,7 +10,7 @@ const Container = styled.div`
   background-image: url(${fondo});
   object-fit: cover;
   height: 100vh;
- background-size: 1920px 1920px;
+ background-size: 1080px 1920px;
  background-position: center;
 `;
 
@@ -29,55 +29,55 @@ const Inicio = () => {
           <ul className="listaEnlace">
             <li>
               <Enlace className="enlaces" to="preguntas">
-                <img src={ask} />
+                <img src={ask} alt="icono"  />
                 Preguntas Frecuentes
               </Enlace>
             </li>
             <li>
               <Enlace className="enlaces" to="preguntas">
-                <img src={ask} />
+                <img src={ask} alt="icono" />
                 Preguntas Frecuentes
               </Enlace>
             </li>
             <li>
               <Enlace className="enlaces" to="preguntas">
-                <img src={ask} />
+                <img src={ask} alt="icono" />
                 Preguntas Frecuentes
               </Enlace>
             </li>
             <li>
               <Enlace className="enlaces" to="preguntas">
-                <img src={ask} />
+                <img src={ask} alt="icono" />
                 Preguntas Frecuentes
               </Enlace>
             </li>
             <li>
               <Enlace className="enlaces" to="preguntas">
-                <img src={ask} />
+                <img src={ask} alt="icono" />
                 Preguntas Frecuentes
               </Enlace>
             </li>
             <li>
               <Enlace className="enlaces" to="preguntas">
-                <img src={ask} />
+                <img src={ask} alt="icono" />
                 Preguntas Frecuentes
               </Enlace>
             </li>
             <li>
               <Enlace className="enlaces" to="preguntas">
-                <img src={ask} />
+                <img src={ask} alt="icono" />
                 Preguntas Frecuentes
               </Enlace>
             </li>
             <li>
               <Enlace className="enlaces" to="preguntas">
-                <img src={ask} />
+                <img src={ask} alt="icono" />
                 Preguntas Frecuentes
               </Enlace>
             </li>
             <li>
               <Enlace className="enlaces" to="preguntas">
-                <img src={ask} />
+                <img src={ask} alt="icono" />
                 Preguntas Frecuentes
               </Enlace>
             </li>

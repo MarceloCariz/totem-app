@@ -5,7 +5,7 @@ import './uiStyles.css';
 export const Toti = () => {
     return (
         <>
-        <img className='toti-ask' src={totiAsk}/>
+        <img className='toti-ask' src={totiAsk} alt="toti-ask"/>
         </>
     )
 }

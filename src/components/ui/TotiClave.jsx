@@ -5,8 +5,8 @@ import cuerpo from './icons/cuerpototi.png'
 
 export const TotiClave = () => {
     return (<>
-        <img className='cuerpoToti' src={cuerpo} />
-        <img className='ojosToti' src={ojos} />
+        <img className='cuerpoToti' src={cuerpo} alt="cuerpo"/>
+        <img className='ojosToti' src={ojos} alt="ojos"/>
     </>
     )
 }

@@ -3,7 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import styled from 'styled-components';
 import { aumentarRanking } from '../../helpers/getPreguntas';
 import useOpciones from '../../hooks/useOpciones';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import flecha from './icons/Flecha.png'
 import barraBusqueda from './icons/barra_busqueda.png'
 import busquedaIcon from './icons/busqueda_icon.png'
@@ -13,9 +13,9 @@ import TotiClave from '../ui/TotiClave';
 import '../ui/uiStyles.css'
 
 
-const Enlace = styled(Link)`
-    text-decoration: none;
-`
+// const Enlace = styled(Link)`
+//     text-decoration: none;
+// `
 const PalabraClave = () => {
 
     const { categoria: nombre, subcategoria: sub } = useParams();
@@ -149,21 +149,21 @@ const IconBusqueda = styled.img`
   margin-top: 1rem;
   object-fit: contain;
 `;
-const Volver = styled.button`
-  background-color: #FFB71B;
-  font-size: 2rem;
-  font-weight: 700;
-  color: black;
-  text-decoration: none;
-  position: absolute;
-  padding: 30px 50px 30px 50px;
-  margin-top: 25rem;
-  /* margin-bottom: 12rem; */
-  margin-right: 49rem;
-  margin-left: 3rem;
-  border-radius: 20px;
+// const Volver = styled.button`
+//   background-color: #FFB71B;
+//   font-size: 2rem;
+//   font-weight: 700;
+//   color: black;
+//   text-decoration: none;
+//   position: absolute;
+//   padding: 30px 50px 30px 50px;
+//   margin-top: 25rem;
+//   /* margin-bottom: 12rem; */
+//   margin-right: 49rem;
+//   margin-left: 3rem;
+//   border-radius: 20px;
  
-`;
+// `;
 const Flecha = styled.img`
   margin-top: 1rem;
   position: relative;

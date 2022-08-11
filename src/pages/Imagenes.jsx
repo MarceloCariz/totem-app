@@ -21,7 +21,7 @@ const Div = styled.div`
   object-fit: cover;
   height: 100vh;
   margin-top: -11rem;
- background-size: 1920px 1920px;
+ background-size: 1080px 1920px;
  background-position: center;
 `;
 
