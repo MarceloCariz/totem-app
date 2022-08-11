@@ -9,13 +9,21 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { Footer } from '../components/ui/Footer';
 import {Head} from '../components/ui/Head'
-
+import fondo from './image/FrenteAVaras.png'
 
 
 const Button = styled(Link)`
 /* margin-bottom: 3rem; */
 `;
 
+const Div = styled.div`
+    background-image: url(${fondo});
+  object-fit: cover;
+  height: 100vh;
+  margin-top: -10rem;
+ background-size: 1920px 1920px;
+ background-position: center;
+`;
 
 
 const Imagenes = () => {
@@ -37,7 +45,7 @@ const Imagenes = () => {
   }, [])
   return (
     <>
-    <div className='div-carrusel'>
+    <Div className='div-carrusel'>
     <Head/>
       <div className='centrar-carrusel'>
       <Carousel  autoPlay={true} infiniteLoop={true} interval={6000} showIndicators={true} showArrows={false}  showStatus={false} showThumbs={false}   >
@@ -58,11 +66,12 @@ const Imagenes = () => {
         <Button className='btn-inicio' to='inicio' >COMENZAR</Button>
       </div>
       <div className='radio-div'></div>
-    </div>
+    </Div>
     <Footer/>
  
     </>
   )
 }
+
 
 export default Imagenes

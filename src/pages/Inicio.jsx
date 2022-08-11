@@ -4,11 +4,17 @@ import styled from "styled-components";
 // import { buscarPreguntas, obtenerPreguntas } from '../helpers/getPreguntas';
 import { Link } from "react-router-dom";
 // import { Footer } from "../components/ui/Footer";
+import fondo from './image/FrenteAVaras.png'
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url(${fondo});
+  object-fit: cover;
+  height: 100vh;
+ background-size: 1920px 1920px;
+ background-position: center;
 `;
 
 const Enlace = styled(Link)`

@@ -30,7 +30,7 @@ const AppRouter = () => {
     console.log('activo')
   };
   return (
-    <IdleTimerProvider timeout={1000 * 20}  onIdle={onIdle} onActive={onActive}>
+    <IdleTimerProvider timeout={100000 * 20}  onIdle={onIdle} onActive={onActive}>
       <Weather />
     <Routes path='/' >
         <Route index element={<Imagenes/>} />
