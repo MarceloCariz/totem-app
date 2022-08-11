@@ -3,13 +3,14 @@ import { useNavigate, useParams } from 'react-router-dom';
 import styled from 'styled-components';
 import { aumentarRanking } from '../../helpers/getPreguntas';
 import useOpciones from '../../hooks/useOpciones';
-// import CardResultado from './CardResultado';
 import { Link } from 'react-router-dom';
-import flecha  from './icons/Flecha.png'
-import  barraBusqueda from './icons/barra_busqueda.png'
+import flecha from './icons/Flecha.png'
+import barraBusqueda from './icons/barra_busqueda.png'
 import busquedaIcon from './icons/busqueda_icon.png'
 import './preguntas.css';
 import { Logo } from './logo/Logo';
+import TotiClave from '../ui/TotiClave';
+import '../ui/uiStyles.css'
 
 
 const Enlace = styled(Link)`
@@ -17,11 +18,11 @@ const Enlace = styled(Link)`
 `
 const PalabraClave = () => {
 
-    const {categoria:nombre, subcategoria: sub} = useParams();
+    const { categoria: nombre, subcategoria: sub } = useParams();
     const navigate = useNavigate();
-    const {preguntas: datos, setPreguntaSeleccionada} = useOpciones();
-   
-    const {data} = datos;
+    const { preguntas: datos, setPreguntaSeleccionada } = useOpciones();
+
+    const { data } = datos;
     const [preguntas, setPreguntas] = useState({})
     const [respuestaF, setRespuesta] = useState({ id: '' })
     const [active, setActive] = useState(false)
@@ -42,14 +43,14 @@ const PalabraClave = () => {
         setActive(!active)
 
         setRespuesta({ id: e._id })
-        setPreguntaSeleccionada({pregunta: e.pregunta, respuesta: e.respuesta})
+        setPreguntaSeleccionada({ pregunta: e.pregunta, respuesta: e.respuesta })
         // setPreguntaSeleccionada( e.pregunta)
 
         aumentarRanking(e._id)
         navigate('/inicio/pregunta')
     }
 
-    const handleInputChange = ({target}) => {
+    const handleInputChange = ({ target }) => {
         setBusqueda(target.value)
         filtrar(target.value);
         // console.log(resultado)
@@ -59,7 +60,7 @@ const PalabraClave = () => {
         }
     }
 
- 
+
 
 
     const filtrar = (terminoBusqueda) => {
@@ -81,58 +82,53 @@ const PalabraClave = () => {
 
     return (
         <>
-            {/* <div className='rectangulo' /> */}
-            {/* <Volver onClick={()=> navigate(-1)}>Volver</Volver> */}
+        <TotiClave/>
             <div className='div-pacl'>
-            <Logo/>
-
-                <div className='name-subcat'>{sub}</div>
-                {/* <form action="" >
-                    <CardResultado resultado={resultado} handleClick={handleClick} respuestaF={respuestaF} active={active} />
-                </form> */}
+                <Logo />
+                <div className='name-subcat'>Ingresa una palabra clave</div>
                 <DivBusqueda>
                     <input className='input-palcl' type="text" onChange={handleInputChange} value={busqueda} placeholder='Palabra Clave' />
                     <IconBusqueda src={busquedaIcon} alt="" />
                 </DivBusqueda>
                 <img src={barraBusqueda} alt="" />
                 <Div className='example'>
-                {
-                    activePreguntas === false && preguntas.length > 0 && preguntas.map(({ pregunta, respuesta, _id }) => (
-                        <div key={_id} onClick={(e) => handleClick({ _id, pregunta, respuesta }, e)}>
-                            <p className='resultado-sub'>{pregunta}</p>
+                    {
+                        activePreguntas === false && preguntas.length > 0 && preguntas.map(({ pregunta, respuesta, _id }) => (
+                            <div key={_id} onClick={(e) => handleClick({ _id, pregunta, respuesta }, e)}>
+                                <p className='resultado-sub'>{pregunta}</p>
 
-                            <button className='btn-ver' onClick={(e) => handleClick({ _id, pregunta, respuesta }, e)}>{active && respuestaF.id === _id ? (<p>Cerrar</p>) : (<p>Respuesta</p>)}</button>
-                            {
-                                active && respuestaF.id === _id && (
-                                    <p className='resp-cate'>{respuestaF.id === _id ? respuesta : ""}</p>
-                                )
-                            }
+                                <button className='btn-ver' onClick={(e) => handleClick({ _id, pregunta, respuesta }, e)}>{active && respuestaF.id === _id ? (<p>Cerrar</p>) : (<p>Respuesta</p>)}</button>
+                                {
+                                    active && respuestaF.id === _id && (
+                                        <p className='resp-cate'>{respuestaF.id === _id ? respuesta : ""}</p>
+                                    )
+                                }
 
-                        </div>
-                    )) 
+                            </div>
+                        ))
 
-                }
+                    }
 
-                {
-                    activePreguntas === true && resultado.length > 0 && resultado.map(({ pregunta, respuesta, _id }) => (
-                        <div key={_id} onClick={(e) => handleClick({ _id, pregunta, respuesta }, e)}>
-                            <p className='resultado-sub'>{pregunta}</p>
+                    {
+                        activePreguntas === true && resultado.length > 0 && resultado.map(({ pregunta, respuesta, _id }) => (
+                            <div key={_id} onClick={(e) => handleClick({ _id, pregunta, respuesta }, e)}>
+                                <p className='resultado-sub'>{pregunta}</p>
 
-                            <button className='btn-ver' onClick={(e) => handleClick({ _id, pregunta }, e)}>{active && respuestaF.id === _id ? (<p>Cerrar</p>) : (<p>Respuesta</p>)}</button>
-                            {
-                                active && respuestaF.id === _id &&(
-                                    <p className='resp-cate'>{respuestaF.id === _id ? respuesta : ""}</p>
-                                )
-                            }
+                                <button className='btn-ver' onClick={(e) => handleClick({ _id, pregunta }, e)}>{active && respuestaF.id === _id ? (<p>Cerrar</p>) : (<p>Respuesta</p>)}</button>
+                                {
+                                    active && respuestaF.id === _id && (
+                                        <p className='resp-cate'>{respuestaF.id === _id ? respuesta : ""}</p>
+                                    )
+                                }
 
-                        </div>
-                    )) 
+                            </div>
+                        ))
 
-                }
+                    }
                 </Div>
-                <Flecha src={flecha}/>
+                <Flecha src={flecha} />
 
-                
+
                 {/* {
             activePreguntas && (<p>Cargando ....</p>)
         } */}
