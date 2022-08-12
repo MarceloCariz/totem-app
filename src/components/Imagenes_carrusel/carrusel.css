@@ -5,8 +5,6 @@
     align-items: center;
     position: relative;
     top: 10px;
-    /* height: 90%; */
-    /* width: 90%; */
 }
 
 img {
@@ -23,8 +21,6 @@ img {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    /* width: 90%; */
-    /* height: 80%; */
     margin-left: 1rem;
     margin-right: 1rem;
     margin-bottom: 40px;

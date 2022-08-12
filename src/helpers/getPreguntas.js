@@ -1,4 +1,5 @@
 import clienteAxios from '../axios';
+
 export const obtenerPreguntas = async() =>{
     const {data} = await clienteAxios('/preguntas');
     

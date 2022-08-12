@@ -26,63 +26,63 @@ const Preguntas = () => {
     // console.log(resultado)
     setActivePreguntas(true)
     if (target.value === '') {
-        setActivePreguntas(false)
+      setActivePreguntas(false)
     }
-}
+  }
 
   const filtrar = (terminoBusqueda) => {
 
     if (!categorias) {
-        return;
+      return;
     }
     // console.log(categorias));
     let resultadoBusqueda = categorias.filter((elemento) => {
-        if (elemento.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toString().toLowerCase().includes(terminoBusqueda.toLowerCase())) {
-            // return elemento
-            return elemento;
-        }
+      if (elemento.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toString().toLowerCase().includes(terminoBusqueda.toLowerCase())) {
+        // return elemento
+        return elemento;
+      }
     });
     // setProductos(resultadoBusqueda);
     console.log(resultado)
     setResultado(resultadoBusqueda)
-}
+  }
   return (
     <>
-        {/* <Volver onClick={()=> navigate(-1)}>Volver</Volver> */}
+      {/* <Volver onClick={()=> navigate(-1)}>Volver</Volver> */}
 
-        
+
       <div className='div-pre'>
         {/* <div className='rectangulo' /> */}
-        <Logo/>
+        <Logo />
 
 
         <p className='preg'>¿EN QUÉ TE PUEDO AYUDAR?</p>
         <DivBusqueda>
-                    <input className='input-palcl'  onChange={handleInputChange} value={busqueda} type="text"  placeholder='Ingrese la categoria' />
-                    <IconBusqueda src={busquedaIcon} alt="" />
-          </DivBusqueda>
-          <img src={barraBusqueda} alt="" />
+          <input className='input-palcl' onChange={handleInputChange} value={busqueda} type="text" placeholder='Ingrese la categoria' />
+          <IconBusqueda src={busquedaIcon} alt="" />
+        </DivBusqueda>
+        <img src={barraBusqueda} alt="" />
 
         <Div className='example'>
 
-        { activePreguntas === false && categorias.length > 0 && (
-          categorias.map((categoria, _id) => (
-            <li className='preguntas-li' key={_id}>
-              <Categorias className='name-cat' to={{ pathname: `${categoria}` }}>{categoria}</Categorias>
-            </li>
-          ))
-        ) }
+          {activePreguntas === false && categorias.length > 0 && (
+            categorias.map((categoria, _id) => (
+              <li className='preguntas-li' key={_id}>
+                <Categorias className='name-cat' to={{ pathname: `${categoria}` }}>{categoria}</Categorias>
+              </li>
+            ))
+          )}
 
-{ activePreguntas === true && resultado.length > 0 && (
-          resultado.map((categoria, _id) => (
-            <li className='preguntas-li' key={_id}>
-              <Categorias className='name-cat' to={{ pathname: `${categoria}` }}>{categoria}</Categorias>
-            </li>
-          ))
-        ) }
+          {activePreguntas === true && resultado.length > 0 && (
+            resultado.map((categoria, _id) => (
+              <li className='preguntas-li' key={_id}>
+                <Categorias className='name-cat' to={{ pathname: `${categoria}` }}>{categoria}</Categorias>
+              </li>
+            ))
+          )}
 
         </Div>
-        <Flecha src={flecha}/>
+        <Flecha src={flecha} />
 
         {/* <Enlace className='btn-salir' to="/">SALIR</Enlace> */}
       </div>
@@ -140,6 +140,6 @@ const Categorias = styled(Link)`
 //   /* margin-right: 45rem; */
 //   margin-left: 3rem;
 //   border-radius: 20px;
- 
+
 // `;
 export default Preguntas

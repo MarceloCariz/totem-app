@@ -16,7 +16,7 @@
     left: 154px;
     top: 130px;
     border-radius: 70px 50px 70px 0px;
-    
+
 }
 
 .preg-frec {
@@ -339,23 +339,17 @@ li {
     text-align: center;
     width: 656px;
     height: 607px;
-    left: 212px;
-    top: 681px;
     background: #D9D9D9;
     border-radius: 30px;
     margin-top: 100px;
-    position: static;
 }
 
-.p-exp {
-    width: 602px;
-    height: 62px;
-    left: 239px;
-    top: 736px;
+
+.form-eva .p-exp {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    font-size: 23px;
+    font-size: 33px;
     line-height: 28px;
     display: flex;
     align-items: center;
@@ -364,116 +358,88 @@ li {
     color: #1E1E1E;
     width: 688px;
     height: 71px;
-    left: 196px;
-    top: 731px;
     background: #FFB71B;
-    position: relative;
-    left: -1px;
-    top: 295px;
-
+    position: absolute;
+    top: 400px;
+    left: 215px;
 }
 
-.p-lograste {
+.form-eva .p-lograste {
     position: relative;
     top: 290px;
+    left: 15px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    font-size: 28px;
+    font-size: 38px;
     line-height: 34px;
     color: #1E1E1E;
 }
 
-.input-si {
-    box-sizing: border-box;
-    width: 166px;
-    height: 166px;
-    border: 4px solid #000000;
-    border-radius: 83px;
+ul {
     display: flex;
-    text-align: center;
-    padding-bottom: 55px;
-    margin-top: 200px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 34px;
-    display: flex;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
+    padding: auto;
+
+}
+
+ul .lista-eva {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    color: #1E1E1E;
-    position: relative;
-    top: 12px;
-    left: 45px;
-    transition: all .2s ease-in-out;
+    text-align: center;
+    align-items: center;
+    padding: 35px;
 }
 
-.input-si:hover {
-    background-color: #1E1E1E;
-    color: #FFFFFF;
-    border: 4px solid #FFFFFF;
+ul .lista-eva .input-eva {
     width: 166px;
     height: 204px;
-}
-
-.input-no {
-    box-sizing: border-box;
-    width: 166px;
-    height: 166px;
+    justify-content: start;
+    text-align: center;
+    align-items: flex-start;
     border: 4px solid #000000;
     border-radius: 83px;
-    display: flex;
-    text-align: center;
-    padding-bottom: 55px;
-    margin-top: 200px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
     font-size: 28px;
     line-height: 34px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #1E1E1E;
-    position: relative;
-    top: 12px;
-    transition: all .2s ease-in-out;
+    transition: 0.5s;
 }
 
-.input-no:hover {
-    background-color: #1E1E1E;
+ul .lista-eva:hover .input-eva {
+    background: #1E1E1E;
+    border: 4px solid #000000;
+    border-radius: 83px;
     color: #FFFFFF;
-    border: 4px solid #FFFFFF;
-    width: 166px;
-    height: 204px;
 }
-
+ul .lista-eva:hover .icon-1{
+    color: #FFFFFF;
+}
+ul .lista-eva:hover .icon-2{
+    color:#FFFFFF ;
+}
 .icon-1 {
-    color: #FFFFFF;
-    position: relative;
-    right: 73px;
-    top: 305px;
+    position: absolute;
+    top: 749px;
     font-size: 75px;
-    transform: scale(1);
+    transition: 0.5s;
 }
 
 .icon-2 {
-    color: #FFFFFF;
-    position: relative;
+    position: absolute;
+    top: 749px;
     font-size: 75px;
-    top: 305px;
-    right: 118px;
-    transform: scale(1);
-
+    transition: 0.5s;
 }
-
 .p-finalizar {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    font-size: 23px;
+    font-size: 33px;
     line-height: 28px;
     display: flex;
     align-items: center;
@@ -510,4 +476,11 @@ li {
     transform: rotate(0.32deg);
     position: relative;
     top: -40px;
+    left: 25px;
+}
+
+.totiHead {
+    position: absolute;
+    left: 205px;
+    top: -30px;
 }
