@@ -7,17 +7,20 @@ import Preguntas from '../components/opcion-preguntas/Preguntas'
 import Layout from '../layouts/Layout'
 import Imagenes from '../pages/Imagenes'
 import Inicio from '../pages/Inicio'
+import { Encuentra } from '../components/busca-tu-profe/Encuentra'
 import { IdleTimerProvider } from "react-idle-timer";
 import { Pregunta } from '../components/opcion-preguntas/prueba/Pregunta'
 import { Weather } from '../components/weather/Weather'
+import { BuscarRut } from '../components/busca-tu-profe/BuscarRut'
+
 
 const AppRouter = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  
+
   const onIdle = () => {
-    if(location.pathname === '/'){
+    if (location.pathname === '/') {
       console.log('principal')
       return
     }
@@ -30,24 +33,22 @@ const AppRouter = () => {
     console.log('activo')
   };
   return (
-    <IdleTimerProvider timeout={100000 * 20}  onIdle={onIdle} onActive={onActive}>
+    <IdleTimerProvider timeout={100000 * 20} onIdle={onIdle} onActive={onActive}>
       <Weather />
-    <Routes path='/' >
-        <Route index element={<Imagenes/>} />
-        <Route path='inicio' element={<Layout/>}>
-           <Route index element={<Inicio/>} />
-           <Route path='preguntas' element={<Preguntas/>}/>
-           <Route path='preguntas/:categoria' element={<Categorias/>}/>
-           <Route path='preguntas/:categoria/:subcategoria' element={<PalabraClave/>}/>
-           <Route path='pregunta' element={<Pregunta/>}/>
-           <Route path='evaluacion' element={<EvaluacionForm/>}/>
-
-
+      <Routes path='/' >
+        <Route index element={<Imagenes />} />
+        <Route path='inicio' element={<Layout />}>
+          <Route index element={<Inicio />} />
+          <Route path='preguntas' element={<Preguntas />} />
+          <Route path='preguntas/:categoria' element={<Categorias />} />
+          <Route path='preguntas/:categoria/:subcategoria' element={<PalabraClave />} />
+          <Route path='pregunta' element={<Pregunta />} />
+          <Route path='evaluacion' element={<EvaluacionForm />} />
+          <Route path='encuentratuprofe' element={<Encuentra />} />
+          <Route path='encuentratuprofe/:buscarporrut' element={<BuscarRut />} />
         </Route>
-
-    </Routes>
+      </Routes>
     </IdleTimerProvider>
-    
   )
 }
 

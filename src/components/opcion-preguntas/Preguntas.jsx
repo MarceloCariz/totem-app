@@ -7,7 +7,6 @@ import { Logo } from './logo/Logo';
 import flecha from './icons/Flecha.png';
 import barraBusqueda from './icons/barra_busqueda.png'
 import busquedaIcon from './icons/busqueda_icon.png'
-// import { Footer } from '../ui/Footer';
 
 
 const Preguntas = () => {
@@ -15,15 +14,10 @@ const Preguntas = () => {
   const [resultado, setResultado] = useState({})
   const [activePreguntas, setActivePreguntas] = useState(false)
   const { preguntas } = useOpciones();
-  // const {categories } = context;
-
-  // const navigate = useNavigate()
   const { categorias } = preguntas;
-  // console.log(categorias)
   const handleInputChange = ({ target }) => {
     setBusqueda(target.value)
     filtrar(target.value);
-    // console.log(resultado)
     setActivePreguntas(true)
     if (target.value === '') {
       setActivePreguntas(false)
@@ -83,8 +77,6 @@ const Preguntas = () => {
 
         </Div>
         <Flecha src={flecha} />
-
-        {/* <Enlace className='btn-salir' to="/">SALIR</Enlace> */}
       </div>
 
     </>

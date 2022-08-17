@@ -36,9 +36,7 @@ const Categorias = () => {
 
     return (
         <>
-            {/* <div className='rectangulo' /> */}
             <div className='div-cat'>
-                {/* <Volver onClick={()=> navigate(-1)}>Volver</Volver> */}
                 <Logo />
 
                 <p className='title-cat'>Tipo de Pregunta</p>

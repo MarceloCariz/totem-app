@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import fondo from './image/FrenteAVaras.png'
+import fondo from '../pages/image/FrenteAVaras.png'
+import lupa from '../pages/image/lupa.png'
 import Toti from "../components/ui/Toti";
 import ask from '../components/ui/icons/preguntas.png'
 const Container = styled.div`
@@ -34,6 +35,12 @@ const Inicio = () => {
               </Enlace>
             </li>
             <li>
+              <Enlace className="enlaces" to="encuentratuprofe">
+                <img src={lupa} alt="icono" />
+                Encuentra tu Profe
+              </Enlace>
+            </li>
+            {/* <li>
               <Enlace className="enlaces" to="preguntas">
                 <img src={ask} alt="icono" />
                 Preguntas Frecuentes
@@ -74,13 +81,7 @@ const Inicio = () => {
                 <img src={ask} alt="icono" />
                 Preguntas Frecuentes
               </Enlace>
-            </li>
-            <li>
-              <Enlace className="enlaces" to="preguntas">
-                <img src={ask} alt="icono" />
-                Preguntas Frecuentes
-              </Enlace>
-            </li>
+            </li> */}
           </ul>
         </div>
         <Toti />

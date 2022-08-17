@@ -3,7 +3,6 @@ import { useNavigate, useParams } from 'react-router-dom';
 import styled from 'styled-components';
 import { aumentarRanking } from '../../helpers/getPreguntas';
 import useOpciones from '../../hooks/useOpciones';
-// import { Link } from 'react-router-dom';
 import flecha from './icons/Flecha.png'
 import barraBusqueda from './icons/barra_busqueda.png'
 import busquedaIcon from './icons/busqueda_icon.png'
@@ -12,10 +11,6 @@ import { Logo } from './logo/Logo';
 import TotiClave from '../ui/TotiClave';
 import '../ui/uiStyles.css'
 
-
-// const Enlace = styled(Link)`
-//     text-decoration: none;
-// `
 const PalabraClave = () => {
 
     const { categoria: nombre, subcategoria: sub } = useParams();
@@ -44,8 +39,6 @@ const PalabraClave = () => {
 
         setRespuesta({ id: e._id })
         setPreguntaSeleccionada({ pregunta: e.pregunta, respuesta: e.respuesta })
-        // setPreguntaSeleccionada( e.pregunta)
-
         aumentarRanking(e._id)
         navigate('/inicio/pregunta')
     }
@@ -53,7 +46,6 @@ const PalabraClave = () => {
     const handleInputChange = ({ target }) => {
         setBusqueda(target.value)
         filtrar(target.value);
-        // console.log(resultado)
         setActivePreguntas(true)
         if (target.value === '') {
             setActivePreguntas(false)
@@ -68,17 +60,14 @@ const PalabraClave = () => {
         if (!preguntas) {
             return;
         }
-        // console.log(preguntas));
         let resultadoBusqueda = preguntas.filter((elemento) => {
             if (elemento.pregunta.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toString().toLowerCase().includes(terminoBusqueda.toLowerCase())) {
                 return elemento
             }
         });
-        // setProductos(resultadoBusqueda);
         setResultado(resultadoBusqueda)
     }
 
-    // const navigate = useNavigate();
 
     return (
         <>
@@ -127,12 +116,6 @@ const PalabraClave = () => {
                     }
                 </Div>
                 <Flecha src={flecha} />
-
-
-                {/* {
-            activePreguntas && (<p>Cargando ....</p>)
-        } */}
-                {/* <Enlace className='btn-salir' to="/inicio/evaluacion">SALIR</Enlace> */}
             </div>
         </>
     )
@@ -149,21 +132,6 @@ const IconBusqueda = styled.img`
   margin-top: 1rem;
   object-fit: contain;
 `;
-// const Volver = styled.button`
-//   background-color: #FFB71B;
-//   font-size: 2rem;
-//   font-weight: 700;
-//   color: black;
-//   text-decoration: none;
-//   position: absolute;
-//   padding: 30px 50px 30px 50px;
-//   margin-top: 25rem;
-//   /* margin-bottom: 12rem; */
-//   margin-right: 49rem;
-//   margin-left: 3rem;
-//   border-radius: 20px;
- 
-// `;
 const Flecha = styled.img`
   margin-top: 1rem;
   position: relative;

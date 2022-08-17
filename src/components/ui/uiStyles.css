@@ -15,7 +15,11 @@
     top: 540px;
     left: 848px;
 }
-
+.toti {
+    position: absolute;
+    top: -12px;
+}
+/* OTROS */
 .sub-title {
     position: relative;
     top: 380px;

@@ -1,0 +1,115 @@
+.div-find-start {
+    display: flex;
+    flex-direction: column;
+    padding: 250px;
+}
+
+.title-select {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 54px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    width: 771px;
+    height: 222px;
+    background: rgba(255, 183, 27, 0.5);
+    border-radius: 70px 0px 70px 50px;
+    position: absolute;
+    left: 150px;
+    top: 305px;
+}
+
+p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF;
+}
+
+.btn {
+    text-decoration: none;
+    box-sizing: border-box;
+    width: 472px;
+    height: 104px;
+    background: rgba(255, 255, 255, 0.59);
+    border-radius: 22px;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    padding: 35px;
+}
+
+.forlist {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.forlist .list {
+    padding: 90px;
+    width: 472px;
+    height: 104px;
+}
+
+.img-icon {
+    position: absolute;
+    top: 182px;
+}
+
+.titulo-alumno {
+    color: #FFB71B;
+    font-family: 'Inter';
+    font-size: 38px;
+    text-align: center;
+    position: relative;
+    top: -250px;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contenedor .lista-contenedor {
+    text-align: center;
+    display: flex;
+    flex-direction: column;    
+}
+
+.contenedor .lista-contenedor .titulo-docente {
+    box-sizing: border-box;
+    width: 772px;
+    height: 85px;
+    background: rgba(255, 255, 255, 0.59);
+    border-radius: 22px 22px 0px 0px;
+    position: relative;
+    top: 40px;
+}
+
+.contenedor .lista-contenedor .titulo-asignatura {
+    width: 772px;
+    height: 61px;
+    background: #FFFFFF;
+    border-radius: 0px 0px 20px 20px;
+}
+.seleccionar{
+    text-align: center;
+    font-size: 46px;
+    position: relative;
+    top: 55px;
+}
+.contenedor-menu{
+    position: relative;
+    top: -305px;
+}
