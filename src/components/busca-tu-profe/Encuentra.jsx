@@ -17,6 +17,8 @@ const Container = styled.div`
   background-position: center;
 `;
 
+
+
 export const Encuentra = () => {
   return (
     <>

@@ -57,6 +57,7 @@ const Inicio = () => {
               <Enlace className="enlaces" to="encuentratuprofe">
                 <img src={lupa} alt="icono" />
                 Encuentra tu Profe
+                <Span>En proceso</Span>
               </Enlace>
             </li>
             
@@ -70,5 +71,11 @@ const Inicio = () => {
   );
 };
 
-
+const Span = styled.span`
+  color: black;
+  font-size: 1rem;
+  position: absolute;
+  margin-top: 11.3rem;
+  text-transform: uppercase;
+`;
 export default Inicio;
