@@ -2,40 +2,57 @@ import { useEffect, useState } from "react";
 import { getAlumno } from "../../helpers/getRut";
 import { TarjetaProfesor } from "./TarjetaProfesor";
 
-export const ResultadoRut = ({ rutAlumno }) => {
+export const ResultadoRut = () => {
 
-    const [alumno, setAlumno] = useState([]);
+    const [rutAlumnos, setRutAlumnos] = useState('');
+
+    const [profe, setProfe] = useState(['']);
 
     const [tituloAlumno, setTituloAlumno] = useState({ Nombre_Alumno: '', Apellido_Paterno_Alumno: '', Apellido_Materno_Alumno: '' });
 
-    const getEstudiante = async () => {
-        const newAlumno = await getAlumno(rutAlumno);
-        setAlumno(newAlumno);
-        setTituloAlumno({
-            Nombre_Alumno: newAlumno[0].Nombre_Alumno,
-            Apellido_Paterno_Alumno: newAlumno[0].Apellido_Paterno_Alumno,
-            Apellido_Materno_Alumno: newAlumno[0].Apellido_Materno_Alumno
-        })
+    const onChange = (e) => {
+        const value = e.target.value;
+        setRutAlumnos(value);
     }
 
-    useEffect(() => {
-        getEstudiante();
-    }, [])
+    const onSubmit = async (e) => {
+        e.preventDefault();
+        const { respAlumno, docente } = await getAlumno(rutAlumnos);
+        setProfe(docente);
+        setTituloAlumno({
+            Nombre_Alumno: respAlumno.Nombre_Alumno,
+            Apellido_Paterno_Alumno: respAlumno.Apellido_Paterno_Alumno,
+            Apellido_Materno_Alumno: respAlumno.Apellido_Materno_Alumno
+        })
 
+    }
+
+    // useEffect(() => {
+    //     getEstudiante();
+    // }, [])
 
 
     return (
         <>
             <h3 className='titulo-alumno'>{`${tituloAlumno.Nombre_Alumno} ${tituloAlumno.Apellido_Paterno_Alumno} ${tituloAlumno.Apellido_Paterno_Alumno}`}</h3>
+
             <div className="contenedor-menu">
                 <p className="seleccionar">Selecciona el ramo que necesites encontrar:</p>
-
+                <form onSubmit={onSubmit}>
+                    <input
+                        className="input-rut"
+                        type="text"
+                        placeholder="INGRESA TU RUT"
+                        onChange={onChange}
+                        value={rutAlumnos}
+                    />
+                </form>
                 <ol>
                     {
-                        alumno.map((alumno) => (
+                        profe.map((profe, index) => (
                             <TarjetaProfesor
-                                key={alumno._id}
-                                {...alumno}
+                                key={index + 1}
+                                {...profe}
                             />
                         ))
                     }

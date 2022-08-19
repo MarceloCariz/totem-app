@@ -72,19 +72,19 @@ p {
     font-size: 38px;
     text-align: center;
     position: relative;
-    top: -250px;
+    top: -230px;
 }
 
 .contenedor {
     display: flex;
     flex-direction: column;
-    
+
 }
 
 .contenedor .lista-contenedor {
     text-align: center;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
 }
 
 .contenedor .lista-contenedor .titulo-docente {
@@ -103,13 +103,27 @@ p {
     background: #FFFFFF;
     border-radius: 0px 0px 20px 20px;
 }
-.seleccionar{
+
+.seleccionar {
     text-align: center;
     font-size: 46px;
     position: relative;
     top: 55px;
 }
-.contenedor-menu{
+
+.contenedor-menu {
     position: relative;
     top: -305px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-rut {
+    position: relative;
+    top: 30px;
+    text-align: center;
+    height: 70px;
+    width: 700px;
+    font-size: 50px;
 }

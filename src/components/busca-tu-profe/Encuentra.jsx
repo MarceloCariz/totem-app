@@ -26,10 +26,10 @@ export const Encuentra = () => {
           <h1 className='title-select'>Selecciona una categoría para iniciar tu búsqueda</h1>
 
           <ul className='forlist'>
-            <li className='list'>
+            {/* <li className='list'>
               <p>Según datos de profesor(a)</p>
               <Link className='btn' to='f' >INGRESA NOMBRE DEL PROFESOR(A)</Link>
-            </li>
+            </li> */}
             <li>
               <p>Según asignatura</p>
               <Link className='btn' to='buscarporrut' >INGRESA TU RUT</Link>

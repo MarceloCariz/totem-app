@@ -20,17 +20,15 @@ const Container = styled.div`
 
 export const BuscarRut = () => {
 
-    const [ rutAlumnos, setRutAlumnos ] = useState([ '208684221' ]);
+    // const [rutAlumnos, setRutAlumnos] = useState('');
     return (
         <>
             <Container>
-            <img className='img-icon' src={icon}/>
+                <img className='img-icon' src={icon} />
                 <div>
-                    {
-                        rutAlumnos.map((rutAlumno) => (
-                            <ResultadoRut key={rutAlumno} rutAlumno={rutAlumno} />
-                        ))
-                    }
+
+                    <ResultadoRut  />
+                
                 </div>
             </Container>
         </>
