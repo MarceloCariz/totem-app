@@ -13,20 +13,39 @@ const Container = styled.div`
   height: 100vh;
  background-size: 1080px 1920px;
  background-position: center;
+
 `;
 
 const Enlace = styled(Link)`
   text-decoration: none;
   z-index: 1;
 `;
+const  P = styled.p`
+  font-size: 3rem;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+`;
+
+const C = styled.p`
+ font-family: sans-serif;
+  text-align: center;
+`;
+
+const Div = styled.div`
+  display: flex;
+  width: 50%;
+  justify-content: center;
+`;
+
 const Inicio = () => {
 
   return (
     <>
       <Container className="">
-        <p className="p-inicio">En que te puedo ayudar</p>
-        <p className="sub-title">Seleciona una categoría:</p>
-        <div className="marco">
+        <P className="p-inicio">¿En que te puedo ayudar?</P>
+        <C className="sub-title">Selecciona una categoría:</C>
+        <Div className="marco">
           <ul className="listaEnlace">
             <li>
               <Enlace className="enlaces" to="preguntas">
@@ -40,50 +59,9 @@ const Inicio = () => {
                 Encuentra tu Profe
               </Enlace>
             </li>
-            {/* <li>
-              <Enlace className="enlaces" to="preguntas">
-                <img src={ask} alt="icono" />
-                Preguntas Frecuentes
-              </Enlace>
-            </li>
-            <li>
-              <Enlace className="enlaces" to="preguntas">
-                <img src={ask} alt="icono" />
-                Preguntas Frecuentes
-              </Enlace>
-            </li>
-            <li>
-              <Enlace className="enlaces" to="preguntas">
-                <img src={ask} alt="icono" />
-                Preguntas Frecuentes
-              </Enlace>
-            </li>
-            <li>
-              <Enlace className="enlaces" to="preguntas">
-                <img src={ask} alt="icono" />
-                Preguntas Frecuentes
-              </Enlace>
-            </li>
-            <li>
-              <Enlace className="enlaces" to="preguntas">
-                <img src={ask} alt="icono" />
-                Preguntas Frecuentes
-              </Enlace>
-            </li>
-            <li>
-              <Enlace className="enlaces" to="preguntas">
-                <img src={ask} alt="icono" />
-                Preguntas Frecuentes
-              </Enlace>
-            </li>
-            <li>
-              <Enlace className="enlaces" to="preguntas">
-                <img src={ask} alt="icono" />
-                Preguntas Frecuentes
-              </Enlace>
-            </li> */}
+            
           </ul>
-        </div>
+        </Div>
         <Toti />
 
       </Container>
