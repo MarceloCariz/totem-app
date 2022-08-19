@@ -64,7 +64,7 @@ export const ResultadoRut = () => {
                     />
                     <Button>Buscar</Button>
                 </Form>
-                {/* <ol> */}
+                <Ol className="example">
                     { active ?
                         profe.map((profe, index) => (
                            <div key={index + 1} onClick={(e)=> handleClick({...profe},e)}>
@@ -75,12 +75,17 @@ export const ResultadoRut = () => {
                    
                         )) : ''
                     }
-                {/* </ol> */}
+                </Ol>
             </div>
         </>
     )
 }
-
+const Ol  = styled.div`
+margin-top: 15rem;
+  height: 700px ;
+  position: absolute; 
+  overflow-y: scroll;
+`;
 const Button = styled.button`
     padding: 1rem 2rem 1rem 2rem;
     background-color: #FFB71B;
