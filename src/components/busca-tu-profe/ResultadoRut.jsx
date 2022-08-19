@@ -8,7 +8,7 @@ import { TarjetaProfesor } from "./TarjetaProfesor";
 export const ResultadoRut = () => {
 
     const [rutAlumnos, setRutAlumnos] = useState('');
-
+    const [active, setActive] = useState(false)
     const [profe, setProfe] = useState(['']);
 
     const [tituloAlumno, setTituloAlumno] = useState({ Nombre_Alumno: '', Apellido_Paterno_Alumno: '', Apellido_Materno_Alumno: '' });
@@ -18,6 +18,10 @@ export const ResultadoRut = () => {
     const onChange = (e) => {
         const value = e.target.value;
         setRutAlumnos(value);
+        if(e.target.value === ''){
+            setActive(false)
+            setTituloAlumno({})
+        }
     }
 
     const onSubmit = async (e) => {
@@ -29,6 +33,7 @@ export const ResultadoRut = () => {
             Apellido_Paterno_Alumno: respAlumno.Apellido_Paterno_Alumno,
             Apellido_Materno_Alumno: respAlumno.Apellido_Materno_Alumno
         })
+        setActive(true)
 
     }
 
@@ -44,7 +49,7 @@ export const ResultadoRut = () => {
 
     return (
         <>
-            <h3 className='titulo-alumno'>{`${tituloAlumno.Nombre_Alumno} ${tituloAlumno.Apellido_Paterno_Alumno} ${tituloAlumno.Apellido_Paterno_Alumno}`}</h3>
+            <h3 className='titulo-alumno'>{ active ?`${tituloAlumno.Nombre_Alumno} ${tituloAlumno.Apellido_Paterno_Alumno} ${tituloAlumno.Apellido_Paterno_Alumno}` : ''}</h3>
 
             <div className="contenedor-menu">
                 <p className="seleccionar">Selecciona el ramo que necesites encontrar:</p>
@@ -59,18 +64,18 @@ export const ResultadoRut = () => {
                     />
                     <Button>Buscar</Button>
                 </Form>
-                <ol>
-                    {
+                {/* <ol> */}
+                    { active ?
                         profe.map((profe, index) => (
                            <div key={index + 1} onClick={(e)=> handleClick({...profe},e)}>
-                        <TarjetaProfesor  {...profe}/>
+                                <TarjetaProfesor  {...profe}/>
 
                            </div>
                          
                    
-                        ))
+                        )) : ''
                     }
-                </ol>
+                {/* </ol> */}
             </div>
         </>
     )

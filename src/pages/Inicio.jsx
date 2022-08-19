@@ -43,7 +43,7 @@ const Inicio = () => {
   return (
     <>
       <Container className="">
-        <P className="p-inicio">¿En que te puedo ayudar?</P>
+        <P className="p-inicio">¿En qué te puedo ayudar?</P>
         <C className="sub-title">Selecciona una categoría:</C>
         <Div className="marco">
           <ul className="listaEnlace">
