@@ -1,7 +1,7 @@
 .numeric-pad {
     position: relative;
-    width: 850px;
-    top: 250px;
+    /* width: 850px; */
+    /* top: 250px; */
     padding: 20px;
     z-index: 3;
     text-align: center;
@@ -19,7 +19,7 @@
 }
 
 .limpiar-pad {
-    width: 95%;
+    width: 75%;
     height: 150px;
     margin: 5px;
     font-size: 60px;

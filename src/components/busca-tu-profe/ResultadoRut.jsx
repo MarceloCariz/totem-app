@@ -71,12 +71,13 @@ export const ResultadoRut = () => {
                     }}><FontAwesomeIcon icon={faTrashCan} />
                 </Button>
                 </Form>
-
-
-                {
+                
+                <Div>
+                 {
                     (padState) ? <NumericPad setRutAlumnos={setRutAlumnos} rutAlumnos={rutAlumnos}/> : null
-                }
+                } 
 
+                </Div>
 
 
                 <ol className="example">
@@ -114,4 +115,10 @@ const Button = styled.button`
 const Form = styled.form`
   display: flex;
   justify-items: center;  
+`;
+
+const Div = styled.div`
+    width: 70% ; 
+    height: 100px;
+    /* position: absolute; */
 `;
