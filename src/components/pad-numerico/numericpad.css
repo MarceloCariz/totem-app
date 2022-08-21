@@ -1,0 +1,30 @@
+.numeric-pad {
+    position: relative;
+    width: 850px;
+    top: 250px;
+    padding: 20px;
+    z-index: 3;
+    text-align: center;
+}
+
+.numeric-pad-button {
+    margin: 10px;
+    width: 30%;
+    height: 150px;
+    font-size: 60px;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    box-shadow: none;
+}
+
+.limpiar-pad {
+    width: 95%;
+    height: 150px;
+    margin: 5px;
+    font-size: 60px;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    box-shadow: none;
+}

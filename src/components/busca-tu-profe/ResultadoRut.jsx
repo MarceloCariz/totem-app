@@ -1,15 +1,20 @@
-import { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { getAlumno } from "../../helpers/getRut";
 import useOpciones from "../../hooks/useOpciones";
+import { NumericPad } from "../pad-numerico/NumericPad";
 import { TarjetaProfesor } from "./TarjetaProfesor";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTrashCan } from '@fortawesome/free-solid-svg-icons'
 
 export const ResultadoRut = () => {
 
     const [rutAlumnos, setRutAlumnos] = useState('');
     const [active, setActive] = useState(false)
     const [profe, setProfe] = useState(['']);
+
+    const [padState, setPadState] = useState(true);
 
     const [tituloAlumno, setTituloAlumno] = useState({ Nombre_Alumno: '', Apellido_Paterno_Alumno: '', Apellido_Materno_Alumno: '' });
 
@@ -34,17 +39,13 @@ export const ResultadoRut = () => {
             Apellido_Materno_Alumno: respAlumno.Apellido_Materno_Alumno
         })
         setActive(true)
-
+        setPadState(false);
     }
 
     const handleClick = (e) =>{
         setAsignatura(e)
         navigate('salas')
     }
-
-    // useEffect(() => {
-    //     getEstudiante();
-    // }, [])
 
 
     return (
@@ -63,8 +64,22 @@ export const ResultadoRut = () => {
                         maxLength={9}
                     />
                     <Button>Buscar</Button>
+                    <Button onClick={() => {
+                        setRutAlumnos("");
+                        setProfe([]);
+                        setPadState(true);
+                    }}><FontAwesomeIcon icon={faTrashCan} />
+                </Button>
                 </Form>
-                <Ol className="example">
+
+
+                {
+                    (padState) ? <NumericPad setRutAlumnos={setRutAlumnos} rutAlumnos={rutAlumnos}/> : null
+                }
+
+
+
+                <ol className="example">
                     { active ?
                         profe.map((profe, index) => (
                            <div key={index + 1} onClick={(e)=> handleClick({...profe},e)}>
@@ -75,7 +90,7 @@ export const ResultadoRut = () => {
                    
                         )) : ''
                     }
-                </Ol>
+                </ol>
             </div>
         </>
     )
