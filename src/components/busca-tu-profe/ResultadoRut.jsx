@@ -18,12 +18,12 @@ export const ResultadoRut = () => {
 
     const [tituloAlumno, setTituloAlumno] = useState({ Nombre_Alumno: '', Apellido_Paterno_Alumno: '', Apellido_Materno_Alumno: '' });
 
-    const {setAsignatura} = useOpciones();
+    const { setAsignatura } = useOpciones();
     const navigate = useNavigate();
     const onChange = (e) => {
         const value = e.target.value;
         setRutAlumnos(value);
-        if(e.target.value === ''){
+        if (e.target.value === '') {
             setActive(false)
             setTituloAlumno({})
         }
@@ -42,7 +42,7 @@ export const ResultadoRut = () => {
         setPadState(false);
     }
 
-    const handleClick = (e) =>{
+    const handleClick = (e) => {
         setAsignatura(e)
         navigate('salas')
     }
@@ -50,11 +50,14 @@ export const ResultadoRut = () => {
 
     return (
         <>
-            <h3 className='titulo-alumno'>{ active ?`${tituloAlumno.Nombre_Alumno} ${tituloAlumno.Apellido_Paterno_Alumno} ${tituloAlumno.Apellido_Paterno_Alumno}` : ''}</h3>
 
             <div className="contenedor-menu">
+                <h3 className='titulo-alumno'>{active ? `${tituloAlumno.Nombre_Alumno} ${tituloAlumno.Apellido_Paterno_Alumno} ${tituloAlumno.Apellido_Paterno_Alumno}` : ''}</h3>
+
                 <p className="seleccionar">Selecciona el ramo que necesites encontrar:</p>
-                <Form onSubmit={onSubmit}>
+                <Form
+                    className="formulario"
+                    onSubmit={onSubmit}>
                     <input
                         className="input-rut"
                         type="text"
@@ -69,26 +72,29 @@ export const ResultadoRut = () => {
                         setProfe([]);
                         setPadState(true);
                     }}><FontAwesomeIcon icon={faTrashCan} />
-                </Button>
+                    </Button>
+
                 </Form>
-                
-                <Div>
-                 {
-                    (padState) ? <NumericPad setRutAlumnos={setRutAlumnos} rutAlumnos={rutAlumnos}/> : null
-                } 
+                <Div
+                    className="pad-numerico">
+                    {
+                        (padState) ? <NumericPad setRutAlumnos={setRutAlumnos} rutAlumnos={rutAlumnos} /> : null
+                    }
 
                 </Div>
 
 
-                <ol className="example">
-                    { active ?
-                        profe.map((profe, index) => (
-                           <div key={index + 1} onClick={(e)=> handleClick({...profe},e)}>
-                                <TarjetaProfesor  {...profe}/>
 
-                           </div>
-                         
-                   
+
+                <ol className="lista-profe">
+                    {active ?
+                        profe.map((profe, index) => (
+                            <div key={index + 1} onClick={(e) => handleClick({ ...profe }, e)}>
+                                <TarjetaProfesor  {...profe} />
+
+                            </div>
+
+
                         )) : ''
                     }
                 </ol>
@@ -96,7 +102,7 @@ export const ResultadoRut = () => {
         </>
     )
 }
-const Ol  = styled.div`
+const Ol = styled.div`
 margin-top: 15rem;
   height: 700px ;
   position: absolute; 

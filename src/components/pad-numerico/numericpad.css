@@ -1,5 +1,5 @@
 .numeric-pad {
-    position: relative;
+    position: sticky;
     /* width: 850px; */
     /* top: 250px; */
     padding: 20px;
@@ -10,21 +10,24 @@
 .numeric-pad-button {
     margin: 10px;
     width: 30%;
-    height: 150px;
+    height: 170px;
     font-size: 60px;
-    border-radius: 5px;
+    border-radius: 15px;
     border: 0;
     outline: none;
     box-shadow: none;
+    background: rgba(255, 255, 255, 0.59);
+    color: #ffff ;
 }
 
 .limpiar-pad {
     width: 75%;
     height: 150px;
-    margin: 5px;
+    margin: 15px;
     font-size: 60px;
     border-radius: 5px;
     border: 0;
     outline: none;
     box-shadow: none;
+    background: rgba(255, 255, 255, 0.59);
 }
