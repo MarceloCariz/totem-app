@@ -76,7 +76,7 @@ export const Encuentra = () => {
             <form onSubmit={handleSubmitRut}>
             <P>Según asignatura</P>
               {/* <Link  to='buscarporrut' > */}
-                <Input negro={numpad} onClick={activeNumpad} type="text" onChange={onChangeRut}    value={rutAlumnos.length === 0 ?'INGRESA TU RUT' : rutAlumnos}
+                <Input negro={numpad} onClick={activeNumpad} type="text" onChange={onChangeRut}   value={numpad ?rutAlumnos : 'INGRESA TU RUT'}
                         maxLength={9} />
               {/* </Link> */}
             </form>
