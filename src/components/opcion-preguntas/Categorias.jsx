@@ -49,7 +49,9 @@ const Categorias = () => {
                                         <div key={_id}>
                                             <li>
                                                 <Div>
-                                                    <Link className='subcategorias' to={{ pathname: `${subcategoria}` }}>{subcategoria}</Link>
+                                                    <Link className='subcategorias ' to={{ pathname: `${subcategoria}` }}>
+                                                        <p className='texto'>{subcategoria}</p>         
+                                                    </Link>
                                                     <Flecha src={flecha} />
 
                                                 </Div>
@@ -84,8 +86,11 @@ const Div = styled.div`
   gap: 8rem;
   justify-content: center;
   align-items:center;
-  text-transform: capitalize;   
+  /* text-transform: lowercase ;    */
+  
 `;
+
+
 const Flecha = styled.img`
   /* margin-top: 1rem; */
   position: relative;

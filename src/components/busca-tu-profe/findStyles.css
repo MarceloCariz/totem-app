@@ -73,7 +73,7 @@ p {
     font-size: 38px;
     text-align: center;
     position: fixed;
-    top: 250px;
+    top: 350px;
 }
 
 .contenedor {
@@ -113,7 +113,7 @@ p {
     font-family: sans-serif;
     font-size: 46px;
     position: relative;
-    top: 120px;
+    top: 220px;
 }
 .formulario{
     display: flex;
@@ -160,5 +160,5 @@ p {
 }
 .lista-profe{
     position: fixed;
-    top: 605px;
+    top: 750px;
 }

@@ -52,7 +52,7 @@ const Preguntas = () => {
 
         <p className='preg'>¿EN QUÉ TE PUEDO AYUDAR?</p>
         <DivBusqueda>
-          <input className='input-palcl' onChange={handleInputChange} value={busqueda} type="text" placeholder='Ingrese la categoria' />
+          <input className='input-palcl' onChange={handleInputChange} value={busqueda} type="text" placeholder='Ingrese la categoría' />
           <IconBusqueda src={busquedaIcon} alt="" />
         </DivBusqueda>
         <img src={barraBusqueda} alt="" />
