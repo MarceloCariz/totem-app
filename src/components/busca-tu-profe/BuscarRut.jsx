@@ -1,7 +1,8 @@
 import './findStyles.css'
 import { useState } from 'react';
 import styled from "styled-components";
-import fondo from '../../pages/image/FrenteAVaras.png'
+import fondo from './img/frentesedeblur.png'
+
 import { ResultadoRut } from './ResultadoRut';
 import icon from './img/Vector.png'
 

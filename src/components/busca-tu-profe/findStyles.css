@@ -24,42 +24,43 @@
 }
 
 p {
-    font-family: 'Inter';
+    font-family: sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 30px;
     line-height: 44px;
+    text-align: center;
     color: #FFFFFF;
 }
 
-.btn {
+/* .btn {
     text-decoration: none;
     box-sizing: border-box;
-    width: 472px;
-    height: 104px;
     background: rgba(255, 255, 255, 0.59);
     border-radius: 22px;
     cursor: pointer;
-    font-family: 'Inter';
+    font-family: sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
     color: #000000;
-    padding: 35px;
-}
+    padding: 2rem 16rem 2rem 20rem; 
+} */
 
 .forlist {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    justify-content: center;
+    /* width: 700px; */
+    border: #FFB71B solid;
 }
 
-.forlist .list {
+/* .forlist .list {
     padding: 90px;
     width: 472px;
     height: 104px;
-}
+} */
 
 .img-icon {
     position: fixed;
@@ -68,11 +69,11 @@ p {
 
 .titulo-alumno {
     color: #FFB71B;
-    font-family: 'Inter';
+    font-family: sans-serif;
     font-size: 38px;
     text-align: center;
     position: fixed;
-    top: 235px;
+    top: 250px;
 }
 
 .contenedor {
@@ -112,7 +113,7 @@ p {
     font-family: sans-serif;
     font-size: 46px;
     position: relative;
-    top: -15px;
+    top: 120px;
 }
 .formulario{
     display: flex;
@@ -144,7 +145,17 @@ p {
 }
 .pad-numerico{
     position: fixed;
-    top: 502px;
+    top: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    /* filter: blur(2); */
+    background-image: url('img/frentesedeblur.png');
+    background-position: bottom ;
+    padding-bottom: 21%;
+    margin-bottom: 12rem;
 
 }
 .lista-profe{
