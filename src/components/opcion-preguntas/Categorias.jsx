@@ -24,15 +24,30 @@ const Categorias = () => {
     // console.log(subcategoria)
 
     useEffect(() => {
+     
         const comprobar = async () => {
             let resultado = subcategoria.filter(({ categoria }) => { return categoria === categoriaParams })
-            //  resultado
-            setSubCategorias(resultado)
-            //  console.log(subcategorias)
+            console.log(resultado.length === 1)
+             if(resultado.length  === 1 ){
+                // console.log('true')
+                setSubCategorias(resultado)
 
+                navigate(`${resultado[0].subcategoria}`);
+                // return
+            }
+                setSubCategorias(resultado)
+
+            
+
+          
+            // console.log('1')
         }
         comprobar();
-    }, [subcategoria, categoriaParams])
+   
+
+        // console.log(subcategorias[0].subcategoria)
+
+    }, [  ])
 
     return (
         <>

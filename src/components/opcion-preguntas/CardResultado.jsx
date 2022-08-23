@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 import './preguntas.css';
 
 
@@ -23,5 +24,6 @@ const CardResultado = ({ resultado, handleClick, respuestaF , active}) => {
     </>
   );
 };
+
 
 export default CardResultado;

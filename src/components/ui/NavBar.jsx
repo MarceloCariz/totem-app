@@ -22,7 +22,7 @@ const NavBar = () => {
 
        <Div>
       {
-        location.pathname === '/inicio' || location.pathname ==='/inicio/evaluacion'  ?
+        location.pathname === '/inicio' || location.pathname ==='/inicio/evaluacion'   ?
         (<img  src={prev} alt="prev" />) :
       (<img onClick={()=> navigate(-1)} src={prev_activo} alt="prev"/>)
       }

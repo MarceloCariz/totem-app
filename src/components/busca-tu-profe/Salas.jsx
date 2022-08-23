@@ -5,15 +5,16 @@ import useOpciones from '../../hooks/useOpciones';
 import fondo from './img/sedeblur.png'
 import gotaR from './img/gotaverdeR.png';
 import gotaL from './img/gotaverdeL.png';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Salas = () => {
     const [imagen, setImagen] = useState(false)
-    const {asignatura} = useOpciones();
+    const {asignatura, setCategoriaEvaluacion} = useOpciones();
     // console.log(asignatura)
     const {Aula, Nom_Asignatura, Final, HorInic}= asignatura;
     const sala = Aula.replace('AV-','').trim();
     // console.log(sala)
-
+    const navigate = useNavigate()
     const handleEnter = () =>{
         setImagen(true)
         console.log('1')
@@ -22,6 +23,10 @@ const Salas = () => {
     const handleLeave = () =>{
         setImagen(false)
         console.log('2')
+    }
+    const handleAddCategory = () =>{
+      setCategoriaEvaluacion('Encuentra a tu profe')
+      navigate('/inicio/evaluacion')
     }
   return (
     <Fondo>
@@ -44,6 +49,8 @@ const Salas = () => {
         </ContenedorHorario>
   
         <Img ampliar={imagen}   onTouchStart={handleEnter}  src={`https://totem.ivaras.cl:7002/salas/${sala}.png`} alt="" />
+        <Boton onClick={handleAddCategory} >Salir</Boton>
+
     </Div>
     </Fondo>
     
@@ -58,7 +65,19 @@ const A = styled.div`
 
     /* width: 100px; */
 `;
-
+const Boton = styled.button`
+margin-top: -25px;
+  background-color: #FFB71B;
+  padding: 1rem 5rem 1rem 5rem;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  font-weight: 800;
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: 700;
+`;
 const NA = styled.p`
 font-family: sans-serif;
     font-size: 1.2rem;

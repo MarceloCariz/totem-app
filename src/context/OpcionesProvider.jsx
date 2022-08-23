@@ -12,6 +12,7 @@ const OpcionesProvider =({children}) =>{
     const [preguntas, setPreguntas] = useState({data:[], categorias: {}, subcategoria: []});
     const [preguntaSeleccionada, setPreguntaSeleccionada] = useState([]);
     const [asignatura, setAsignatura] = useState([])
+    const [categoriaEvaluacion, setCategoriaEvaluacion] = useState('')
     const [profe, setProfe] = useState(['']);
     const [tituloAlumno, setTituloAlumno] = useState({ Nombre_Alumno: '', Apellido_Paterno_Alumno: '', Apellido_Materno_Alumno: '' });
 
@@ -33,7 +34,7 @@ const OpcionesProvider =({children}) =>{
 
     return(
         <OpcionesContext.Provider value={{preguntas, setPreguntaSeleccionada, preguntaSeleccionada, setAsignatura, asignatura,
-            setTituloAlumno, tituloAlumno, setProfe, profe
+            setTituloAlumno, tituloAlumno, setProfe, profe, setCategoriaEvaluacion, categoriaEvaluacion
         
         }}>
             {children}

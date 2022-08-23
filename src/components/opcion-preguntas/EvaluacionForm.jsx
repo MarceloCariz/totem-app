@@ -8,9 +8,9 @@ import { RiEmotionUnhappyLine } from "react-icons/ri";
 import totiHead from './icons/toti-decabeza.png'
 
 const EvaluacionForm = () => {
-  const { preguntaSeleccionada } = useOpciones();
+  const { preguntaSeleccionada, setPreguntaSeleccionada, categoriaEvaluacion, setCategoriaEvaluacion } = useOpciones();
   const navigate = useNavigate();
-
+  console.log(categoriaEvaluacion)
   const [evaluacion, setEvaluacion] = useState({
     pregunta: "",
     respuesta: "",
@@ -42,7 +42,10 @@ const EvaluacionForm = () => {
 
   const handleEnviar = async (e) => {
     e.preventDefault();
-    await enviarEvaluacion({ ...evaluacion, categoria: 'pregunta' })
+
+    await enviarEvaluacion({ ...evaluacion, categoria: categoriaEvaluacion })
+    setPreguntaSeleccionada({})
+    setCategoriaEvaluacion('')
     navigate("/inicio");
   };
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import useOpciones from '../../../hooks/useOpciones';
 // import { Logo } from '../logo/Logo';
@@ -7,9 +7,14 @@ import logo from '../icons/logo-preguntas.png'
 
 
 export const Pregunta = () => {
-  const { preguntaSeleccionada } = useOpciones();
+  const { preguntaSeleccionada ,setCategoriaEvaluacion} = useOpciones();
+  const navigate = useNavigate();
   console.log(preguntaSeleccionada)
   const {pregunta, respuesta} = preguntaSeleccionada;
+  const handleAddCategory = () =>{
+    setCategoriaEvaluacion('preguntas')
+    navigate('/inicio/evaluacion')
+  }
   return (
     <Div>
             <Img src={logo} alt="" />
@@ -21,13 +26,13 @@ export const Pregunta = () => {
               </P>
               {respuesta}
             </Contenedor>
-            <Boton to="/inicio/evaluacion">Salir</Boton>
+            <Boton  onClick={handleAddCategory}>Salir</Boton>
 
 
     </Div>
   )
 }
-const Boton = styled(Link)`
+const Boton = styled.button`
 margin-top: -20px;
   background-color: #FFB71B;
   padding: 1rem 5rem 1rem 5rem;
@@ -42,6 +47,7 @@ margin-top: -20px;
 const P = styled.p`
   text-align:center;
   font-weight: 700;
+  color: black;
 `;
 const Contenedor = styled.div`
   display: flex;
