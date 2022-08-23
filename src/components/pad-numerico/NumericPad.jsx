@@ -1,6 +1,9 @@
 import styled from "styled-components";
 import "./numericpad.css";
-
+import flechaBuscar from './icons/flechaBuscar.png';
+import volver from './icons/volver.png';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
 export const NumericPad = ({ setRutAlumnos, rutAlumnos, activeNumpad, submit }) => {
   const onClickRut = (e) => {
     const value = e.currentTarget.value
@@ -13,9 +16,19 @@ export const NumericPad = ({ setRutAlumnos, rutAlumnos, activeNumpad, submit }) 
   return (
 <>
 <Div>
-<Button onClick={activeNumpad} className="limpiar-pad">Cerrar</Button>
-<Button onClick={onCleanRut} className="limpiar-pad">Limpiar</Button>
-<Button onClick={submit} className="limpiar-pad">Buscar</Button>
+<Volver onClick={activeNumpad} >
+  {/* Volver */}
+  <img src={volver} alt="" />
+</Volver>
+<button onClick={onCleanRut} className="limpiar-pad">
+  <FontAwesomeIcon icon={faTrash}/>
+  Limpiar
+  </button>
+<Buscar onClick={submit}>
+Buscar
+<img src={flechaBuscar} alt="" />
+
+</Buscar>
 </Div>
 
 
@@ -42,10 +55,32 @@ export const NumericPad = ({ setRutAlumnos, rutAlumnos, activeNumpad, submit }) 
 
 const Div = styled.div`
   display: flex;
-  justify-content: space-between;
-  gap: 15rem;
+  justify-content:space-between;
+  /* gap: 15rem; */
+  width: 93%;
+  margin-bottom: 1rem;
+
 ` 
 
-const Button = styled.button`
-  
+const Buscar = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background: rgb(145,145,144, 0.7);
+  font-family: sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  font-size: 2rem;
+  width: 251px;
+  height: 75px;
+  border: 2px solid rgba(255, 255, 255, 0.59);
+  border-radius: 0px 22px 22px 0px;
+  background-color: transparent;
+`;
+
+const Volver = styled.button`
+  background-color: transparent;
+  border: none;
 `;

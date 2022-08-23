@@ -27,14 +27,12 @@ const Categorias = () => {
      
         const comprobar = async () => {
             let resultado = subcategoria.filter(({ categoria }) => { return categoria === categoriaParams })
-            console.log(resultado.length === 1)
-             if(resultado.length  === 1 ){
-                // console.log('true')
-                setSubCategorias(resultado)
+            // console.log(resultado.length === 1)
+            //  if(resultado.length  === 1 ){
+            //     setSubCategorias(resultado)
 
-                navigate(`${resultado[0].subcategoria}`);
-                // return
-            }
+            //     navigate(`${resultado[0].subcategoria}`);
+            // }
                 setSubCategorias(resultado)
 
             
