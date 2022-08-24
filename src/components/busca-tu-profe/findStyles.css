@@ -175,7 +175,11 @@ p {
 
 .lista-profe {
     position: fixed;
-    top: 750px;
+    top: 630px;
+    height: 36%;
+    padding-top: 5rem;
+    /* height: 30%; */
+    overflow-y: scroll; 
 }
 
 
@@ -208,8 +212,3 @@ p {
     top: 600px;
 }
 
-.lista-profesor{
-    overflow: hidden scroll;
-    overflow-x: hidden;
-    overflow-anchor: 1px;
-}

@@ -27,7 +27,7 @@ export const ResultadoRut = () => {
 
                 <p className="seleccionar">Selecciona el ramo que necesites encontrar:</p>
             
-                <ol className="lista-profe">
+                <ol className="lista-profe example">
                     {profe.length > 0 ?
                         profe.map((profe, index) => (
                             <div  key={index + 1} onClick={(e) => handleClick({ ...profe }, e)}>
