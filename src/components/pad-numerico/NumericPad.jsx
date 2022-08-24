@@ -14,41 +14,41 @@ export const NumericPad = ({ setRutAlumnos, rutAlumnos, activeNumpad, submit }) 
 
 
   return (
-<>
-<Div>
-<Volver onClick={activeNumpad} >
-  {/* Volver */}
-  <img src={volver} alt="" />
-</Volver>
-<button onClick={onCleanRut} className="limpiar-pad">
-  <FontAwesomeIcon icon={faTrash}/>
-  Limpiar
-  </button>
-<Buscar onClick={submit}>
-Buscar
-<img src={flechaBuscar} alt="" />
+    <>
+      <Div>
+        <Volver onClick={activeNumpad} >
+          {/* Volver */}
+          <img src={volver} alt="" />
+        </Volver>
+        <button onClick={onCleanRut} className="limpiar-pad">
+          <FontAwesomeIcon icon={faTrash} />
+          Limpiar
+        </button>
+        <Buscar onClick={submit}>
+          Buscar
+          <img src={flechaBuscar} alt="" />
 
-</Buscar>
-</Div>
-
-
-
-    <div className="numeric-pad">
+        </Buscar>
+      </Div>
 
 
-      <button value="1" onClick={onClickRut} className="numeric-pad-button">1</button>
-      <button value="2" onClick={onClickRut} className="numeric-pad-button">2</button>
 
-      <button value="3" onClick={onClickRut} className="numeric-pad-button">3</button>
-      <button value="4" onClick={onClickRut} className="numeric-pad-button">4</button>
-      <button value="5" onClick={onClickRut} className="numeric-pad-button">5</button>
-      <button value="6" onClick={onClickRut} className="numeric-pad-button">6</button>
-      <button value="7" onClick={onClickRut} className="numeric-pad-button">7</button>
-      <button value="8" onClick={onClickRut} className="numeric-pad-button">8</button>
-      <button value="9" onClick={onClickRut} className="numeric-pad-button">9</button>
-      <button value="0" onClick={onClickRut} className="numeric-pad-button">0</button>
-      <button value="K" onClick={onClickRut} className="numeric-pad-button">K</button>
-    </div>
+      <div className="numeric-pad">
+
+
+        <button value="1" onClick={onClickRut} className="numeric-pad-button">1</button>
+        <button value="2" onClick={onClickRut} className="numeric-pad-button">2</button>
+
+        <button value="3" onClick={onClickRut} className="numeric-pad-button">3</button>
+        <button value="4" onClick={onClickRut} className="numeric-pad-button">4</button>
+        <button value="5" onClick={onClickRut} className="numeric-pad-button">5</button>
+        <button value="6" onClick={onClickRut} className="numeric-pad-button">6</button>
+        <button value="7" onClick={onClickRut} className="numeric-pad-button">7</button>
+        <button value="8" onClick={onClickRut} className="numeric-pad-button">8</button>
+        <button value="9" onClick={onClickRut} className="numeric-pad-button">9</button>
+        <button value="0" onClick={onClickRut} className="numeric-pad-button">0</button>
+        <button value="K" onClick={onClickRut} className="numeric-pad-button">K</button>
+      </div>
     </>
   );
 };
@@ -60,7 +60,7 @@ const Div = styled.div`
   width: 93%;
   margin-bottom: 1rem;
 
-` 
+`
 
 const Buscar = styled.button`
   display: flex;

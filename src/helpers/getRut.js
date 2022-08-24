@@ -2,7 +2,8 @@
 export const getAlumno = async ( rutAlumno='') => {
 
     console.log(rutAlumno)
-    const url = `https://totem.ivaras.cl:7002/api/alumnos/${rutAlumno}`
+    
+    const url = `https://totem.ivaras.cl:7002/api/alumnos/${rutAlumno}`;
     const resp = await fetch(url);
     const { alumno , docente } = await resp.json();
     const respAlumno ={
