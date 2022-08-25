@@ -11,6 +11,7 @@ export const Keyboard = ({ nameDocente, setNameDocente, activeKeyboard, submit }
         const value = e.currentTarget.value
         setNameDocente(nameDocente + `${value}`);
     }
+
     const onCleanName = () => { setNameDocente(""); }
 
 
@@ -29,6 +30,7 @@ export const Keyboard = ({ nameDocente, setNameDocente, activeKeyboard, submit }
                     <img src={flechaBuscar} alt="" />
                 </Buscar>
             </Div>
+            
             <div className='teclado'>
                 <div className="primera-linea">
                     <button value="Q" onClick={onClickName} className="tecla">Q</button>

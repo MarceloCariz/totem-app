@@ -90,7 +90,7 @@ export const Encuentra = () => {
           <h1 className='title-select'>Selecciona una categoría para iniciar tu búsqueda</h1>
 
           <Contenedor className='contenedor-form'>
-            <div className='div-form'>
+            
               <form className='formulario-docente' onSubmit={handleSubmitName}>
                 <p className='titulo-docente'>Según datos de profesor(a)</p>
                 <Input1 negro={keyboard} onClick={activeKeyboard} type='text' readOnly onChange={onChangeProfe} value={keyboard ? profe : 'INGRESA NOMBRE DEL PROFESOR(A)'} />
@@ -122,7 +122,6 @@ export const Encuentra = () => {
 
                   </div>) : ''
               }
-            </div>
           </Contenedor>
         </div>
       </Container>
