@@ -40,7 +40,7 @@ export const Encuentra = () => {
     setProfe(value);
     if (e.target.value === '') {
       setActive(false)
-      setProfe()
+      setProfe({})
     }
   }
 
@@ -61,6 +61,7 @@ export const Encuentra = () => {
   }
   const activeKeyboard = () => {
     setKeyboard(!keyboard);
+    console.log(keyboard)
   }
 
   const handleSubmitName = async (e) => {
@@ -89,36 +90,39 @@ export const Encuentra = () => {
           <h1 className='title-select'>Selecciona una categoría para iniciar tu búsqueda</h1>
 
           <Contenedor className='contenedor-form'>
-            <form className='formulario-docente' onSubmit={handleSubmitName}>
-              <p className='titulo-docente'>Según datos de profesor(a)</p>
-              <Input1 negro={keyboard} onClick={activeKeyboard} type='text' readOnly onChange={onChangeProfe} value={keyboard ? profe : 'INGRESA NOMBRE DEL PROFESOR(A)'} />
-            </form>
-            {
-              keyboard ?
-                (<div className='keyboard'>
-                  {
-                    <Keyboard setNameDocente={setProfe} nameDocente={profe} activeKeyboard={activeKeyboard} submit={handleSubmitName} />
-                  }
+            <div className='div-form'>
+              <form className='formulario-docente' onSubmit={handleSubmitName}>
+                <p className='titulo-docente'>Según datos de profesor(a)</p>
+                <Input1 negro={keyboard} onClick={activeKeyboard} type='text' readOnly onChange={onChangeProfe} value={keyboard ? profe : 'INGRESA NOMBRE DEL PROFESOR(A)'} />
+              </form>
+              {
+                keyboard ?
+                  (<div
+                    className='keyboard'>
+                    {
+                      <Keyboard setNameDocente={setProfe} nameDocente={profe} activeKeyboard={activeKeyboard} submit={handleSubmitName} />
+                    }
 
-                </div>) : ''
-            }
+                  </div>) : ''
+              }
 
-            <form className='fomulario-rut' onSubmit={handleSubmitRut}>
-              <P className='titulo-rut'>Según asignatura</P>
-              <Input negro={numpad} onClick={activeNumpad} type="text" readOnly onChange={onChangeRut} value={numpad ? rutAlumnos : 'INGRESA TU RUT'}
-                maxLength={9} />
-            </form>
-            {
-              numpad ?
-                (<div
-                  className="pad-numerico"
-                >
-                  {
-                    <NumericPad setRutAlumnos={setRutAlumnos} rutAlumnos={rutAlumnos} activeNumpad={activeNumpad} submit={handleSubmitRut} />
-                  }
+              <form className='fomulario-rut' onSubmit={handleSubmitRut}>
+                <P className='titulo-rut'>Según asignatura</P>
+                <Input negro={numpad} onClick={activeNumpad} type="text" readOnly onChange={onChangeRut} value={numpad ? rutAlumnos : 'INGRESA TU RUT'}
+                  maxLength={9} />
+              </form>
+              {
+                numpad ?
+                  (<div
+                    className="pad-numerico"
+                  >
+                    {
+                      <NumericPad setRutAlumnos={setRutAlumnos} rutAlumnos={rutAlumnos} activeNumpad={activeNumpad} submit={handleSubmitRut} />
+                    }
 
-                </div>) : ''
-            }
+                  </div>) : ''
+              }
+            </div>
           </Contenedor>
         </div>
       </Container>
