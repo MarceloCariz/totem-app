@@ -2,8 +2,12 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import fondo from '../pages/image/FrenteAVaras.png'
 import lupa from '../pages/image/lupa.png'
+import tour from '../pages/image/TOURVIRTUAL.png'
 import Toti from "../components/ui/Toti";
 import ask from '../components/ui/icons/preguntas.png'
+import { crearClick } from "../helpers/getClicks";
+import { useEffect, useState } from "react";
+import { TourVirtual } from "../components/tour-virtual/TourVirtual";
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -40,6 +44,29 @@ const Div = styled.div`
 
 const Inicio = () => {
 
+  const [tourQr, setTourQr] = useState(false);
+
+  if (tourQr){
+    setTimeout(() => {setTourQr(!tourQr);}, 60000)
+  }
+
+  const onClickTour = () => {
+
+
+    setTourQr(!tourQr);
+  }
+
+
+  const vistaInicio = {
+    idVista: 1,
+    nombreVista: "VISTA INICIO"
+  };
+
+  
+  useEffect(() => {
+    crearClick(vistaInicio);
+  }, []);
+
   return (
     <>
       <Container className="">
@@ -60,10 +87,26 @@ const Inicio = () => {
                 <Span>En proceso</Span>
               </Enlace>
             </li>
+            <li>
+              <div className="enlaces" onClick={onClickTour}>
+                <img src={tour} alt="icono" />
+                Tour Virtual
+                <Span>En proceso</Span>
+              </div>
+            </li>
             
           </ul>
+
+
+
+
         </Div>
         <Toti />
+
+
+      {
+          (tourQr) ? <TourVirtual /> : null
+        }
 
       </Container>
     </>
