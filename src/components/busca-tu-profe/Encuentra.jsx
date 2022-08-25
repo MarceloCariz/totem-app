@@ -61,7 +61,6 @@ export const Encuentra = () => {
   }
   const activeKeyboard = () => {
     setKeyboard(!keyboard);
-    console.log(keyboard)
   }
 
   const handleSubmitName = async (e) => {
