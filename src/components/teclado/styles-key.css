@@ -30,6 +30,9 @@
 .espacio{
     width: 600px;
 }
+.delete{
+    width: 200px;
+}
 
 .limpiar-pad {
     width: 180px;

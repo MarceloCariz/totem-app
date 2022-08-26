@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { getAlumno } from "../../helpers/getRut";
@@ -18,6 +18,14 @@ export const ResultadoRut = () => {
         setAsignatura(e)
         navigate('salas')
     }
+    useEffect(() => {
+      console.log('carga de profe')
+    
+      return () => {
+        setProfe([''])
+      }
+    }, [profe])
+    
 
     return (
         <>

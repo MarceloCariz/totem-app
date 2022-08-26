@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import fondo from './img/frentesedeblur.png'
@@ -82,6 +82,8 @@ export const Encuentra = () => {
     })
     navigate('resultado')
   }
+  
+  
   return (
     <>
       <Container>
@@ -89,39 +91,38 @@ export const Encuentra = () => {
         <div className='div-find-start'>
           <h1 className='title-select'>Selecciona una categoría para iniciar tu búsqueda</h1>
 
-          <Contenedor className='contenedor-form'>
-            
-              <form className='formulario-docente' onSubmit={handleSubmitName}>
-                <p className='titulo-docente'>Según datos de profesor(a)</p>
-                <Input1 negro={keyboard} onClick={activeKeyboard} type='text' readOnly onChange={onChangeProfe} value={keyboard ? profe : 'INGRESA NOMBRE DEL PROFESOR(A)'} />
-              </form>
-              {
-                keyboard ?
-                  (<div
-                    className='keyboard'>
-                    {
-                      <Keyboard setNameDocente={setProfe} nameDocente={profe} activeKeyboard={activeKeyboard} submit={handleSubmitName} />
-                    }
+          <Contenedor >
+            <form onSubmit={handleSubmitName}>
+              <P className='titulo-docente'>Según datos de profesor(a)</P>
+              <Input1 negro={keyboard} onClick={activeKeyboard} type='text' readOnly onChange={onChangeProfe} value={keyboard ? profe : 'INGRESA NOMBRE DEL PROFESOR(A)'} />
+            </form>
+            {
+              keyboard ?
+                (<div
+                  className='keyboard'>
+                  {
+                    <Keyboard setNameDocente={setProfe} nameDocente={profe} activeKeyboard={activeKeyboard} submit={handleSubmitName} />
+                  }
 
-                  </div>) : ''
-              }
+                </div>) : ''
+            }
 
-              <form className='fomulario-rut' onSubmit={handleSubmitRut}>
-                <P className='titulo-rut'>Según asignatura</P>
-                <Input negro={numpad} onClick={activeNumpad} type="text" readOnly onChange={onChangeRut} value={numpad ? rutAlumnos : 'INGRESA TU RUT'}
-                  maxLength={9} />
-              </form>
-              {
-                numpad ?
-                  (<div
-                    className="pad-numerico"
-                  >
-                    {
-                      <NumericPad setRutAlumnos={setRutAlumnos} rutAlumnos={rutAlumnos} activeNumpad={activeNumpad} submit={handleSubmitRut} />
-                    }
+            <form onSubmit={handleSubmitRut}>
+              <P className='titulo-rut'>Según asignatura</P>
+              <Input negro={numpad} onClick={activeNumpad} type="text" readOnly onChange={onChangeRut} value={numpad ? rutAlumnos : 'INGRESA TU RUT'}
+                maxLength={9} />
+            </form>
+            {
+              numpad ?
+                (<div
+                  className="pad-numerico"
+                >
+                  {
+                    <NumericPad setRutAlumnos={setRutAlumnos} rutAlumnos={rutAlumnos} activeNumpad={activeNumpad} submit={handleSubmitRut} />
+                  }
 
-                  </div>) : ''
-              }
+                </div>) : ''
+            }
           </Contenedor>
         </div>
       </Container>
@@ -129,11 +130,11 @@ export const Encuentra = () => {
   )
 }
 const Input = styled.input`
- position: absolute;
+position: absolute;
 width: 772px;
 height: 104px;
 left: 154px;
-top: 1139px;
+top: 970px;
 text-align: center;
 color: ${props => props.negro ? 'black' : 'rgba(0, 0, 0, 0.2)'};
 text-transform: uppercase;
@@ -143,11 +144,11 @@ background: rgba(255, 255, 255, 0.59);
 border-radius: 22px;
 `;
 const Input1 = styled.input`
- position: absolute;
+position: absolute;
 width: 772px;
 height: 104px;
 left: 154px;
-top: 939px;
+top: 700px;
 text-align: center;
 color: ${props => props.negro ? 'black' : 'rgba(0, 0, 0, 0.2)'};
 text-transform: uppercase;

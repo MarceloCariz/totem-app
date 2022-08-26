@@ -4,6 +4,8 @@ import flechaBuscar from './icons/flechaBuscar.png';
 import volver from './icons/volver.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
+
+
 export const NumericPad = ({ setRutAlumnos, rutAlumnos, activeNumpad, submit }) => {
   const onClickRut = (e) => {
     const value = e.currentTarget.value

@@ -3,13 +3,17 @@ import './styles-key.css'
 import volver from './icons/volver.png';
 import flechaBuscar from './icons/flechaBuscar.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTrash } from "@fortawesome/free-solid-svg-icons";
+import { faTrash, faDeleteLeft } from "@fortawesome/free-solid-svg-icons";
 
 export const Keyboard = ({ nameDocente, setNameDocente, activeKeyboard, submit }) => {
 
     const onClickName = (e) => {
         const value = e.currentTarget.value
         setNameDocente(nameDocente + `${value}`);
+    }
+    const onClickDelete = () =>{
+        setNameDocente(nameDocente.slice(0, -1));
+
     }
 
     const onCleanName = () => { setNameDocente(""); }
@@ -65,6 +69,8 @@ export const Keyboard = ({ nameDocente, setNameDocente, activeKeyboard, submit }
                     <button value="B" onClick={onClickName} className="tecla">B</button>
                     <button value="N" onClick={onClickName} className="tecla">N</button>
                     <button value="M" onClick={onClickName} className="tecla">M</button>
+                    <button className="tecla delete" onClick={onClickDelete}><FontAwesomeIcon icon={faDeleteLeft} /></button>
+
                 </div>
                 <div className="barra-espacio">
                     <button value=" " onClick={onClickName} className="tecla espacio">ESPACIO</button>

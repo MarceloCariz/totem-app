@@ -33,20 +33,7 @@ p {
     color: #FFFFFF;
 }
 
-/* .btn {
-    text-decoration: none;
-    box-sizing: border-box;
-    background: rgba(255, 255, 255, 0.59);
-    border-radius: 22px;
-    cursor: pointer;
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 30px;
-    color: #000000;
-    padding: 2rem 16rem 2rem 20rem; 
-} */
+
 
 .forlist {
     display: flex;
@@ -56,11 +43,7 @@ p {
     border: #FFB71B solid;
 }
 
-/* .forlist .list {
-    padding: 90px;
-    width: 472px;
-    height: 104px;
-} */
+
 
 .img-icon {
     position: fixed;
@@ -90,7 +73,7 @@ p {
     flex-direction: column;
 }
 
-.contenedor .lista-contenedor .titulo-docente {
+.contenedor .lista-contenedor .titulo-docente-tarjeta {
     box-sizing: border-box;
     width: 772px;
     height: 85px;
@@ -133,9 +116,6 @@ p {
 }
 
 .input-rut {
-    /* position: fixed;
-    top:500px;
-    left: -300px; */
     text-align: center;
     border-radius: 10px;
     border: none;
@@ -178,7 +158,6 @@ p {
     top: 630px;
     height: 36%;
     padding-top: 5rem;
-    /* height: 30%; */
     overflow-y: scroll; 
 }
 
@@ -200,15 +179,22 @@ p {
     text-align: center;
 }
 
+
+
+.titulo-docente1 {
+    position: absolute;
+    top: 600px;
+}
 .titulo-rut {
     position: absolute;
-    top: 1045px;
+    top: 850px;
     left: 305px;
 
 }
 
 .titulo-docente {
     position: absolute;
-    top: 600px;
+    top: 580px;
+    left: 305px;
 }
 
