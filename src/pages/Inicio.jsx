@@ -24,7 +24,7 @@ const Enlace = styled(Link)`
   text-decoration: none;
   z-index: 1;
 `;
-const  P = styled.p`
+const P = styled.p`
   font-size: 3rem;
   font-family: sans-serif;
   text-transform: uppercase;
@@ -46,8 +46,8 @@ const Inicio = () => {
 
   const [tourQr, setTourQr] = useState(false);
 
-  if (tourQr){
-    setTimeout(() => {setTourQr(!tourQr);}, 60000)
+  if (tourQr) {
+    setTimeout(() => { setTourQr(!tourQr); }, 60000)
   }
 
   const onClickTour = () => {
@@ -62,7 +62,7 @@ const Inicio = () => {
     nombreVista: "VISTA INICIO"
   };
 
-  
+
   useEffect(() => {
     crearClick(vistaInicio);
   }, []);
@@ -76,7 +76,7 @@ const Inicio = () => {
           <ul className="listaEnlace">
             <li>
               <Enlace className="enlaces" to="preguntas">
-                <img src={ask} alt="icono"  />
+                <img src={ask} alt="icono" />
                 Preguntas Frecuentes
               </Enlace>
             </li>
@@ -88,26 +88,15 @@ const Inicio = () => {
               </Enlace>
             </li>
             <li>
-              <div className="enlaces" onClick={onClickTour}>
+              <Enlace className="enlaces" to="tour">
                 <img src={tour} alt="icono" />
                 Tour Virtual
                 <Span>En proceso</Span>
-              </div>
+              </Enlace>
             </li>
-            
           </ul>
-
-
-
-
         </Div>
         <Toti />
-
-
-      {
-          (tourQr) ? <TourVirtual /> : null
-        }
-
       </Container>
     </>
 

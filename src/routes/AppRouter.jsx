@@ -12,8 +12,9 @@ import { IdleTimerProvider } from "react-idle-timer";
 import { Pregunta } from '../components/opcion-preguntas/prueba/Pregunta'
 import { Weather } from '../components/weather/Weather'
 import { BuscarRut } from '../components/busca-tu-profe/BuscarRut'
-import { TarjetaProfesor } from '../components/busca-tu-profe/TarjetaProfesor'
 import Salas from '../components/busca-tu-profe/Salas'
+import { TourVirtual } from '../components/tour-virtual/TourVirtual'
+import { VistaTour } from '../components/tour-virtual/VistaTour'
 
 
 const AppRouter = () => {
@@ -49,6 +50,8 @@ const AppRouter = () => {
           <Route path='encuentratuprofe' element={<Encuentra />} />
           <Route path='encuentratuprofe/:buscarporrut' element={<BuscarRut />} />
           <Route path='encuentratuprofe/:buscarporrut/salas' element={<Salas />} />
+          <Route path='tour' element={<TourVirtual />} />
+          <Route path='tour/:vistatour' element={<VistaTour/>}/>
 
         </Route>
       </Routes>
