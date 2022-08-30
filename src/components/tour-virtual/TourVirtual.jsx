@@ -3,9 +3,18 @@ import styled from 'styled-components';
 import "./tourvirtual.css";
 
 import logoTour from './img/logo-tour.png'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 
 export const TourVirtual = () => {
+
+  const navigate = useNavigate();
+  
+  useEffect(() => {
+    setTimeout(() => {
+        navigate('/')
+    }, 30000);
+}, [])
   return (
     <>
       <Div>

@@ -4,15 +4,25 @@ import totiTour from './img/toti-tour.png'
 import styled from 'styled-components';
 import "./tourvirtual.css";
 import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 
 export const VistaTour = () => {
+
     const navigate = useNavigate();
-    const handleAddCategory = () =>{
+    
+    const handleAddCategory = () => {
         navigate('/inicio/evaluacion')
     }
+
+    useEffect(() => {
+        setTimeout(() => {
+            navigate('/')
+        }, 30000);
+    }, [])
+
     return (
         <Div>
-        <img className='toti' src={totiTour}/>
+            <img className='toti' src={totiTour} />
             <div className='imagenes'>
                 <h1 className='titulo-vista'>Escanea el siguiente código</h1>
                 <img className='fondo' src={fondo} />
