@@ -51,7 +51,7 @@ const AppRouter = () => {
           <Route path='encuentratuprofe/:buscarporrut' element={<BuscarRut />} />
           <Route path='encuentratuprofe/:buscarporrut/salas' element={<Salas />} />
           <Route path='tour' element={<TourVirtual />} />
-          <Route path='tour/:vistatour' element={<VistaTour/>}/>
+          <Route path='tour/:vistatour' element={<VistaTour />} />
 
         </Route>
       </Routes>

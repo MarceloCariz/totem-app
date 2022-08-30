@@ -17,6 +17,7 @@
   top: 130px;
   border-radius: 70px 50px 70px 0px;
 }
+
 .texto {
   text-transform: lowercase;
   text-align: left;
@@ -28,6 +29,7 @@
 .texto:first-letter {
   text-transform: uppercase;
 }
+
 .preg-frec {
   width: 402px;
   height: 90px;
@@ -201,6 +203,7 @@ li {
   color: #ffffff;
   text-decoration: none;
   padding: 28px;
+  justify-content: space-between;
 }
 
 .figura-2 {
@@ -419,12 +422,15 @@ ul .lista-eva:hover .input-eva {
   border-radius: 83px;
   color: #ffffff;
 }
+
 ul .lista-eva:hover .icon-1 {
   color: #ffffff;
 }
+
 ul .lista-eva:hover .icon-2 {
   color: #ffffff;
 }
+
 .icon-1 {
   position: absolute;
   top: 749px;
@@ -438,6 +444,7 @@ ul .lista-eva:hover .icon-2 {
   font-size: 75px;
   transition: 0.5s;
 }
+
 .p-finalizar {
   font-family: "Inter";
   font-style: normal;
@@ -486,4 +493,9 @@ ul .lista-eva:hover .icon-2 {
   position: absolute;
   left: 205px;
   top: -30px;
+}
+
+.flecha {
+  width: 50px !important;
+  height:  30px !important;
 }

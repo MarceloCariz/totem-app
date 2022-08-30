@@ -4,6 +4,7 @@ import useOpciones from '../../hooks/useOpciones';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import flecha from './icons/Flecha.png'
+import './preguntas.css'
 
 import './preguntas.css';
 import { Logo } from './logo/Logo';
@@ -63,9 +64,10 @@ const Categorias = () => {
                                             <li>
                                                 <Div>
                                                     <Link className='subcategorias ' to={{ pathname: `${subcategoria}` }}>
-                                                        <p className='texto'>{subcategoria}</p>         
+                                                        <p className='texto'>{subcategoria}</p> 
+                                                        <Flecha className='flecha' src={flecha} />        
                                                     </Link>
-                                                    <Flecha src={flecha} />
+                                                    
 
                                                 </Div>
                                                 <div className='figura-1' />
