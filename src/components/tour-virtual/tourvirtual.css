@@ -31,7 +31,7 @@
     right: 200px;
     width: 922px;
     height: 158px;
-    background: #FFB71B;
+    background: rgba(255, 183, 27, 0.4);
     border-radius: 70px;
 }
 
@@ -48,7 +48,7 @@
 .recorre {
     position: absolute;
     top: 750px;
-    font-family: 'Inter';
+    font-family: sans-serif;;
     font-style: normal; 
     font-weight: 700;
     font-size: 45px;
@@ -68,8 +68,8 @@
 
 .btn-get {
     position: absolute;
-    top: 1200px;
-    right: 350px;
+    top: 1100px;
+    right: 400px;
     color: #FFFFFF;
     font-family: 'Inter';
     font-style: normal;
