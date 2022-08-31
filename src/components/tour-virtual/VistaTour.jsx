@@ -14,11 +14,11 @@ export const VistaTour = () => {
         navigate('/inicio/evaluacion')
     }
 
-    useEffect(() => {
-        setTimeout(() => {
-            navigate('/')
-        }, 30000);
-    }, [])
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         navigate('/')
+    //     }, 30000);
+    // }, [])
 
     return (
         <Div>

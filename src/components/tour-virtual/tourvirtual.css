@@ -16,7 +16,6 @@
     display: flex;
     align-items: center;
     text-align: center;
-
     color: #FFFFFF;
 }
 
@@ -32,14 +31,12 @@
     right: 200px;
     width: 922px;
     height: 158px;
-    background: rgba(255, 183, 27, 0.5);
+    background: #FFB71B;
     border-radius: 70px;
 }
 
 .fondo-blur {
     position: absolute;
-    top: 600px;
-    right: 200px;
     width: 922px;
     height: 158px;
     background: rgba(255, 183, 27, 0.5);
