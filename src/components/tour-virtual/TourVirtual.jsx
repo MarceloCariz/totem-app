@@ -10,11 +10,11 @@ export const TourVirtual = () => {
 
   const navigate = useNavigate();
 
-  //   useEffect(() => {
-  //     setTimeout(() => {
-  //         navigate('/')
-  //     }, 30000);
-  // }, [])
+    useEffect(() => {
+      setTimeout(() => {
+          navigate('/')
+      }, 30000);
+  }, [])
   return (
     <>
       <Div>
