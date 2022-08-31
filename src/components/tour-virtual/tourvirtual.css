@@ -17,9 +17,8 @@
     align-items: center;
     text-align: center;
 
-    color: #FFFFFF;
+    color: #ffffff;
 }
-
 .div-title {
     display: flex;
     justify-content: start;
@@ -50,12 +49,13 @@
 
 .recorre {
     position: absolute;
-    top: 900px;
+    top: 750px;
     font-family: 'Inter';
-    font-style: normal;
+    font-style: normal; 
     font-weight: 700;
     font-size: 45px;
     line-height: 54px;
+    right: 300px;
     display: flex;
     align-items: center;
 
@@ -64,7 +64,8 @@
 
 .virtual {
     position: absolute;
-    top: 950px;
+    top: 800px;
+    right: 300px;
 }
 
 .btn-get {
@@ -118,4 +119,28 @@
     position: absolute;
     left: 400px;
     width: 400px;
+}
+.fondocodigo {
+    position: absolute;
+    top: -10px;
+    ;
+}
+.totitour2 {
+    position: absolute;
+    right:  0px;
+    top: 800px;   
+}
+
+.posicion {
+position: absolute;
+left: 80px !important;
+top: 750px;
+border-radius: 70px;
+}
+
+.dos{
+top: 170px;
+left: 200px;
+border-radius: 70px 70px 0px 70px;
+width: 700px;
 }

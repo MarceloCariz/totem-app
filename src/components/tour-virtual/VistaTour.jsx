@@ -34,7 +34,7 @@ export const VistaTour = () => {
 }
 
 const Div = styled.div`
-background-color: #000000;
+background-color: #14525;
 object-fit: cover;
 height: 100vh;
 margin-top: -11rem;
