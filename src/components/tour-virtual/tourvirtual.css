@@ -8,7 +8,7 @@
     position: absolute;
     top: 15px;
     right: 90px;
-    font-family: 'Inter';
+    font-family: sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 45px;
@@ -16,8 +16,8 @@
     display: flex;
     align-items: center;
     text-align: center;
+    color: #FFFFFF;
 
-    color: #ffffff;
 }
 .div-title {
     display: flex;
@@ -31,20 +31,18 @@
     right: 200px;
     width: 922px;
     height: 158px;
-    background: rgba(255, 183, 27, 0.5);
+    background: #FFB71B;
     border-radius: 70px;
 }
 
 .fondo-blur {
     position: absolute;
-    top: 600px;
-    right: 200px;
     width: 922px;
     height: 158px;
     background: rgba(255, 183, 27, 0.5);
     border: 11px solid #FFB71B;
     filter: blur(67px);
-    border-radius: 70px 70px 70px 0px;
+    border-radius: 70px;
 }
 
 .recorre {
@@ -133,7 +131,7 @@
 
 .posicion {
 position: absolute;
-left: 80px !important;
+left: 80px;
 top: 750px;
 border-radius: 70px;
 }

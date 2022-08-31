@@ -10,6 +10,7 @@ import { useEffect } from "react";
 export const TourVirtual = () => {
   const navigate = useNavigate();
 
+
   useEffect(() => {
     setTimeout(() => {
       navigate("/");
@@ -24,12 +25,13 @@ export const TourVirtual = () => {
         <div className="div-title">
           <div className="div-titulo">
           <div className="div-titulo dos"/>
+          <div className="fondo-blur" />
             <h1 className="titulo-tour">VIVE UNA NUEVA EXPERIENCIA</h1>
           </div>
-          <div className="fondo-blur" />
           <div className="fondo-blur posicion" />
           <h1 className="recorre">Anímate y recorre la sede </h1>
           <h1 className="recorre virtual">virtualmente</h1>
+
         </div>
         <Link to=":vistatour">
           <button className="btn-get">OBTENER CÓDIGO</button>
