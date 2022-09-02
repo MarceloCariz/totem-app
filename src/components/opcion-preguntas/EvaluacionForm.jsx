@@ -66,7 +66,7 @@ const EvaluacionForm = () => {
             </li>
           </div>
         </ul>
-        {active && (
+        {/* {active && (
           <>
             <p className="p-finalizar">Ingresa tu correo para finalizar</p>
             <input
@@ -79,7 +79,7 @@ const EvaluacionForm = () => {
               placeholder=""
             />
           </>
-        )}
+        )} */}
 
         <button className="btn-enviar" type="submit">Enviar</button>
       </form>
