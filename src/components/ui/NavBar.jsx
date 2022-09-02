@@ -22,11 +22,14 @@ const NavBar = () => {
 
        <Div>
       {
-        location.pathname === '/inicio' || location.pathname ==='/inicio/evaluacion'   ?
+        location.pathname === '/inicio' 
+        || location.pathname ==='/inicio/evaluacion' 
+        || location.pathname ==='/inicio/encuentratuprofe/resultado/salas' 
+        || location.pathname ==='/inicio/tour/:vistatour'  ?
         (<img  src={prev} alt="prev" />) :
       (<img onClick={()=> navigate(-1)} src={prev_activo} alt="prev"/>)
       }
-      <Home  active={location.pathname} onClick={()=> navigate(location.pathname === '/inicio' ? '/' : '/inicio')} src={home} alt="home" />
+      <Home  active={location.pathname} onClick={()=> navigate(location.pathname === '/inicio'  ? '/' : '/inicio' )} src={home} alt="home" />
       
     </Div>
     {/* )} */}
@@ -38,8 +41,6 @@ const NavBar = () => {
 
 const Div = styled.div`
   display: flex;
-  /* width: 30%; */
-  /* margin-top: 300rem; */
   padding-top: 2rem;
   align-items: center;
   position: absolute;
@@ -52,10 +53,13 @@ const Div = styled.div`
 `;
 
 const Home = styled.img`
-  /* object-fit: contain; */
   border-radius: 0px;
-  opacity: ${props => props.active=== '/inicio/evaluacion' ? '50%' : '100%'} ;
-  pointer-events:  ${props => props.active=== '/inicio/evaluacion' ? 'none' : ''};
+  opacity: ${props => props.active=== '/inicio/evaluacion' 
+  || props.active=== '/inicio/encuentratuprofe/resultado/salas' 
+  || props.active=== '/inicio/tour/:vistatour' ? '50%' : '100%'} ;
+  pointer-events:  ${props => props.active=== '/inicio/evaluacion' 
+  || props.active=== '/inicio/encuentratuprofe/resultado/salas' 
+  || props.active=== '/inicio/tour/:vistatour' ? 'none' : ''};
 `;
 
 export default NavBar
